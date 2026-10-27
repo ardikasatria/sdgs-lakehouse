@@ -35,10 +35,9 @@ Folder bukti diurutkan mengikuti urutan pekerjaan, bukan urutan nomor unit. Seti
 ## Perintah
 
 ```bash
-make data      # salin ringkasan dari DSIC-SDG (DSIC_SDG=/jalur/DSIC-SDG bila bukan ~/penelitian-kk)
+make data      # salin ringkasan dari penelitian Ardika Satria
 make sidik     # catat sha256 data ke data/SIDIK.txt
 make periksa   # pastikan data belum berubah
-make laporan   # report/*.md -> report/_build/laporan.docx
 ```
 
 ## Keadaan
