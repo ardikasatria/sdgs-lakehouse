@@ -140,7 +140,7 @@ Dua kesimpulan dari perhitungan ini. Pertama, biaya simpan dapat diabaikan: kura
 ## Catatan terbuka
 
 - **Kompatibilitas S3 bucket Lightsail belum diperiksa.** FAQ Lightsail tidak menyatakan bucket memakai API S3, sehingga bucket baru boleh dianggap cadangan, belum gudang Iceberg. Salinan ke bucket juga belum dikonfirmasi dibuat.
-- **Volume berita belum ditaksir** pada tabel pertumbuhan; ukuran alirannya baru diukur pada langkah 10 (GDELT seminggu 8,42 GB zip, tersimpan 18 MB).
+- **Volume berita belum ditaksir** pada tabel pertumbuhan; ukuran alirannya baru diukur pada langkah 10 (GDELT seminggu 8,42 GB zip dialirkan 11,6 MB per detik, `data/uji/uji-sla-gdelt.json`).
 - **Deduplikasi isi snapshot BPS belum dijalankan**, karena snapshot BPS kedua setelah 20 Oktober belum diambil.
 - **Memori komponen lakehouse belum diukur dengan `docker stats`** seperti direncanakan; yang ada adalah bukti tidak langsung bahwa semuanya berjalan pada VM 8 GiB.
 - **Pemantauan ruang kosong masih manual.** Ruang kosong Mac 6,2 GiB saat uji operasi sudah di bawah ambang peringatan 5 GB yang direncanakan bila dihitung dalam GB desimal; ini alasan mode alir wajib pada langkah 10.
