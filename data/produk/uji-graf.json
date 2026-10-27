@@ -1,0 +1,556 @@
+{
+ "praregistrasi": "docs/brief5/praregistrasi-eksperimen-v4.md Bagian 3",
+ "sidik_gold": "657df68e2f000087f750c4e5b95a55b0465f27ef2da16ff10bcb9ca5665d0adb",
+ "graf": {
+  "tripel": 85734,
+  "sha256_nt_gz": "e1b70160aa6f12c6f5e17dc96bb136e059211b9105fe99bf3db672b1983b6712",
+  "sama_dengan_m5": true,
+  "m5": {
+   "tripel": 85734,
+   "sha256_nt_gz": "e1b70160aa6f12c6f5e17dc96bb136e059211b9105fe99bf3db672b1983b6712"
+  },
+  "shacl_lulus": true,
+  "pelanggaran_shacl": 0,
+  "simpul_per_kelas": {
+   "Rilis": 2678,
+   "Seri": 2062,
+   "Indicator": 232,
+   "Klaim": 195,
+   "Target": 169,
+   "IndikatorTPB": 105,
+   "Dokumen": 71,
+   "Keterkaitan": 46,
+   "VersiWilayah": 42,
+   "Goal": 17,
+   "Sumber": 15,
+   "DataProduct": 9,
+   "Dataset": 9,
+   "Pilar": 4,
+   "RencanaIndikator": 4
+  },
+  "cakupan_per_tujuan": {
+   "1": {
+    "indikator": 3,
+    "global": 3,
+    "seri_langsung": 1,
+    "seri": 3,
+    "rilis": 3
+   },
+   "2": {
+    "indikator": 9,
+    "global": 9,
+    "seri_langsung": 3,
+    "seri": 9,
+    "rilis": 9
+   },
+   "3": {
+    "indikator": 22,
+    "global": 22,
+    "seri_langsung": 9,
+    "seri": 22,
+    "rilis": 22
+   },
+   "4": {
+    "indikator": 14,
+    "global": 12,
+    "seri_langsung": 7,
+    "seri": 13,
+    "rilis": 13
+   },
+   "5": {
+    "indikator": 5,
+    "global": 5,
+    "seri_langsung": 3,
+    "seri": 4,
+    "rilis": 4
+   },
+   "6": {
+    "indikator": 4,
+    "global": 4,
+    "seri_langsung": 2,
+    "seri": 4,
+    "rilis": 4
+   },
+   "7": {
+    "indikator": 2,
+    "global": 2,
+    "seri_langsung": 0,
+    "seri": 2,
+    "rilis": 2
+   },
+   "8": {
+    "indikator": 11,
+    "global": 11,
+    "seri_langsung": 6,
+    "seri": 11,
+    "rilis": 11
+   },
+   "9": {
+    "indikator": 9,
+    "global": 9,
+    "seri_langsung": 3,
+    "seri": 8,
+    "rilis": 8
+   },
+   "10": {
+    "indikator": 7,
+    "global": 7,
+    "seri_langsung": 4,
+    "seri": 6,
+    "rilis": 6
+   },
+   "11": {
+    "indikator": 5,
+    "global": 5,
+    "seri_langsung": 4,
+    "seri": 4,
+    "rilis": 4
+   },
+   "15": {
+    "indikator": 1,
+    "global": 1,
+    "seri_langsung": 1,
+    "seri": 1,
+    "rilis": 1
+   },
+   "16": {
+    "indikator": 12,
+    "global": 12,
+    "seri_langsung": 6,
+    "seri": 12,
+    "rilis": 12
+   },
+   "17": {
+    "indikator": 1,
+    "global": 1,
+    "seri_langsung": 1,
+    "seri": 1,
+    "rilis": 1
+   }
+  },
+  "cakupan_jumlah": {
+   "indikator": 105,
+   "global": 103,
+   "seri_langsung": 50,
+   "seri": 100,
+   "rilis": 100
+  }
+ },
+ "pengelompokan": {
+  "indikator": 109,
+  "proporsi_berkelompok": {
+   "pilar": 1.0,
+   "tujuan": 1.0,
+   "sumber": 0.945,
+   "sumber_tayang": 0.7064,
+   "status_kecocokan": 0.945
+  },
+  "ambang_pilar_tujuan_lulus": true,
+  "status_kecocokan": {
+   "banyak_sumber_belum_dibandingkan": 49,
+   "satu_sumber": 26,
+   "beda_tak_terjelaskan": 21,
+   "tanpa_data": 6,
+   "sama": 4,
+   "beda_terjelaskan": 3
+  },
+  "status_kecocokan_per_tujuan": {
+   "1": {
+    "sama": 1,
+    "banyak_sumber_belum_dibandingkan": 1,
+    "satu_sumber": 1
+   },
+   "2": {
+    "beda_tak_terjelaskan": 2,
+    "banyak_sumber_belum_dibandingkan": 5,
+    "satu_sumber": 2
+   },
+   "3": {
+    "banyak_sumber_belum_dibandingkan": 14,
+    "beda_tak_terjelaskan": 6,
+    "satu_sumber": 2
+   },
+   "4": {
+    "satu_sumber": 5,
+    "tanpa_data": 1,
+    "banyak_sumber_belum_dibandingkan": 6,
+    "beda_terjelaskan": 1,
+    "sama": 1
+   },
+   "5": {
+    "beda_tak_terjelaskan": 3,
+    "tanpa_data": 1,
+    "satu_sumber": 1
+   },
+   "6": {
+    "beda_tak_terjelaskan": 1,
+    "banyak_sumber_belum_dibandingkan": 1,
+    "satu_sumber": 2
+   },
+   "7": {
+    "beda_tak_terjelaskan": 1,
+    "banyak_sumber_belum_dibandingkan": 1
+   },
+   "8": {
+    "satu_sumber": 3,
+    "beda_terjelaskan": 1,
+    "beda_tak_terjelaskan": 3,
+    "banyak_sumber_belum_dibandingkan": 4
+   },
+   "9": {
+    "tanpa_data": 1,
+    "banyak_sumber_belum_dibandingkan": 3,
+    "beda_tak_terjelaskan": 2,
+    "satu_sumber": 3
+   },
+   "10": {
+    "banyak_sumber_belum_dibandingkan": 5,
+    "beda_terjelaskan": 1,
+    "tanpa_data": 1
+   },
+   "11": {
+    "banyak_sumber_belum_dibandingkan": 4,
+    "tanpa_data": 1
+   },
+   "12": {
+    "satu_sumber": 1
+   },
+   "13": {
+    "banyak_sumber_belum_dibandingkan": 1,
+    "tanpa_data": 1
+   },
+   "14": {
+    "banyak_sumber_belum_dibandingkan": 1
+   },
+   "15": {
+    "banyak_sumber_belum_dibandingkan": 1
+   },
+   "16": {
+    "sama": 2,
+    "beda_tak_terjelaskan": 2,
+    "satu_sumber": 6,
+    "banyak_sumber_belum_dibandingkan": 2
+   },
+   "17": {
+    "beda_tak_terjelaskan": 1
+   }
+  },
+  "berkas": "results/brief5/E2/dashboard_kelompok.json"
+ },
+ "keterkaitan": {
+  "semua_nilai_pilihan": 46,
+  "tayang": 46,
+  "sama_pasangan": 46,
+  "lintas_tujuan_tayang": 43,
+  "per_tujuan_tayang": {
+   "1": 3,
+   "2": 7,
+   "3": 8,
+   "4": 19,
+   "5": 11,
+   "6": 4,
+   "8": 5,
+   "9": 1,
+   "10": 9,
+   "11": 6,
+   "16": 16
+  },
+  "tujuan_game_dengan_keterkaitan": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   8,
+   9,
+   10,
+   11,
+   16
+  ],
+  "tujuan_game_tanpa_keterkaitan": [
+   7,
+   13,
+   15,
+   17
+  ],
+  "daftar_tayang": [
+   {
+    "a": "tpb:16.9.1*",
+    "b": "tpb:16.9.1.(b)",
+    "rho": 0.963,
+    "n": 306
+   },
+   {
+    "a": "tpb:4.4.1.(a)",
+    "b": "tpb:4.4.1.(b)",
+    "rho": 0.957,
+    "n": 382
+   },
+   {
+    "a": "tpb:11.1.1.(a)",
+    "b": "tpb:4.4.1.(a)",
+    "rho": 0.8446,
+    "n": 382
+   },
+   {
+    "a": "tpb:4.4.1.(b)",
+    "b": "tpb:5.b.1*",
+    "rho": 0.8158,
+    "n": 382
+   },
+   {
+    "a": "tpb:11.1.1.(a)",
+    "b": "tpb:4.4.1.(b)",
+    "rho": 0.8151,
+    "n": 382
+   },
+   {
+    "a": "tpb:16.9.1*",
+    "b": "tpb:2.1.2*",
+    "rho": -0.8138,
+    "n": 314
+   },
+   {
+    "a": "tpb:4.4.1.(a)",
+    "b": "tpb:5.b.1*",
+    "rho": 0.7988,
+    "n": 382
+   },
+   {
+    "a": "tpb:2.1.2*",
+    "b": "tpb:4.4.1.(a)",
+    "rho": -0.7836,
+    "n": 314
+   },
+   {
+    "a": "tpb:16.9.1.(b)",
+    "b": "tpb:2.1.2*",
+    "rho": -0.7678,
+    "n": 238
+   },
+   {
+    "a": "tpb:5.b.1*",
+    "b": "tpb:8.3.1*",
+    "rho": -0.7677,
+    "n": 280
+   },
+   {
+    "a": "tpb:16.9.1.(b)",
+    "b": "tpb:4.4.1.(a)",
+    "rho": 0.7633,
+    "n": 306
+   },
+   {
+    "a": "tpb:16.9.1*",
+    "b": "tpb:4.4.1.(a)",
+    "rho": 0.7513,
+    "n": 382
+   },
+   {
+    "a": "tpb:11.1.1.(a)",
+    "b": "tpb:5.b.1*",
+    "rho": 0.7509,
+    "n": 382
+   },
+   {
+    "a": "tpb:10.1.1.(c)",
+    "b": "tpb:4.4.1.(a)",
+    "rho": -0.7343,
+    "n": 99
+   },
+   {
+    "a": "tpb:16.1.4*",
+    "b": "tpb:4.4.1.(b)",
+    "rho": 0.7335,
+    "n": 106
+   },
+   {
+    "a": "tpb:1.2.1*",
+    "b": "tpb:10.2.1*",
+    "rho": 0.7318,
+    "n": 199
+   },
+   {
+    "a": "tpb:10.1.1.(c)",
+    "b": "tpb:3.1.2*",
+    "rho": -0.7126,
+    "n": 33
+   },
+   {
+    "a": "tpb:11.1.1.(a)",
+    "b": "tpb:16.9.1.(b)",
+    "rho": 0.708,
+    "n": 306
+   },
+   {
+    "a": "tpb:16.1.4*",
+    "b": "tpb:4.4.1.(a)",
+    "rho": 0.6956,
+    "n": 106
+   },
+   {
+    "a": "tpb:1.2.1*",
+    "b": "tpb:8.3.1*",
+    "rho": 0.6916,
+    "n": 280
+   },
+   {
+    "a": "tpb:3.7.2*",
+    "b": "tpb:5.3.1*",
+    "rho": 0.6916,
+    "n": 34
+   },
+   {
+    "a": "tpb:16.9.1.(b)",
+    "b": "tpb:5.b.1*",
+    "rho": 0.6793,
+    "n": 306
+   },
+   {
+    "a": "tpb:11.1.1.(a)",
+    "b": "tpb:16.9.1*",
+    "rho": 0.6756,
+    "n": 382
+   },
+   {
+    "a": "tpb:16.9.1.(b)",
+    "b": "tpb:4.4.1.(b)",
+    "rho": 0.6755,
+    "n": 306
+   },
+   {
+    "a": "tpb:3.1.2*",
+    "b": "tpb:4.4.1.(a)",
+    "rho": 0.6754,
+    "n": 170
+   },
+   {
+    "a": "tpb:11.1.1.(a)",
+    "b": "tpb:2.1.2*",
+    "rho": -0.6745,
+    "n": 314
+   },
+   {
+    "a": "tpb:16.9.1*",
+    "b": "tpb:5.b.1*",
+    "rho": 0.6711,
+    "n": 382
+   },
+   {
+    "a": "tpb:6.2.1*",
+    "b": "tpb:8.3.1*",
+    "rho": -0.6708,
+    "n": 74
+   },
+   {
+    "a": "tpb:2.1.2*",
+    "b": "tpb:4.4.1.(b)",
+    "rho": -0.6676,
+    "n": 314
+   },
+   {
+    "a": "tpb:10.1.1.(d)",
+    "b": "tpb:3.1.2*",
+    "rho": 0.6617,
+    "n": 33
+   },
+   {
+    "a": "tpb:2.3.1.(a)",
+    "b": "tpb:5.b.1*",
+    "rho": 0.6616,
+    "n": 306
+   },
+   {
+    "a": "tpb:3.1.2*",
+    "b": "tpb:9.2.2*",
+    "rho": 0.6586,
+    "n": 68
+   },
+   {
+    "a": "tpb:2.1.2*",
+    "b": "tpb:5.b.1*",
+    "rho": -0.6577,
+    "n": 314
+   },
+   {
+    "a": "tpb:10.2.1*",
+    "b": "tpb:8.3.1*",
+    "rho": 0.6553,
+    "n": 199
+   },
+   {
+    "a": "tpb:16.9.1*",
+    "b": "tpb:4.4.1.(b)",
+    "rho": 0.6481,
+    "n": 382
+   },
+   {
+    "a": "tpb:1.2.1*",
+    "b": "tpb:5.b.1*",
+    "rho": -0.6451,
+    "n": 382
+   },
+   {
+    "a": "tpb:16.9.1.(b)",
+    "b": "tpb:3.1.2*",
+    "rho": 0.6444,
+    "n": 170
+   },
+   {
+    "a": "tpb:3.1.2*",
+    "b": "tpb:3.7.2*",
+    "rho": -0.6374,
+    "n": 34
+   },
+   {
+    "a": "tpb:4.4.1.(b)",
+    "b": "tpb:6.2.1*",
+    "rho": 0.6369,
+    "n": 74
+   },
+   {
+    "a": "tpb:4.4.1.(a)",
+    "b": "tpb:6.2.1*",
+    "rho": 0.6324,
+    "n": 74
+   },
+   {
+    "a": "tpb:16.9.1*",
+    "b": "tpb:3.1.2*",
+    "rho": 0.628,
+    "n": 170
+   },
+   {
+    "a": "tpb:10.1.1.(c)",
+    "b": "tpb:16.9.1.(b)",
+    "rho": -0.6206,
+    "n": 99
+   },
+   {
+    "a": "tpb:10.2.1*",
+    "b": "tpb:5.b.1*",
+    "rho": -0.6171,
+    "n": 199
+   },
+   {
+    "a": "tpb:6.1.1*",
+    "b": "tpb:8.5.1*",
+    "rho": -0.6113,
+    "n": 212
+   },
+   {
+    "a": "tpb:10.1.1.(c)",
+    "b": "tpb:4.4.1.(b)",
+    "rho": -0.607,
+    "n": 99
+   },
+   {
+    "a": "tpb:10.1.1.(d)",
+    "b": "tpb:4.4.1.(a)",
+    "rho": 0.6014,
+    "n": 99
+   }
+  ]
+ }
+}

@@ -1,0 +1,115 @@
+{
+ "manifest": "data/manifests/gudang/gdelt-2026-10-24.json",
+ "per_hari": {
+  "english/20261014": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "english/20261015": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "english/20261016": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "english/20261017": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "english/20261018": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "english/20261019": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "english/20261020": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "translation/20261014": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "translation/20261015": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "translation/20261016": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "translation/20261017": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "translation/20261018": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "translation/20261019": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  },
+  "translation/20261020": {
+   "berkas": 96,
+   "gagal": 0,
+   "tercantum": 96,
+   "lengkap": true
+  }
+ },
+ "bita_zip": 8416382556,
+ "durasi_s": 726.0,
+ "berkas_lengkap": {
+  "nilai": "14/14",
+  "ambang": "14/14",
+  "satuan": "",
+  "lulus": true
+ },
+ "md5_dan_unduh_gagal": {
+  "nilai": 0,
+  "ambang": 0,
+  "satuan": "",
+  "lulus": true
+ },
+ "laju_mb_s": {
+  "nilai": 11.6,
+  "ambang": 10,
+  "satuan": "MB/s",
+  "lulus": true
+ },
+ "satu_hari_menit": {
+  "nilai": 1.5,
+  "ambang": 60,
+  "satuan": "menit",
+  "lulus": true
+ }
+}

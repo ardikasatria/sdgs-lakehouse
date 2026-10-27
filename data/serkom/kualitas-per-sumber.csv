@@ -1,0 +1,67 @@
+sumber,dimensi,nilai,standar,memenuhi
+bnpb,keterpetakan,0.9954,"≥ 0,95",ya
+bnpb,keunikan,0,0,ya
+bnpb,validitas,1.0,"≥ 0,99",ya
+bnpb,kelengkapan,0.6535,"≥ 0,90 per seri-tahun",tidak
+bnpb,ketepatan_waktu,254,dilaporkan,
+bnpb,keterlacakan,1.0,"1,00",ya
+bps,keterpetakan,1.0,"≥ 0,95",ya
+bps,keunikan,0,0,ya
+bps,validitas,0.9997,"≥ 0,99",ya
+bps,kelengkapan,0.9591,"≥ 0,90 per seri-tahun",ya
+bps,ketepatan_waktu,2177,dilaporkan,
+bps,keterlacakan,1.0,"1,00",ya
+ilostat,keterpetakan,1.0,"≥ 0,95",ya
+ilostat,keunikan,0,0,ya
+ilostat,validitas,0.9997,"≥ 0,99",ya
+ilostat,kelengkapan,,"≥ 0,90 per seri-tahun",ya
+ilostat,ketepatan_waktu,4306.0,dilaporkan,
+ilostat,keterlacakan,1.0,"1,00",ya
+kkp,keterpetakan,0.9965,"≥ 0,95",ya
+kkp,keunikan,0,0,ya
+kkp,validitas,1.0,"≥ 0,99",ya
+kkp,kelengkapan,0.9737,"≥ 0,90 per seri-tahun",ya
+kkp,ketepatan_waktu,,dilaporkan,
+kkp,keterlacakan,1.0,"1,00",ya
+signsmart,keterpetakan,0.8704,"≥ 0,95",tidak
+signsmart,keunikan,0,0,ya
+signsmart,validitas,0.8802,"≥ 0,99",tidak
+signsmart,kelengkapan,,"≥ 0,90 per seri-tahun",ya
+signsmart,ketepatan_waktu,,dilaporkan,
+signsmart,keterlacakan,1.0,"1,00",ya
+sipsn,keterpetakan,0.1553,"≥ 0,95",tidak
+sipsn,keunikan,0,0,ya
+sipsn,validitas,1.0,"≥ 0,99",ya
+sipsn,kelengkapan,0.9532,"≥ 0,90 per seri-tahun",ya
+sipsn,ketepatan_waktu,,dilaporkan,
+sipsn,keterlacakan,1.0,"1,00",ya
+unsd,keterpetakan,0.9988,"≥ 0,95",ya
+unsd,keunikan,0,0,ya
+unsd,validitas,0.996,"≥ 0,99",ya
+unsd,kelengkapan,,"≥ 0,90 per seri-tahun",ya
+unsd,ketepatan_waktu,3560.0,dilaporkan,
+unsd,keterlacakan,1.0,"1,00",ya
+unsd_arsip,keterpetakan,0.9995,"≥ 0,95",ya
+unsd_arsip,keunikan,0,0,ya
+unsd_arsip,validitas,0.9985,"≥ 0,99",ya
+unsd_arsip,kelengkapan,,"≥ 0,90 per seri-tahun",ya
+unsd_arsip,ketepatan_waktu,2283.0,dilaporkan,
+unsd_arsip,keterlacakan,1.0,"1,00",ya
+wdi,keterpetakan,1.0,"≥ 0,95",ya
+wdi,keunikan,0,0,ya
+wdi,validitas,1.0,"≥ 0,99",ya
+wdi,kelengkapan,,"≥ 0,90 per seri-tahun",ya
+wdi,ketepatan_waktu,7221,dilaporkan,
+wdi,keterlacakan,1.0,"1,00",ya
+wdi_arsip,keterpetakan,1.0,"≥ 0,95",ya
+wdi_arsip,keunikan,0,0,ya
+wdi_arsip,validitas,1.0,"≥ 0,99",ya
+wdi_arsip,kelengkapan,,"≥ 0,90 per seri-tahun",ya
+wdi_arsip,ketepatan_waktu,2161.0,dilaporkan,
+wdi_arsip,keterlacakan,1.0,"1,00",ya
+who_gho,keterpetakan,0.9988,"≥ 0,95",ya
+who_gho,keunikan,2,0,tidak
+who_gho,validitas,1.0,"≥ 0,99",ya
+who_gho,kelengkapan,,"≥ 0,90 per seri-tahun",ya
+who_gho,ketepatan_waktu,3823,dilaporkan,
+who_gho,keterlacakan,1.0,"1,00",ya

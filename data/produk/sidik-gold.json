@@ -1,0 +1,121 @@
+{
+ "diukur_pada": "2026-10-21T08:38:14+07:00",
+ "sidik_gold": "657df68e2f000087f750c4e5b95a55b0465f27ef2da16ff10bcb9ca5665d0adb",
+ "tabel": {
+  "dp.dp_ekonomi_nasional": {
+   "baris": 6908,
+   "kolom": 19,
+   "sha256": "c8231d64fb7296711dc6da10cb0ba6928e873b99ce7f8df7f0eeaecf4a69d03f"
+  },
+  "dp.dp_ekonomi_provinsi": {
+   "baris": 10547,
+   "kolom": 19,
+   "sha256": "bd67c8afd78df360a6cf96d8a364f831131d055ddee882fe8ef03da3a6f1db4d"
+  },
+  "dp.dp_lingkungan_nasional": {
+   "baris": 1845,
+   "kolom": 19,
+   "sha256": "ba403e089050cc7a52fdab3d27f0696c02af82860c54deecd6080cf5bc16dc2a"
+  },
+  "dp.dp_lingkungan_provinsi": {
+   "baris": 17436,
+   "kolom": 19,
+   "sha256": "a7258d52639bff303ad0365452b9d4e3bea8bb155c8b9feeaa48bea078373166"
+  },
+  "dp.dp_referensi_indikator": {
+   "baris": 109,
+   "kolom": 11,
+   "sha256": "0e6c38569f712db197ef9fea587ad0df9e4181174de3e2361835750aba18ffc1"
+  },
+  "dp.dp_referensi_konsep": {
+   "baris": 1126,
+   "kolom": 8,
+   "sha256": "530810f8f566cb5c3f39c9411574dd899757b38bc079b1900b3ad013b6e23a3d"
+  },
+  "dp.dp_referensi_satuan": {
+   "baris": 91,
+   "kolom": 5,
+   "sha256": "6c60ecd821006d5435b790df55a8e868bbbbd74d21d071e4326acd4b8a901377"
+  },
+  "dp.dp_referensi_wilayah": {
+   "baris": 42,
+   "kolom": 13,
+   "sha256": "9d160a6992a5e3ef5af3fe82e868bb33bd524ff0112235c4d2aeda733c5fe1da"
+  },
+  "dp.dp_rilis": {
+   "baris": 2678,
+   "kolom": 15,
+   "sha256": "564c2e7bae4cab452abc351b96ee8802e9583f206b88ace75bb521f23a4ca7e2"
+  },
+  "dp.dp_sosial_nasional": {
+   "baris": 3347,
+   "kolom": 19,
+   "sha256": "1a8f0b30743a1a95a9d6f66aefe103d5fd2858be0e1919ab0e3f2b42a5ee72da"
+  },
+  "dp.dp_sosial_provinsi": {
+   "baris": 21228,
+   "kolom": 19,
+   "sha256": "d1bbb62594df07bab1120fc217d6f0cf7a0fbc5be89b2b68597d6f99c3a8b27f"
+  },
+  "dp.dp_tatakelola_provinsi": {
+   "baris": 1315,
+   "kolom": 19,
+   "sha256": "fcc090de0758a3b5dea98658d4067272c9fe042d5a5d7d9b4b53b03b52247b2c"
+  },
+  "gold.dim_indikator": {
+   "baris": 109,
+   "kolom": 11,
+   "sha256": "0e6c38569f712db197ef9fea587ad0df9e4181174de3e2361835750aba18ffc1"
+  },
+  "gold.dim_konsep": {
+   "baris": 1126,
+   "kolom": 8,
+   "sha256": "530810f8f566cb5c3f39c9411574dd899757b38bc079b1900b3ad013b6e23a3d"
+  },
+  "gold.dim_periode": {
+   "baris": 181,
+   "kolom": 4,
+   "sha256": "6394ea1918d885adfda4fd399ce951edd2989b1c43dd1d5e8dc40aa2db858e7b"
+  },
+  "gold.dim_rilis": {
+   "baris": 2678,
+   "kolom": 13,
+   "sha256": "0f775c4b9d6a22fa4966dc95c1b22c0699905ca12881f4d64f36c2560bef5bfe"
+  },
+  "gold.dim_satuan": {
+   "baris": 91,
+   "kolom": 5,
+   "sha256": "6c60ecd821006d5435b790df55a8e868bbbbd74d21d071e4326acd4b8a901377"
+  },
+  "gold.dim_sumber": {
+   "baris": 15,
+   "kolom": 7,
+   "sha256": "7823dddad5eb06f7da219d789194e643bf557dc5962fa584c0c347ff1276bb36"
+  },
+  "gold.dim_wilayah": {
+   "baris": 42,
+   "kolom": 13,
+   "sha256": "9d160a6992a5e3ef5af3fe82e868bb33bd524ff0112235c4d2aeda733c5fe1da"
+  },
+  "gold.fakta_observasi": {
+   "baris": 1486490,
+   "kolom": 35,
+   "sha256": "e119934c743d1d7ac616663ffd656a687643fc225bfb60059d0dc9e3844b3742"
+  },
+  "gold.fakta_selisih": {
+   "baris": 1377573,
+   "kolom": 24,
+   "sha256": "af06eec31965bad2a0e4811b0ffdd525239dfa73ec9dab4bfe00fd5c74238915"
+  },
+  "gold.nilai_pilihan": {
+   "baris": 109289,
+   "kolom": 18,
+   "sha256": "70efa5e4990b31d9b315e1cfd091334bbaaf0defca3d8bd6b38e65ff5857ed53"
+  },
+  "gold.nilai_pilihan_tayang": {
+   "baris": 81249,
+   "kolom": 18,
+   "sha256": "2c9c846b33430ab587bba533bf49c1dd87f3daa4f4c627bf19b21b1daad8f148"
+  }
+ }
+}

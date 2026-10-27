@@ -1,0 +1,1085 @@
+{
+ "praregistrasi": "docs/brief5/praregistrasi-eksperimen-v4.md Bagian 4; Bagian 9 Catatan 3-5",
+ "hash": {
+  "level_pack_v4.json": {
+   "artefak_v4": "afbcbeefa40d3772c7545d9fe3f81ae9b67074f4f49aa7b7af343a1e47ef613f",
+   "ulang": "afbcbeefa40d3772c7545d9fe3f81ae9b67074f4f49aa7b7af343a1e47ef613f",
+   "sama": true
+  },
+  "gold_sdg.parquet": {
+   "artefak_v4": "7b2511190268b2f70c4e0545a6c42a8e0e5a004c84c73d27e72dfe9ab40f089e",
+   "ulang": "7b2511190268b2f70c4e0545a6c42a8e0e5a004c84c73d27e72dfe9ab40f089e",
+   "sama": true
+  },
+  "gold_sdg.sqlite": {
+   "artefak_v4": "faaa6a55ce09ae55fd8c9c5ad869440351e8a7292b02a45cc4e0908781a3be1a",
+   "ulang": "faaa6a55ce09ae55fd8c9c5ad869440351e8a7292b02a45cc4e0908781a3be1a",
+   "sama": true
+  }
+ },
+ "ambang_hash_lulus": true,
+ "kesetaraan_v3": {
+  "per_jenis": {
+   "anomali": {
+    "identik_kecuali_versi": 82
+   },
+   "baca": {
+    "identik_kecuali_versi": 276
+   },
+   "banding": {
+    "identik_kecuali_versi": 312
+   },
+   "peta": {
+    "identik_kecuali_versi": 64
+   },
+   "revisi": {
+    "hilang": 21,
+    "identik_kecuali_versi": 14
+   },
+   "tren": {
+    "identik_kecuali_versi": 102
+   }
+  },
+  "non_revisi": {
+   "identik_kecuali_versi": 836
+  },
+  "ambang_non_revisi_lulus": true,
+  "dunia_v3_sama": 73,
+  "dunia_v3": 80
+ },
+ "dunia": {
+  "biasa": 145,
+  "kasus": 18,
+  "per_tujuan": {
+   "1": 3,
+   "2": 5,
+   "3": 10,
+   "4": 24,
+   "5": 5,
+   "6": 8,
+   "7": 7,
+   "8": 14,
+   "9": 6,
+   "10": 11,
+   "11": 13,
+   "13": 16,
+   "15": 15,
+   "16": 7,
+   "17": 1
+  },
+  "ambang_setiap_tujuan_lulus": true
+ },
+ "level": {
+  "total_paket": 1650,
+  "biasa": 1570,
+  "langkah_kasus": 80,
+  "dikompilasi_biasa": 3820,
+  "proporsi_lolos_biasa": 0.411
+ },
+ "per_jenis": {
+  "anomali": {
+   "dikompilasi": 360,
+   "lolos": 82,
+   "rho": 0.2278
+  },
+  "baca": {
+   "dikompilasi": 624,
+   "lolos": 366,
+   "rho": 0.5865
+  },
+  "banding": {
+   "dikompilasi": 777,
+   "lolos": 438,
+   "rho": 0.5637
+  },
+  "jalur": {
+   "dikompilasi": 21,
+   "lolos": 18,
+   "rho": 0.8571
+  },
+  "keterkaitan": {
+   "dikompilasi": 67,
+   "lolos": 53,
+   "rho": 0.791
+  },
+  "peta": {
+   "dikompilasi": 1152,
+   "lolos": 140,
+   "rho": 0.1215
+  },
+  "revisi": {
+   "dikompilasi": 140,
+   "lolos": 35,
+   "rho": 0.25
+  },
+  "sumber": {
+   "dikompilasi": 119,
+   "lolos": 93,
+   "rho": 0.7815
+  },
+  "tebak": {
+   "dikompilasi": 338,
+   "lolos": 243,
+   "rho": 0.7189
+  },
+  "tren": {
+   "dikompilasi": 222,
+   "lolos": 102,
+   "rho": 0.4595
+  }
+ },
+ "per_jenis_tujuan": [
+  {
+   "jenis": "anomali",
+   "tujuan": 2,
+   "dikompilasi": 12,
+   "lolos": 5,
+   "rho": 0.4167
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 3,
+   "dikompilasi": 12,
+   "lolos": 4,
+   "rho": 0.3333
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 4,
+   "dikompilasi": 124,
+   "lolos": 18,
+   "rho": 0.1452
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 5,
+   "dikompilasi": 12,
+   "lolos": 2,
+   "rho": 0.1667
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 6,
+   "dikompilasi": 28,
+   "lolos": 6,
+   "rho": 0.2143
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 7,
+   "dikompilasi": 32,
+   "lolos": 8,
+   "rho": 0.25
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 8,
+   "dikompilasi": 36,
+   "lolos": 10,
+   "rho": 0.2778
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 9,
+   "dikompilasi": 8,
+   "lolos": 2,
+   "rho": 0.25
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 10,
+   "dikompilasi": 28,
+   "lolos": 9,
+   "rho": 0.3214
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 11,
+   "dikompilasi": 4,
+   "lolos": 0,
+   "rho": 0.0
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 15,
+   "dikompilasi": 52,
+   "lolos": 17,
+   "rho": 0.3269
+  },
+  {
+   "jenis": "anomali",
+   "tujuan": 16,
+   "dikompilasi": 12,
+   "lolos": 1,
+   "rho": 0.0833
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 1,
+   "dikompilasi": 9,
+   "lolos": 9,
+   "rho": 1.0
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 2,
+   "dikompilasi": 9,
+   "lolos": 9,
+   "rho": 1.0
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 3,
+   "dikompilasi": 24,
+   "lolos": 19,
+   "rho": 0.7917
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 4,
+   "dikompilasi": 105,
+   "lolos": 56,
+   "rho": 0.5333
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 5,
+   "dikompilasi": 9,
+   "lolos": 9,
+   "rho": 1.0
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 6,
+   "dikompilasi": 24,
+   "lolos": 21,
+   "rho": 0.875
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 7,
+   "dikompilasi": 24,
+   "lolos": 12,
+   "rho": 0.5
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 8,
+   "dikompilasi": 27,
+   "lolos": 17,
+   "rho": 0.6296
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 9,
+   "dikompilasi": 18,
+   "lolos": 14,
+   "rho": 0.7778
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 10,
+   "dikompilasi": 42,
+   "lolos": 35,
+   "rho": 0.8333
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 11,
+   "dikompilasi": 117,
+   "lolos": 42,
+   "rho": 0.359
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 13,
+   "dikompilasi": 144,
+   "lolos": 56,
+   "rho": 0.3889
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 15,
+   "dikompilasi": 51,
+   "lolos": 48,
+   "rho": 0.9412
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 16,
+   "dikompilasi": 18,
+   "lolos": 16,
+   "rho": 0.8889
+  },
+  {
+   "jenis": "baca",
+   "tujuan": 17,
+   "dikompilasi": 3,
+   "lolos": 3,
+   "rho": 1.0
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 1,
+   "dikompilasi": 12,
+   "lolos": 8,
+   "rho": 0.6667
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 2,
+   "dikompilasi": 12,
+   "lolos": 9,
+   "rho": 0.75
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 3,
+   "dikompilasi": 30,
+   "lolos": 22,
+   "rho": 0.7333
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 4,
+   "dikompilasi": 132,
+   "lolos": 73,
+   "rho": 0.553
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 5,
+   "dikompilasi": 12,
+   "lolos": 6,
+   "rho": 0.5
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 6,
+   "dikompilasi": 30,
+   "lolos": 20,
+   "rho": 0.6667
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 7,
+   "dikompilasi": 32,
+   "lolos": 12,
+   "rho": 0.375
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 8,
+   "dikompilasi": 51,
+   "lolos": 27,
+   "rho": 0.5294
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 9,
+   "dikompilasi": 24,
+   "lolos": 19,
+   "rho": 0.7917
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 10,
+   "dikompilasi": 48,
+   "lolos": 35,
+   "rho": 0.7292
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 11,
+   "dikompilasi": 122,
+   "lolos": 52,
+   "rho": 0.4262
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 13,
+   "dikompilasi": 180,
+   "lolos": 81,
+   "rho": 0.45
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 15,
+   "dikompilasi": 68,
+   "lolos": 57,
+   "rho": 0.8382
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 16,
+   "dikompilasi": 22,
+   "lolos": 16,
+   "rho": 0.7273
+  },
+  {
+   "jenis": "banding",
+   "tujuan": 17,
+   "dikompilasi": 2,
+   "lolos": 1,
+   "rho": 0.5
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 1,
+   "dikompilasi": 1,
+   "lolos": 1,
+   "rho": 1.0
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 2,
+   "dikompilasi": 2,
+   "lolos": 2,
+   "rho": 1.0
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 3,
+   "dikompilasi": 2,
+   "lolos": 2,
+   "rho": 1.0
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 4,
+   "dikompilasi": 2,
+   "lolos": 2,
+   "rho": 1.0
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 5,
+   "dikompilasi": 2,
+   "lolos": 1,
+   "rho": 0.5
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 6,
+   "dikompilasi": 2,
+   "lolos": 1,
+   "rho": 0.5
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 8,
+   "dikompilasi": 2,
+   "lolos": 1,
+   "rho": 0.5
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 9,
+   "dikompilasi": 1,
+   "lolos": 1,
+   "rho": 1.0
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 10,
+   "dikompilasi": 3,
+   "lolos": 3,
+   "rho": 1.0
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 11,
+   "dikompilasi": 1,
+   "lolos": 1,
+   "rho": 1.0
+  },
+  {
+   "jenis": "jalur",
+   "tujuan": 16,
+   "dikompilasi": 3,
+   "lolos": 3,
+   "rho": 1.0
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 1,
+   "dikompilasi": 4,
+   "lolos": 3,
+   "rho": 0.75
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 2,
+   "dikompilasi": 6,
+   "lolos": 4,
+   "rho": 0.6667
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 3,
+   "dikompilasi": 6,
+   "lolos": 5,
+   "rho": 0.8333
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 4,
+   "dikompilasi": 7,
+   "lolos": 6,
+   "rho": 0.8571
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 5,
+   "dikompilasi": 3,
+   "lolos": 1,
+   "rho": 0.3333
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 6,
+   "dikompilasi": 4,
+   "lolos": 2,
+   "rho": 0.5
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 8,
+   "dikompilasi": 2,
+   "lolos": 1,
+   "rho": 0.5
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 9,
+   "dikompilasi": 1,
+   "lolos": 0,
+   "rho": 0.0
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 10,
+   "dikompilasi": 11,
+   "lolos": 10,
+   "rho": 0.9091
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 11,
+   "dikompilasi": 7,
+   "lolos": 7,
+   "rho": 1.0
+  },
+  {
+   "jenis": "keterkaitan",
+   "tujuan": 16,
+   "dikompilasi": 16,
+   "lolos": 14,
+   "rho": 0.875
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 2,
+   "dikompilasi": 12,
+   "lolos": 2,
+   "rho": 0.1667
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 3,
+   "dikompilasi": 18,
+   "lolos": 2,
+   "rho": 0.1111
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 4,
+   "dikompilasi": 174,
+   "lolos": 16,
+   "rho": 0.092
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 5,
+   "dikompilasi": 18,
+   "lolos": 3,
+   "rho": 0.1667
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 6,
+   "dikompilasi": 36,
+   "lolos": 3,
+   "rho": 0.0833
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 7,
+   "dikompilasi": 6,
+   "lolos": 2,
+   "rho": 0.3333
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 8,
+   "dikompilasi": 42,
+   "lolos": 7,
+   "rho": 0.1667
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 9,
+   "dikompilasi": 24,
+   "lolos": 6,
+   "rho": 0.25
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 10,
+   "dikompilasi": 24,
+   "lolos": 5,
+   "rho": 0.2083
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 11,
+   "dikompilasi": 330,
+   "lolos": 32,
+   "rho": 0.097
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 13,
+   "dikompilasi": 378,
+   "lolos": 44,
+   "rho": 0.1164
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 15,
+   "dikompilasi": 72,
+   "lolos": 16,
+   "rho": 0.2222
+  },
+  {
+   "jenis": "peta",
+   "tujuan": 16,
+   "dikompilasi": 18,
+   "lolos": 2,
+   "rho": 0.1111
+  },
+  {
+   "jenis": "revisi",
+   "tujuan": 7,
+   "dikompilasi": 20,
+   "lolos": 5,
+   "rho": 0.25
+  },
+  {
+   "jenis": "revisi",
+   "tujuan": 8,
+   "dikompilasi": 116,
+   "lolos": 29,
+   "rho": 0.25
+  },
+  {
+   "jenis": "revisi",
+   "tujuan": 15,
+   "dikompilasi": 4,
+   "lolos": 1,
+   "rho": 0.25
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 1,
+   "dikompilasi": 3,
+   "lolos": 0,
+   "rho": 0.0
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 2,
+   "dikompilasi": 6,
+   "lolos": 5,
+   "rho": 0.8333
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 3,
+   "dikompilasi": 42,
+   "lolos": 37,
+   "rho": 0.881
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 4,
+   "dikompilasi": 3,
+   "lolos": 0,
+   "rho": 0.0
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 5,
+   "dikompilasi": 6,
+   "lolos": 5,
+   "rho": 0.8333
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 6,
+   "dikompilasi": 20,
+   "lolos": 15,
+   "rho": 0.75
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 7,
+   "dikompilasi": 3,
+   "lolos": 3,
+   "rho": 1.0
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 8,
+   "dikompilasi": 24,
+   "lolos": 17,
+   "rho": 0.7083
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 9,
+   "dikompilasi": 6,
+   "lolos": 6,
+   "rho": 1.0
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 15,
+   "dikompilasi": 3,
+   "lolos": 3,
+   "rho": 1.0
+  },
+  {
+   "jenis": "sumber",
+   "tujuan": 16,
+   "dikompilasi": 3,
+   "lolos": 2,
+   "rho": 0.6667
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 1,
+   "dikompilasi": 6,
+   "lolos": 6,
+   "rho": 1.0
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 2,
+   "dikompilasi": 9,
+   "lolos": 8,
+   "rho": 0.8889
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 3,
+   "dikompilasi": 13,
+   "lolos": 12,
+   "rho": 0.9231
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 4,
+   "dikompilasi": 91,
+   "lolos": 73,
+   "rho": 0.8022
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 5,
+   "dikompilasi": 9,
+   "lolos": 9,
+   "rho": 1.0
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 6,
+   "dikompilasi": 17,
+   "lolos": 16,
+   "rho": 0.9412
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 7,
+   "dikompilasi": 24,
+   "lolos": 12,
+   "rho": 0.5
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 8,
+   "dikompilasi": 26,
+   "lolos": 22,
+   "rho": 0.8462
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 9,
+   "dikompilasi": 14,
+   "lolos": 12,
+   "rho": 0.8571
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 10,
+   "dikompilasi": 26,
+   "lolos": 22,
+   "rho": 0.8462
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 11,
+   "dikompilasi": 3,
+   "lolos": 3,
+   "rho": 1.0
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 13,
+   "dikompilasi": 48,
+   "lolos": 9,
+   "rho": 0.1875
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 15,
+   "dikompilasi": 39,
+   "lolos": 28,
+   "rho": 0.7179
+  },
+  {
+   "jenis": "tebak",
+   "tujuan": 16,
+   "dikompilasi": 13,
+   "lolos": 11,
+   "rho": 0.8462
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 2,
+   "dikompilasi": 9,
+   "lolos": 6,
+   "rho": 0.6667
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 3,
+   "dikompilasi": 9,
+   "lolos": 4,
+   "rho": 0.4444
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 4,
+   "dikompilasi": 87,
+   "lolos": 40,
+   "rho": 0.4598
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 5,
+   "dikompilasi": 9,
+   "lolos": 5,
+   "rho": 0.5556
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 6,
+   "dikompilasi": 9,
+   "lolos": 3,
+   "rho": 0.3333
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 7,
+   "dikompilasi": 24,
+   "lolos": 12,
+   "rho": 0.5
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 8,
+   "dikompilasi": 24,
+   "lolos": 10,
+   "rho": 0.4167
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 9,
+   "dikompilasi": 6,
+   "lolos": 5,
+   "rho": 0.8333
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 10,
+   "dikompilasi": 18,
+   "lolos": 7,
+   "rho": 0.3889
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 11,
+   "dikompilasi": 3,
+   "lolos": 3,
+   "rho": 1.0
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 15,
+   "dikompilasi": 15,
+   "lolos": 4,
+   "rho": 0.2667
+  },
+  {
+   "jenis": "tren",
+   "tujuan": 16,
+   "dikompilasi": 9,
+   "lolos": 3,
+   "rho": 0.3333
+  }
+ ],
+ "mekanik": {
+  "tebak": {
+   "lolos": {
+    "baca": 171,
+    "tren": 72
+   },
+   "gugur": {
+    "baca": {
+     "mustahil: rentang nilai yang tampil sebelum kartu dibuka nol": 26,
+     "trivial: nilai acuan sama dengan nilai yang tampil sebelum kartu dibuka": 67
+    },
+    "tren": {
+     "mustahil: rentang nilai yang tampil sebelum kartu dibuka nol": 2
+    }
+   },
+   "tren_naif_lulus": 36,
+   "tren_lolos": 72
+  },
+  "sumber": {
+   "lolos": {
+    "tanda": 5,
+    "selisih": 54,
+    "tinggi": 34
+   },
+   "gugur": {
+    "selisih": {
+     "mustahil: status pasangan pembulatan, bukan selisih": 5,
+     "duplikat: struktur (jenis, tabel, wilayah, tahun) sama dengan level yang lolos": 10,
+     "mustahil: kandidat lain berada di dalam toleransi jawaban": 4,
+     "mustahil: status pasangan sama, bukan selisih": 3
+    },
+    "tinggi": {
+     "mustahil: status pasangan pembulatan, bukan selisih": 2,
+     "mustahil: status pasangan sama, bukan selisih": 2
+    }
+   },
+   "jawaban_tanda": "tersimpan di acuan; lihat laporan",
+   "tanda_lolos": 5
+  },
+  "keterkaitan": {
+   "lolos": {
+    "arah": 44,
+    "kandidat": 9
+   },
+   "gugur": {
+    "arah": {
+     "trivial: keterkaitan antarrincian kode TPB dasar yang sama": 2
+    },
+    "kandidat": {
+     "mustahil: selisih |rho| kandidat terkuat dan kedua 0.040 < 0.05": 1,
+     "mustahil: selisih |rho| kandidat terkuat dan kedua 0.022 < 0.05": 1,
+     "mustahil: selisih |rho| kandidat terkuat dan kedua 0.038 < 0.05": 1,
+     "mustahil: selisih |rho| kandidat terkuat dan kedua 0.030 < 0.05": 1,
+     "trivial: jawaban satu-satunya pilihan yang terhubung ke indikator itu pada graf kartu Jalur": 5,
+     "mustahil: selisih |rho| kandidat terkuat dan kedua 0.037 < 0.05": 1,
+     "mustahil: selisih |rho| kandidat terkuat dan kedua 0.048 < 0.05": 1,
+     "mustahil: selisih |rho| kandidat terkuat dan kedua 0.034 < 0.05": 1
+    }
+   }
+  },
+  "jalur": {
+   "lolos": {
+    "": 18
+   },
+   "gugur": {
+    "": {
+     "duplikat: struktur (jenis, tabel, wilayah, tahun) sama dengan level yang lolos": 1,
+     "mustahil: tidak ada jalur <= 3 keterkaitan": 2
+    }
+   },
+   "panjang_terpendek": {
+    "2": 13,
+    "3": 5
+   },
+   "tujuan": {
+    "1": 1,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 1,
+    "6": 1,
+    "8": 1,
+    "9": 1,
+    "10": 3,
+    "11": 1,
+    "16": 3
+   }
+  },
+  "kasus": {
+   "arah_tidak_tegas": 0,
+   "audit_angka": {
+    "angka_indikator": 0,
+    "terlacak": 0
+   },
+   "dipotong_maks_per_tujuan": 18,
+   "grup": 249,
+   "kurang_jenis": 0,
+   "kurang_level": 27,
+   "langkah_lolos": 80,
+   "layak": 18,
+   "per_tujuan": {
+    "2": 1,
+    "3": 1,
+    "4": 4,
+    "5": 1,
+    "6": 2,
+    "7": 3,
+    "10": 1,
+    "11": 1,
+    "15": 2,
+    "16": 2
+   },
+   "tanpa_banding_tahun": 11,
+   "tanpa_provinsi_layak": 175,
+   "terbit": 18
+  }
+ },
+ "e2_butir_4_level_dari_graf": {
+  "keterkaitan": 53,
+  "jalur": 18
+ },
+ "lisensi": {
+  "bnpb": {
+   "atribusi": "Data Informasi Bencana Indonesia (DIBI), Badan Nasional Penanggulangan Bencana, lewat portal CKAN BNPB; turunan dirilis di bawah ODbL",
+   "lisensi": "ODbL 1.0",
+   "nama": "BNPB"
+  }
+ },
+ "manifest_kelayakan": {
+  "dikompilasi": 3820,
+  "gagal": 2250,
+  "lolos": 1570
+ }
+}

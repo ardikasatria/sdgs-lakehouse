@@ -1,0 +1,76 @@
+{
+ "mulai": "2026-10-24T14:29:09+07:00",
+ "tanggal": "2026-10-20",
+ "pekerja": 8,
+ "inti": 8,
+ "commit": "dcaa55e",
+ "mesin": "Darwin arm64, 8 inti",
+ "java": "openjdk version \"17.0.21.0.2\" 2026-10-22",
+ "spark_versi": "3.5.3",
+ "gudang": {
+  "trino": {
+   "baris": 1486490,
+   "window_s": 1.772,
+   "window_ulang": [
+    3.294,
+    1.772,
+    1.721
+   ],
+   "window_hasil": [
+    1486490,
+    1376297
+   ],
+   "agregat_s": 0.66,
+   "agregat_ulang": [
+    1.0,
+    0.66,
+    0.24
+   ],
+   "agregat_konsep": 662
+  },
+  "spark": {
+   "baris": 1486490,
+   "window_s": 0.955,
+   "window_ulang": [
+    2.986,
+    0.955,
+    0.871
+   ],
+   "window_hasil": [
+    1486490,
+    1376297
+   ],
+   "agregat_s": 0.219,
+   "agregat_ulang": [
+    0.383,
+    0.219,
+    0.151
+   ],
+   "agregat_konsep": 662
+  }
+ },
+ "spark_mulai_s": 2.5097621250001794,
+ "berita": {
+  "sampel": {
+   "berkas": 12,
+   "bita_zip": 52876264,
+   "jaringan_1_utas_mb_s": 2.4,
+   "jaringan_8_utas_mb_s": 5.7
+  },
+  "python_konektor_s": 0.58,
+  "python_konektor_baris": 7,
+  "python_ramping_s": 0.38,
+  "python_ramping_baris": 7,
+  "spark": {
+   "ekstrak_zip_s": 0.36,
+   "saring_s": 0.197,
+   "saring_ulang": [
+    0.616,
+    0.197,
+    0.18
+   ],
+   "baris_cocok": 7,
+   "bita_csv": 164484366
+  }
+ }
+}

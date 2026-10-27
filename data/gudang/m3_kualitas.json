@@ -1,0 +1,855 @@
+{
+ "dibangun_pada": "2026-10-21T05:44:48+07:00",
+ "standar": {
+  "keterpetakan": 0.95,
+  "keunikan": 0,
+  "validitas": 0.99,
+  "kelengkapan": 0.9,
+  "keterlacakan": 1.0
+ },
+ "per_sumber": {
+  "bnpb": {
+   "hitungan": {
+    "baris_bronze": 12095,
+    "silver": 18219,
+    "karantina": 84,
+    "kosong": 326,
+    "di_luar": 99565,
+    "gabung_s08": 0
+   },
+   "keterpetakan": 0.9954,
+   "keunikan": 0,
+   "validitas": 1.0,
+   "validitas_diuji": 23921,
+   "kelengkapan": {
+    "sel_seri_tahun": 72,
+    "rerata": 0.6535,
+    "proporsi_memenuhi": 0.4444
+   },
+   "ketepatan_waktu": {
+    "median_jeda_hari": 254,
+    "rilis": 113,
+    "proporsi_bukti_lemah": 0.0
+   },
+   "konsistensi": {},
+   "keterlacakan": 1.0
+  },
+  "bps": {
+   "hitungan": {
+    "baris_bronze": 56502,
+    "silver": 45063,
+    "karantina": 0,
+    "kosong": 806,
+    "di_luar": 8167,
+    "gabung_s08": 2466
+   },
+   "keterpetakan": 1.0,
+   "keunikan": 0,
+   "validitas": 0.9997,
+   "validitas_diuji": 30030,
+   "kelengkapan": {
+    "sel_seri_tahun": 574,
+    "rerata": 0.9591,
+    "proporsi_memenuhi": 0.7805
+   },
+   "ketepatan_waktu": {
+    "median_jeda_hari": 2177,
+    "rilis": 73,
+    "proporsi_bukti_lemah": 0.0274
+   },
+   "konsistensi": {
+    "bpsxilostat": {
+     "selisih": 58,
+     "pembulatan": 3
+    },
+    "bpsxunsd": {
+     "sama": 18,
+     "selisih": 181,
+     "pembulatan": 41
+    },
+    "bpsxwdi": {
+     "pembulatan": 30,
+     "sama": 2,
+     "selisih": 125
+    },
+    "bpsxwho_gho": {
+     "selisih": 35
+    }
+   },
+   "keterlacakan": 1.0
+  },
+  "ilostat": {
+   "hitungan": {
+    "baris_bronze": 7094,
+    "silver": 6868,
+    "karantina": 0,
+    "kosong": 226,
+    "di_luar": 0,
+    "gabung_s08": 0
+   },
+   "keterpetakan": 1.0,
+   "keunikan": 0,
+   "validitas": 0.9997,
+   "validitas_diuji": 6166,
+   "kelengkapan": null,
+   "ketepatan_waktu": {
+    "median_jeda_hari": 4306.0,
+    "rilis": 26,
+    "proporsi_bukti_lemah": 0.0
+   },
+   "konsistensi": {
+    "bpsxilostat": {
+     "selisih": 58,
+     "pembulatan": 3
+    },
+    "ilostatxunsd": {
+     "pembulatan": 98,
+     "sama": 16,
+     "selisih": 5
+    },
+    "ilostatxwdi": {
+     "sama": 62,
+     "pembulatan": 4
+    }
+   },
+   "keterlacakan": 1.0
+  },
+  "kkp": {
+   "hitungan": {
+    "baris_bronze": 1427,
+    "silver": 3385,
+    "karantina": 12,
+    "kosong": 0,
+    "di_luar": 206,
+    "gabung_s08": 0
+   },
+   "keterpetakan": 0.9965,
+   "keunikan": 0,
+   "validitas": 1.0,
+   "validitas_diuji": 1373,
+   "kelengkapan": {
+    "sel_seri_tahun": 60,
+    "rerata": 0.9737,
+    "proporsi_memenuhi": 0.7667
+   },
+   "ketepatan_waktu": {
+    "median_jeda_hari": null,
+    "rilis": 43,
+    "proporsi_bukti_lemah": 1.0
+   },
+   "konsistensi": {},
+   "keterlacakan": 1.0
+  },
+  "signsmart": {
+   "hitungan": {
+    "baris_bronze": 5235,
+    "silver": 4365,
+    "karantina": 650,
+    "kosong": 220,
+    "di_luar": 0,
+    "gabung_s08": 0
+   },
+   "keterpetakan": 0.8704,
+   "keunikan": 0,
+   "validitas": 0.8802,
+   "validitas_diuji": 4290,
+   "kelengkapan": null,
+   "ketepatan_waktu": {
+    "median_jeda_hari": null,
+    "rilis": 28,
+    "proporsi_bukti_lemah": 1.0
+   },
+   "konsistensi": {},
+   "keterlacakan": 1.0
+  },
+  "sipsn": {
+   "hitungan": {
+    "baris_bronze": 1063,
+    "silver": 25,
+    "karantina": 136,
+    "kosong": 0,
+    "di_luar": 8687,
+    "gabung_s08": 0
+   },
+   "keterpetakan": 0.1553,
+   "keunikan": 0,
+   "validitas": 1.0,
+   "validitas_diuji": 350,
+   "kelengkapan": {
+    "sel_seri_tahun": 9,
+    "rerata": 0.9532,
+    "proporsi_memenuhi": 0.5556
+   },
+   "ketepatan_waktu": {
+    "median_jeda_hari": null,
+    "rilis": 2,
+    "proporsi_bukti_lemah": 1.0
+   },
+   "konsistensi": {},
+   "keterlacakan": 1.0
+  },
+  "unsd": {
+   "hitungan": {
+    "baris_bronze": 15453,
+    "silver": 14688,
+    "karantina": 17,
+    "kosong": 544,
+    "di_luar": 204,
+    "gabung_s08": 0
+   },
+   "keterpetakan": 0.9988,
+   "keunikan": 0,
+   "validitas": 0.996,
+   "validitas_diuji": 9567,
+   "kelengkapan": null,
+   "ketepatan_waktu": {
+    "median_jeda_hari": 3560.0,
+    "rilis": 1,
+    "proporsi_bukti_lemah": 0.0
+   },
+   "konsistensi": {
+    "bpsxunsd": {
+     "sama": 18,
+     "selisih": 181,
+     "pembulatan": 41
+    },
+    "ilostatxunsd": {
+     "pembulatan": 98,
+     "sama": 16,
+     "selisih": 5
+    },
+    "unsdxwdi": {
+     "pembulatan": 133,
+     "sama": 104,
+     "selisih": 89
+    },
+    "unsdxwho_gho": {
+     "selisih": 80,
+     "pembulatan": 33,
+     "sama": 10
+    }
+   },
+   "keterlacakan": 1.0
+  },
+  "unsd_arsip": {
+   "hitungan": {
+    "baris_bronze": 628035,
+    "silver": 525017,
+    "karantina": 319,
+    "kosong": 16956,
+    "di_luar": 2963,
+    "gabung_s08": 82780
+   },
+   "keterpetakan": 0.9995,
+   "keunikan": 0,
+   "validitas": 0.9985,
+   "validitas_diuji": 321436,
+   "kelengkapan": null,
+   "ketepatan_waktu": {
+    "median_jeda_hari": 2283.0,
+    "rilis": 48,
+    "proporsi_bukti_lemah": 0.0
+   },
+   "konsistensi": {
+    "bpsxunsd": {
+     "sama": 18,
+     "selisih": 181,
+     "pembulatan": 41
+    },
+    "ilostatxunsd": {
+     "pembulatan": 98,
+     "sama": 16,
+     "selisih": 5
+    },
+    "unsdxwdi": {
+     "pembulatan": 133,
+     "sama": 104,
+     "selisih": 89
+    },
+    "unsdxwho_gho": {
+     "selisih": 80,
+     "pembulatan": 33,
+     "sama": 10
+    }
+   },
+   "keterlacakan": 1.0
+  },
+  "wdi": {
+   "hitungan": {
+    "baris_bronze": 24816,
+    "silver": 10107,
+    "karantina": 0,
+    "kosong": 14709,
+    "di_luar": 0,
+    "gabung_s08": 0
+   },
+   "keterpetakan": 1.0,
+   "keunikan": 0,
+   "validitas": 1.0,
+   "validitas_diuji": 4401,
+   "kelengkapan": null,
+   "ketepatan_waktu": {
+    "median_jeda_hari": 7221,
+    "rilis": 1,
+    "proporsi_bukti_lemah": 0.0
+   },
+   "konsistensi": {
+    "bpsxwdi": {
+     "pembulatan": 30,
+     "sama": 2,
+     "selisih": 125
+    },
+    "ilostatxwdi": {
+     "sama": 62,
+     "pembulatan": 4
+    },
+    "unsdxwdi": {
+     "pembulatan": 133,
+     "sama": 104,
+     "selisih": 89
+    },
+    "wdixwho_gho": {
+     "selisih": 124,
+     "pembulatan": 24,
+     "sama": 1
+    }
+   },
+   "keterlacakan": 1.0
+  },
+  "wdi_arsip": {
+   "hitungan": {
+    "baris_bronze": 848794,
+    "silver": 848794,
+    "karantina": 0,
+    "kosong": 0,
+    "di_luar": 0,
+    "gabung_s08": 0
+   },
+   "keterpetakan": 1.0,
+   "keunikan": 0,
+   "validitas": 1.0,
+   "validitas_diuji": 313547,
+   "kelengkapan": null,
+   "ketepatan_waktu": {
+    "median_jeda_hari": 2161.0,
+    "rilis": 142,
+    "proporsi_bukti_lemah": 0.0
+   },
+   "konsistensi": {
+    "bpsxwdi": {
+     "pembulatan": 30,
+     "sama": 2,
+     "selisih": 125
+    },
+    "ilostatxwdi": {
+     "sama": 62,
+     "pembulatan": 4
+    },
+    "unsdxwdi": {
+     "pembulatan": 133,
+     "sama": 104,
+     "selisih": 89
+    },
+    "wdixwho_gho": {
+     "selisih": 124,
+     "pembulatan": 24,
+     "sama": 1
+    }
+   },
+   "keterlacakan": 1.0
+  },
+  "who_gho": {
+   "hitungan": {
+    "baris_bronze": 2484,
+    "silver": 2457,
+    "karantina": 3,
+    "kosong": 0,
+    "di_luar": 0,
+    "gabung_s08": 24
+   },
+   "keterpetakan": 0.9988,
+   "keunikan": 2,
+   "validitas": 1.0,
+   "validitas_diuji": 1388,
+   "kelengkapan": null,
+   "ketepatan_waktu": {
+    "median_jeda_hari": 3823,
+    "rilis": 42,
+    "proporsi_bukti_lemah": 0.0238
+   },
+   "konsistensi": {
+    "bpsxwho_gho": {
+     "selisih": 35
+    },
+    "unsdxwho_gho": {
+     "selisih": 80,
+     "pembulatan": 33,
+     "sama": 10
+    },
+    "wdixwho_gho": {
+     "selisih": 124,
+     "pembulatan": 24,
+     "sama": 1
+    }
+   },
+   "keterlacakan": 1.0
+  }
+ },
+ "keterlacakan": {
+  "baris": 1487727,
+  "cocok": 1487727,
+  "berkas_gagal": []
+ },
+ "contoh_pelanggaran_validitas": [
+  {
+   "sumber": "bps",
+   "seri_kode": "tabel:sdg7_bahan_bakar",
+   "wilayah_kode": "3400",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "100.01",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "bps",
+   "seri_kode": "tabel:sdg7_bahan_bakar",
+   "wilayah_kode": "3100",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "100.01",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "bps",
+   "seri_kode": "tabel:sdg7_bahan_bakar",
+   "wilayah_kode": "7500",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "100.01",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "bps",
+   "seri_kode": "tabel:sdg7_bahan_bakar",
+   "wilayah_kode": "9999",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "100.01",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "bps",
+   "seri_kode": "tabel:sdg7_bahan_bakar",
+   "wilayah_kode": "6400",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "100.01",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "bps",
+   "seri_kode": "tabel:sdg7_bahan_bakar",
+   "wilayah_kode": "6500",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "100.01",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "bps",
+   "seri_kode": "tabel:sdg7_bahan_bakar",
+   "wilayah_kode": "2100",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "100.01",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "bps",
+   "seri_kode": "tabel:sdg7_bahan_bakar",
+   "wilayah_kode": "7200",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "100.01",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "bps",
+   "seri_kode": "tabel:sdg7_bahan_bakar",
+   "wilayah_kode": "7100",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "100.01",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "ilostat",
+   "seri_kode": "SDG_0821_NOC_RT",
+   "wilayah_kode": "9999",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "-1.35",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "ilostat",
+   "seri_kode": "SDG_B821_NOC_RT",
+   "wilayah_kode": "9999",
+   "periode": "2020",
+   "rincian": "total",
+   "nilai": "-1.35",
+   "satuan_id": "persen"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "7500",
+   "periode": "2000",
+   "rincian": "sektor=pertanian",
+   "nilai": "-4320",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "8200",
+   "periode": "2000",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-12006000",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1200",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-8717890",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1700",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-5198440",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1300",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-6936040",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1800",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-2579390",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1900",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-325750",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "2100",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-1749610",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3600",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-2437210",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3200",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-11676720",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3100",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-2169940",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3300",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-22058050",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3500",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-18683130",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3400",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-3253430",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "5100",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-313370",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "5300",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-10150740",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "6400",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-19832560",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "7500",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-3997420",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "7300",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-7095890",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "7400",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-11911150",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "7200",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-18675420",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "7100",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-323040",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "7600",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-3828470",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "8100",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-18057690",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "8200",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-11333580",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "9400",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-120332880",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "9100",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-127869440",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "6500",
+   "periode": "2001",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-2533700",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1200",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-8701950",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1700",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-5213670",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1300",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-7162950",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1800",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-2616640",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "1900",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-345160",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "2100",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-1756400",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3600",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-2597960",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3200",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-11945960",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3100",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-2189350",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3300",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-21606320",
+   "satuan_id": "ton_co2e"
+  },
+  {
+   "sumber": "signsmart",
+   "seri_kode": "emisi_provinsi:emisi_grk",
+   "wilayah_kode": "3500",
+   "periode": "2002",
+   "rincian": "sektor=kehutanan",
+   "nilai": "-18995900",
+   "satuan_id": "ton_co2e"
+  }
+ ]
+}

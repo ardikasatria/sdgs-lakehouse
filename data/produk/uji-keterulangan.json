@@ -1,0 +1,60 @@
+{
+ "praregistrasi": "docs/brief5/praregistrasi-eksperimen-v4.md Bagian 6",
+ "mesin": "Mac (Colima)",
+ "gudang": {
+  "jalan": [
+   {
+    "mulai": "2026-10-21T07:18:12+00:00",
+    "turun_s": 13.1,
+    "naik_s": 51.5,
+    "parse_dan_job_s": 250.5,
+    "sidik_s": 51.1,
+    "sidik_gold": "657df68e2f000087f750c4e5b95a55b0465f27ef2da16ff10bcb9ca5665d0adb",
+    "ekspor_s": 51.2,
+    "ekspor_sama_dengan_commit": {
+     "gudang_tayang.csv": true,
+     "gudang_pasangan.csv": true,
+     "keterkaitan_deret.csv": true,
+     "keterkaitan_korelasi.csv": true
+    },
+    "total_s": 366.2
+   },
+   {
+    "mulai": "2026-10-21T07:25:10+00:00",
+    "turun_s": 11.2,
+    "naik_s": 38.3,
+    "parse_dan_job_s": 239.3,
+    "sidik_s": 49.2,
+    "sidik_gold": "657df68e2f000087f750c4e5b95a55b0465f27ef2da16ff10bcb9ca5665d0adb",
+    "ekspor_s": 52.9,
+    "ekspor_sama_dengan_commit": {
+     "gudang_tayang.csv": true,
+     "gudang_pasangan.csv": true,
+     "keterkaitan_deret.csv": true,
+     "keterkaitan_korelasi.csv": true
+    },
+    "total_s": 338.0
+   }
+  ],
+  "sidik_acuan": "657df68e2f000087f750c4e5b95a55b0465f27ef2da16ff10bcb9ca5665d0adb",
+  "sidik_sama": true,
+  "sama_dengan_acuan": true
+ },
+ "kompilasi": {
+  "jalan": [
+   {
+    "waktu_s": 16.3,
+    "sha256_paket": "afbcbeefa40d3772c7545d9fe3f81ae9b67074f4f49aa7b7af343a1e47ef613f",
+    "sha256_gold_sqlite": "faaa6a55ce09ae55fd8c9c5ad869440351e8a7292b02a45cc4e0908781a3be1a"
+   },
+   {
+    "waktu_s": 15.5,
+    "sha256_paket": "afbcbeefa40d3772c7545d9fe3f81ae9b67074f4f49aa7b7af343a1e47ef613f",
+    "sha256_gold_sqlite": "faaa6a55ce09ae55fd8c9c5ad869440351e8a7292b02a45cc4e0908781a3be1a"
+   }
+  ],
+  "sha256_resmi": "afbcbeefa40d3772c7545d9fe3f81ae9b67074f4f49aa7b7af343a1e47ef613f",
+  "hash_sama": true,
+  "sama_dengan_resmi": true
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "mulai": "2026-10-24T13:56:37+07:00",
+ "commit": "dcaa55e",
+ "ambang_ditetapkan": "2026-10-24",
+ "mesin": "Darwin arm64, 8 inti",
+ "ingest": {
+  "berkas_raw": 907,
+  "integritas_raw": {
+   "nilai": 1.0,
+   "ambang": 1.0,
+   "satuan": "",
+   "lulus": true
+  },
+  "masalah": [],
+  "umur_snapshot_hari": {
+   "bnpb": 4,
+   "bps": 4,
+   "bps_brs": 4,
+   "ccnews": 3,
+   "ilostat": 4,
+   "kkp": 4,
+   "rss": 3,
+   "signsmart": 4,
+   "sipsn": 4,
+   "unsd": 4,
+   "unsd_arsip": 4,
+   "wdi": 4,
+   "wdi_arsip": 4,
+   "who_gho": 4
+  },
+  "kesegaran_snapshot": {
+   "nilai": 4,
+   "ambang": 7,
+   "satuan": "hari",
+   "lulus": true
+  }
+ },
+ "proses": {
+  "tumpukan": {
+   "turun_s": 0.3,
+   "naik_sampai_sehat_s": 33.5
+  },
+  "dbt_parse_s": 4.8,
+  "job_s": {
+   "nilai": 207.3,
+   "ambang": 600,
+   "satuan": "s",
+   "lulus": true
+  },
+  "run": {
+   "run_id": "6b0bb330-015e-4799-9d41-cb2e66c9a069",
+   "status": "SUCCESS"
+  },
+  "langkah": {
+   "kontrak_mesh": {
+    "nilai": 0.1,
+    "ambang": 30,
+    "satuan": "s",
+    "lulus": true
+   },
+   "bronze": {
+    "nilai": 43.8,
+    "ambang": 120,
+    "satuan": "s",
+    "lulus": true
+   },
+   "silver": {
+    "nilai": 60.4,
+    "ambang": 120,
+    "satuan": "s",
+    "lulus": true
+   },
+   "rekonsiliasi": {
+    "nilai": 42.9,
+    "ambang": 120,
+    "satuan": "s",
+    "lulus": true
+   },
+   "iceberg_silver": {
+    "nilai": 3.8,
+    "ambang": 60,
+    "satuan": "s",
+    "lulus": true
+   },
+   "kualitas": {
+    "nilai": 14.8,
+    "ambang": 60,
+    "satuan": "s",
+    "lulus": true
+   },
+   "gudang_dbt": {
+    "nilai": 40.7,
+    "ambang": 180,
+    "satuan": "s",
+    "lulus": true
+   }
+  },
+  "dbt": {
+   "node": 139,
+   "status": {
+    "success": 24,
+    "pass": 115
+   },
+   "berkas": "dbt/gudang_sdg/target/gudang_dbt-6b0bb33-7f2932c/run_results.json"
+  },
+  "uji_dbt_gagal": {
+   "nilai": 0,
+   "ambang": 0,
+   "satuan": "",
+   "lulus": true
+  },
+  "keterlacakan_silver_min": {
+   "nilai": 1.0,
+   "ambang": 1.0,
+   "satuan": "",
+   "lulus": true
+  }
+ },
+ "sajian": {
+  "data_product": {
+   "dp_ekonomi_nasional": {
+    "baris": {
+     "nilai": 6908,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "kesegaran": {
+     "nilai": 9,
+     "ambang": 400,
+     "satuan": "hari",
+     "lulus": true
+    },
+    "rilis_terbaru": "2026-10-15",
+    "query_p95_ms": {
+     "nilai": 63.6,
+     "ambang": 2000,
+     "satuan": "ms",
+     "lulus": true
+    },
+    "query_n": 20
+   },
+   "dp_ekonomi_provinsi": {
+    "baris": {
+     "nilai": 10547,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "kesegaran": {
+     "nilai": 109,
+     "ambang": 400,
+     "satuan": "hari",
+     "lulus": true
+    },
+    "rilis_terbaru": "2026-07-07",
+    "query_p95_ms": {
+     "nilai": 61.8,
+     "ambang": 2000,
+     "satuan": "ms",
+     "lulus": true
+    },
+    "query_n": 20
+   },
+   "dp_lingkungan_nasional": {
+    "baris": {
+     "nilai": 1845,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "kesegaran": {
+     "nilai": 16,
+     "ambang": 400,
+     "satuan": "hari",
+     "lulus": true
+    },
+    "rilis_terbaru": "2026-10-08",
+    "query_p95_ms": {
+     "nilai": 44.1,
+     "ambang": 2000,
+     "satuan": "ms",
+     "lulus": true
+    },
+    "query_n": 20
+   },
+   "dp_lingkungan_provinsi": {
+    "baris": {
+     "nilai": 17436,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "kesegaran": {
+     "nilai": 57,
+     "ambang": 400,
+     "satuan": "hari",
+     "lulus": true
+    },
+    "rilis_terbaru": "2026-08-28",
+    "query_p95_ms": {
+     "nilai": 58.6,
+     "ambang": 2000,
+     "satuan": "ms",
+     "lulus": true
+    },
+    "query_n": 20
+   },
+   "dp_referensi_indikator": {
+    "baris": {
+     "nilai": 109,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    }
+   },
+   "dp_referensi_konsep": {
+    "baris": {
+     "nilai": 1126,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "query_p95_ms": {
+     "nilai": 37.4,
+     "ambang": 2000,
+     "satuan": "ms",
+     "lulus": true
+    },
+    "query_n": 20
+   },
+   "dp_referensi_satuan": {
+    "baris": {
+     "nilai": 91,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    }
+   },
+   "dp_referensi_wilayah": {
+    "baris": {
+     "nilai": 42,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "query_p95_ms": {
+     "nilai": 31.2,
+     "ambang": 2000,
+     "satuan": "ms",
+     "lulus": true
+    },
+    "query_n": 20
+   },
+   "dp_rilis": {
+    "baris": {
+     "nilai": 2678,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "kesegaran": {
+     "nilai": 3,
+     "ambang": 31,
+     "satuan": "hari",
+     "lulus": true
+    },
+    "rilis_terbaru": "2026-10-21"
+   },
+   "dp_sosial_nasional": {
+    "baris": {
+     "nilai": 3347,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "kesegaran": {
+     "nilai": 11,
+     "ambang": 400,
+     "satuan": "hari",
+     "lulus": true
+    },
+    "rilis_terbaru": "2026-10-13",
+    "query_p95_ms": {
+     "nilai": 47.6,
+     "ambang": 2000,
+     "satuan": "ms",
+     "lulus": true
+    },
+    "query_n": 20
+   },
+   "dp_sosial_provinsi": {
+    "baris": {
+     "nilai": 21228,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "kesegaran": {
+     "nilai": 57,
+     "ambang": 400,
+     "satuan": "hari",
+     "lulus": true
+    },
+    "rilis_terbaru": "2026-08-28",
+    "query_p95_ms": {
+     "nilai": 34.0,
+     "ambang": 2000,
+     "satuan": "ms",
+     "lulus": true
+    },
+    "query_n": 20
+   },
+   "dp_tatakelola_provinsi": {
+    "baris": {
+     "nilai": 1315,
+     "ambang": 1,
+     "satuan": "",
+     "lulus": true
+    },
+    "kesegaran": {
+     "nilai": 57,
+     "ambang": 400,
+     "satuan": "hari",
+     "lulus": true
+    },
+    "rilis_terbaru": "2026-08-28",
+    "query_p95_ms": {
+     "nilai": 37.1,
+     "ambang": 2000,
+     "satuan": "ms",
+     "lulus": true
+    },
+    "query_n": 20
+   }
+  },
+  "jembatan_ke_paket": {
+   "waktu_s": {
+    "nilai": 50.5,
+    "ambang": 120,
+    "satuan": "s",
+    "lulus": true
+   },
+   "identik": {
+    "nilai": {
+     "gudang_tayang.csv": true,
+     "gudang_pasangan.csv": true,
+     "keterkaitan_deret.csv": true,
+     "keterkaitan_korelasi.csv": true
+    },
+    "ambang": true,
+    "satuan": "",
+    "lulus": true
+   }
+  },
+  "api_produksi": {
+   "url": "https://sditera.cloud/api/game/sdg/levels",
+   "bita_jawaban": 512995,
+   "p50_ms": 4371.3,
+   "p95_ms": {
+    "nilai": 8416.8,
+    "ambang": 3000,
+    "satuan": "ms",
+    "lulus": false
+   },
+   "galat": {
+    "nilai": 0,
+    "ambang": 0,
+    "satuan": "",
+    "lulus": true
+   }
+  }
+ },
+ "keterulangan": {
+  "sidik_gold": "657df68e2f000087f750c4e5b95a55b0465f27ef2da16ff10bcb9ca5665d0adb",
+  "sama_dengan_acuan": {
+   "nilai": "657df68e2f00",
+   "ambang": "657df68e2f00",
+   "satuan": "",
+   "lulus": true
+  }
+ },
+ "selesai": "2026-10-24T14:04:16+07:00"
+}

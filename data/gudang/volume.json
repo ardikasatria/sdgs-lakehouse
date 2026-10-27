@@ -1,0 +1,176 @@
+{
+ "diukur_pada": "2026-10-20T19:42:24+07:00",
+ "lapis": {
+  "raw": {
+   "bita": 142534818,
+   "berkas": 889,
+   "per_sumber": {
+    "bnpb": {
+     "bita": 3873163,
+     "berkas": 116
+    },
+    "bps": {
+     "bita": 58135019,
+     "berkas": 160
+    },
+    "bps_brs": {
+     "bita": 8196109,
+     "berkas": 215
+    },
+    "ilostat": {
+     "bita": 5492725,
+     "berkas": 45
+    },
+    "kkp": {
+     "bita": 203325,
+     "berkas": 45
+    },
+    "signsmart": {
+     "bita": 191138,
+     "berkas": 29
+    },
+    "sipsn": {
+     "bita": 2576067,
+     "berkas": 11
+    },
+    "unsd": {
+     "bita": 13146476,
+     "berkas": 19
+    },
+    "unsd_arsip": {
+     "bita": 14895013,
+     "berkas": 49
+    },
+    "wdi": {
+     "bita": 8194277,
+     "berkas": 10
+    },
+    "wdi_arsip": {
+     "bita": 26028943,
+     "berkas": 145
+    },
+    "who_gho": {
+     "bita": 1602563,
+     "berkas": 45
+    }
+   }
+  },
+  "bronze": {
+   "bita": 32731297,
+   "berkas": 780,
+   "per_sumber": {
+    "bnpb": {
+     "bita": 1387321,
+     "berkas": 131
+    },
+    "bps": {
+     "bita": 676258,
+     "berkas": 82
+    },
+    "bps_brs": {
+     "bita": 6000871,
+     "berkas": 215
+    },
+    "ilostat": {
+     "bita": 160564,
+     "berkas": 18
+    },
+    "kkp": {
+     "bita": 248515,
+     "berkas": 43
+    },
+    "signsmart": {
+     "bita": 133631,
+     "berkas": 28
+    },
+    "sipsn": {
+     "bita": 54277,
+     "berkas": 4
+    },
+    "unsd": {
+     "bita": 369843,
+     "berkas": 18
+    },
+    "unsd_arsip": {
+     "bita": 14022840,
+     "berkas": 48
+    },
+    "wdi": {
+     "bita": 309603,
+     "berkas": 9
+    },
+    "wdi_arsip": {
+     "bita": 9048238,
+     "berkas": 142
+    },
+    "who_gho": {
+     "bita": 319336,
+     "berkas": 42
+    }
+   }
+  },
+  "manifest": {
+   "bita": 3721166,
+   "berkas": 16,
+   "per_sumber": {}
+  }
+ },
+ "baris_bronze": {
+  "bnpb/kabupaten": 9966,
+  "bnpb/lain": 494,
+  "bnpb/provinsi": 1635,
+  "bps/publikasi": 2,
+  "bps/dinamis": 44845,
+  "bps/katalog_tabel": 78,
+  "bps/statis_sdg15_tutupan_hutan": 1770,
+  "bps/statis_sdg4_amh_rinci": 5967,
+  "bps/statis_sdg7_bahan_bakar": 3920,
+  "bps_brs/brs": 2143,
+  "ilostat/df_sdg_0111_sex_age_rt": 218,
+  "ilostat/df_sdg_0131_sex_soc_rt": 30,
+  "ilostat/df_sdg_0552_noc_rt": 5,
+  "ilostat/df_sdg_0821_noc_rt": 28,
+  "ilostat/df_sdg_0831_sex_eco_rt": 216,
+  "ilostat/df_sdg_0851_sex_ocu_nb": 687,
+  "ilostat/df_sdg_0852_sex_age_rt": 216,
+  "ilostat/df_sdg_0852_sex_dsb_rt": 81,
+  "ilostat/df_sdg_0861_sex_rt": 72,
+  "ilostat/df_sdg_0882_noc_rt": 10,
+  "ilostat/df_sdg_08b1_noc_nb": 5,
+  "ilostat/df_sdg_0922_noc_rt": 24,
+  "ilostat/df_sdg_1041_noc_rt": 23,
+  "ilostat/df_sdg_a871_sex_age_rt": 9,
+  "ilostat/df_sdg_b821_noc_rt": 28,
+  "ilostat/df_sdg_b871_sex_age_rt": 3,
+  "ilostat/df_sdg_t552_noc_rt": 15,
+  "ilostat/df_une_deap_sex_age_rt": 5424,
+  "kkp/kawasan_konservasi": 11,
+  "kkp/kirt_per_prov": 386,
+  "kkp/nasional_kirt_tahunan": 11,
+  "kkp/nasional_nelayan_tahunan": 6,
+  "kkp/nasional_ntn_tahunan": 7,
+  "kkp/nasional_ntpi_tahunan": 7,
+  "kkp/nasional_pembudidaya_tahunan": 7,
+  "kkp/nelayan_per_prov": 211,
+  "kkp/ntn_per_prov": 216,
+  "kkp/ntpi_per_prov": 216,
+  "kkp/pembudidaya_per_prov": 246,
+  "kkp/rhl_mangrove": 103,
+  "signsmart/emisi_nasional": 105,
+  "signsmart/emisi_provinsi": 5130,
+  "sipsn/detil_kabkota": 519,
+  "sipsn/peta_kabkota": 519,
+  "sipsn/ringkasan_indikator": 11,
+  "sipsn/ringkasan_wilayah_fasilitas": 14,
+  "unsd/data_indonesia": 15453,
+  "unsd/seri": 713,
+  "unsd_arsip/data_indonesia": 628035,
+  "wdi/indikator": 1498,
+  "wdi/nilai": 24816,
+  "wdi/seri_sdg46": 408,
+  "wdi_arsip/nilai": 848794,
+  "who_gho/fakta_datadot": 2484,
+  "who_gho/indikator": 67
+ },
+ "baris_bronze_total": 1607907
+}

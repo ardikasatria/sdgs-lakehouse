@@ -1,0 +1,39 @@
+{
+ "diukur_pada": "2026-10-24T14:05:10+07:00",
+ "tanpa_kompresi": {
+  "url": "https://sditera.cloud/api/game/sdg/levels",
+  "gzip": false,
+  "bita_jawaban": 512995,
+  "p50_ms": 4744.0,
+  "p95_ms": {
+   "nilai": 6478.6,
+   "ambang": 3000,
+   "satuan": "ms",
+   "lulus": false
+  },
+  "galat": {
+   "nilai": 0,
+   "ambang": 0,
+   "satuan": "",
+   "lulus": true
+  }
+ },
+ "gzip": {
+  "url": "https://sditera.cloud/api/game/sdg/levels",
+  "gzip": true,
+  "bita_jawaban": 38542,
+  "p50_ms": 1493.1,
+  "p95_ms": {
+   "nilai": 2226.0,
+   "ambang": 3000,
+   "satuan": "ms",
+   "lulus": true
+  },
+  "galat": {
+   "nilai": 0,
+   "ambang": 0,
+   "satuan": "",
+   "lulus": true
+  }
+ }
+}

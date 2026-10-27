@@ -1,0 +1,25 @@
+# salinan (relatif ke data/)	asal di DSIC-SDG
+gudang/volume.json	data/manifests/gudang/volume.json
+gudang/m3_kualitas.json	data/manifests/gudang/m3_kualitas.json
+gudang/m3_rekonsiliasi_ringkasan.json	data/manifests/gudang/m3_rekonsiliasi_ringkasan.json
+gudang/silver_ringkasan.json	data/manifests/gudang/silver_ringkasan.json
+gudang/m4_sidik_gold.json	data/manifests/gudang/m4_sidik_gold.json
+gudang/m4_lineage.json	data/manifests/gudang/m4_lineage.json
+gudang/m5_kg_ringkasan.json	data/manifests/gudang/m5_kg_ringkasan.json
+produk/sidik-gold.json	results/brief5/E0_sidik_gold.json
+produk/uji-integrasi.json	results/brief5/E1/ringkasan.json
+produk/uji-graf.json	results/brief5/E2/ringkasan.json
+produk/uji-kompilasi.json	results/brief5/E3/ringkasan.json
+produk/uji-keterikatan.json	results/brief5/E4/ringkasan.json
+produk/uji-keterulangan.json	results/brief5/E5/keterulangan.json
+produk/latensi-produksi-1.json	results/brief5/E5/lightsail-1.json
+produk/latensi-produksi-2.json	results/brief5/E5/lightsail-2.json
+produk/latensi-produksi-3.json	results/brief5/E5/lightsail-3.json
+serkom/inventaris-aset-data.csv	docs/serkom/J.62DMS00.001.1/inventaris-aset-data.csv
+serkom/raci.csv	docs/serkom/J.62DMS00.002.1/raci.csv
+serkom/kualitas-per-sumber.csv	docs/serkom/J.62DMS00.012.1/kualitas-per-sumber.csv
+serkom/prioritas-perbaikan.csv	docs/serkom/J.62DMS00.012.1/prioritas-perbaikan.csv
+uji/uji-sla.json	results/serkom/uji-sla-20261024T1356.json
+uji/uji-sla-api.json	results/serkom/uji-sla-api-20261024T1407.json
+uji/uji-sla-gdelt.json	results/serkom/uji-sla-gdelt-20261024T1420.json
+uji/banding-spark.json	results/serkom/banding-spark-20261024T1429.json

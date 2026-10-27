@@ -1,0 +1,68 @@
+{
+ "mesin": "Linux-7.0.0-1012-aws-x86_64-with-glibc2.39 · x86_64 · Python 3.12.3",
+ "kiriman": 2000,
+ "rss": {
+  "sebelum_mb": 44.2,
+  "sesudah_mb": 61.9,
+  "delta_mb": 17.7,
+  "muat_s": 0.144,
+  "level": 1650
+ },
+ "jenis": [
+  "baca",
+  "banding",
+  "tren",
+  "anomali",
+  "peta",
+  "revisi",
+  "tebak",
+  "sumber",
+  "keterkaitan",
+  "jalur"
+ ],
+ "per_jenis": 200,
+ "latensi_proses_ms": {
+  "p50": 0.312,
+  "p95": 0.751,
+  "maks": 16.984,
+  "rata": 0.46,
+  "per_jenis_p95": {
+   "baca": 0.967,
+   "banding": 0.553,
+   "tren": 0.691,
+   "anomali": 0.398,
+   "peta": 0.643,
+   "revisi": 0.397,
+   "tebak": 0.672,
+   "sumber": 0.422,
+   "keterkaitan": 0.657,
+   "jalur": 0.493
+  },
+  "per_jenis_p50": {
+   "baca": 0.687,
+   "banding": 0.411,
+   "tren": 0.485,
+   "anomali": 0.304,
+   "peta": 0.458,
+   "revisi": 0.295,
+   "tebak": 0.499,
+   "sumber": 0.306,
+   "keterkaitan": 0.458,
+   "jalur": 0.321
+  },
+  "per_jenis_n": {
+   "baca": 200,
+   "banding": 200,
+   "tren": 200,
+   "anomali": 200,
+   "peta": 200,
+   "revisi": 200,
+   "tebak": 200,
+   "sumber": 200,
+   "keterkaitan": 200,
+   "jalur": 200
+  },
+  "benar": 1000
+ },
+ "rss_setelah_kiriman_mb": 65.9
+}

@@ -1,0 +1,155 @@
+{
+ "dijalankan_pada": "2026-10-21T05:44:20+07:00",
+ "berkas_beku": {
+  "docs/gudang/m3-praregistrasi-rekonsiliasi.md": {
+   "sha256": "dca3f329b4f0b420d6465f45e83d717421bfe75b49ccdbd3585996a9fe7de48b",
+   "commit": "3f9cf7b65c644fca76830f71a67cb8807d1f1826 2026-10-20T14:45:31Z"
+  },
+  "config/rekonsiliasi/aturan_rekonsiliasi.csv": {
+   "sha256": "881751a4ef8e29c8be968ed7178c76965ce145d543bb59c4413f871320be56b1",
+   "commit": "89e038725753d777baf7dbd112224d781d278f3b 2026-10-20T13:00:58Z"
+  },
+  "config/rekonsiliasi/padanan_seri.csv": {
+   "sha256": "77545f13c35e42ad4308400ff42b7a43954702d3292ba1aa7a5e174f2aa34186",
+   "commit": "69ec697c3da2408157961626fe5c29f0b902fb9d 2026-10-20T13:27:30Z"
+  }
+ },
+ "observasi_silver": 1486490,
+ "ringkasan": {
+  "rilis_x_rilis": {
+   "pasangan": 1376297,
+   "status": {
+    "sama": 1242574,
+    "selisih": 84849,
+    "pembulatan": 48874
+   },
+   "kelas_sebab": {
+    "vintage": 81090,
+    "satuan_skala": 3137,
+    "granularitas": 610,
+    "periode_acuan": 12
+   },
+   "proporsi_terjelaskan": 1.0,
+   "wilson95_terjelaskan": [
+    1.0,
+    1.0
+   ],
+   "proporsi_teramati": 0.9999,
+   "wilson95_teramati": [
+    0.9998,
+    0.9999
+   ],
+   "per_pasangan_keluarga": {
+    "bnpbxbnpb": 10466,
+    "kkpxkkp": 12,
+    "unsdxunsd": 519285,
+    "wdixwdi": 846534
+   },
+   "status_per_pasangan_keluarga": {
+    "bnpbxbnpb": {
+     "sama": 9740,
+     "selisih": 616,
+     "pembulatan": 110
+    },
+    "kkpxkkp": {
+     "selisih": 12
+    },
+    "unsdxunsd": {
+     "sama": 490509,
+     "selisih": 16801,
+     "pembulatan": 11975
+    },
+    "wdixwdi": {
+     "sama": 742325,
+     "selisih": 67420,
+     "pembulatan": 36789
+    }
+   }
+  },
+  "sumber_x_sumber": {
+   "pasangan": 1276,
+   "status": {
+    "sama": 213,
+    "selisih": 697,
+    "pembulatan": 366
+   },
+   "kelas_sebab": {
+    "tidak_terjelaskan": 414,
+    "definisi": 175,
+    "periode_acuan": 57,
+    "metodologi": 49,
+    "satuan_skala": 2
+   },
+   "proporsi_terjelaskan": 0.406,
+   "wilson95_terjelaskan": [
+    0.3702,
+    0.4429
+   ],
+   "proporsi_teramati": 0.0029,
+   "wilson95_teramati": [
+    0.0008,
+    0.0104
+   ],
+   "per_pasangan_keluarga": {
+    "bpsxilostat": 61,
+    "bpsxunsd": 240,
+    "bpsxwdi": 157,
+    "bpsxwho_gho": 35,
+    "ilostatxunsd": 119,
+    "ilostatxwdi": 66,
+    "unsdxwdi": 326,
+    "unsdxwho_gho": 123,
+    "wdixwho_gho": 149
+   },
+   "status_per_pasangan_keluarga": {
+    "bpsxilostat": {
+     "selisih": 58,
+     "pembulatan": 3
+    },
+    "bpsxunsd": {
+     "sama": 18,
+     "selisih": 181,
+     "pembulatan": 41
+    },
+    "bpsxwdi": {
+     "pembulatan": 30,
+     "sama": 2,
+     "selisih": 125
+    },
+    "bpsxwho_gho": {
+     "selisih": 35
+    },
+    "ilostatxunsd": {
+     "pembulatan": 98,
+     "sama": 16,
+     "selisih": 5
+    },
+    "ilostatxwdi": {
+     "sama": 62,
+     "pembulatan": 4
+    },
+    "unsdxwdi": {
+     "pembulatan": 133,
+     "sama": 104,
+     "selisih": 89
+    },
+    "unsdxwho_gho": {
+     "selisih": 80,
+     "pembulatan": 33,
+     "sama": 10
+    },
+    "wdixwho_gho": {
+     "selisih": 124,
+     "pembulatan": 24,
+     "sama": 1
+    }
+   }
+  }
+ },
+ "padanan_dilewati_periode": [
+  {
+   "seri": "ilostat:UNE_DEAP_SEX_AGE_RT:periode_triwulan",
+   "observasi_dilewati": 32
+  }
+ ]
+}

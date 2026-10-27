@@ -1,0 +1,793 @@
+{
+ "praregistrasi": "docs/brief5/praregistrasi-eksperimen-v4.md Bagian 2",
+ "sidik_gold": "657df68e2f000087f750c4e5b95a55b0465f27ef2da16ff10bcb9ca5665d0adb",
+ "sumber_dimuat": 11,
+ "keluarga_dimuat": 9,
+ "observasi": 1486490,
+ "sel_pilihan": 109289,
+ "sel_tayang": 81249,
+ "konsep_dimuat": 1126,
+ "konsep_tayang": 509,
+ "indikator_katalog": 109,
+ "indikator_katalog_berdata": 105,
+ "indikator_katalog_berdata_tayang": 79,
+ "tujuan_berdata": 17,
+ "tujuan_tayang": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  13,
+  15,
+  16,
+  17
+ ],
+ "konsep_padanan": 36,
+ "konsep_padanan_per_jumlah_keluarga": {
+  "1": 3,
+  "2": 10,
+  "3": 15,
+  "4": 8
+ },
+ "sumber_x_sumber": {
+  "pasangan": 1276,
+  "konsep": 32,
+  "status": {
+   "selisih": 697,
+   "pembulatan": 366,
+   "sama": 213
+  },
+  "kelas_sebab_selisih": {
+   "tidak_terjelaskan": 414,
+   "definisi": 175,
+   "periode_acuan": 57,
+   "metodologi": 49,
+   "satuan_skala": 2
+  },
+  "tingkat_bukti_selisih": {
+   "tidak_terselesaikan": 414,
+   "kandidat": 281,
+   "teramati": 2
+  },
+  "terjelaskan": 283,
+  "proporsi_terjelaskan": 0.406,
+  "wilson95_terjelaskan": [
+   0.3702,
+   0.4429
+  ],
+  "per_pasangan_keluarga": {
+   "bpsxilostat": {
+    "selisih": 58,
+    "pembulatan": 3
+   },
+   "bpsxunsd": {
+    "sama": 18,
+    "selisih": 181,
+    "pembulatan": 41
+   },
+   "bpsxwdi": {
+    "pembulatan": 30,
+    "sama": 2,
+    "selisih": 125
+   },
+   "bpsxwho_gho": {
+    "selisih": 35
+   },
+   "ilostatxunsd": {
+    "pembulatan": 98,
+    "sama": 16,
+    "selisih": 5
+   },
+   "ilostatxwdi": {
+    "sama": 62,
+    "pembulatan": 4
+   },
+   "unsdxwdi": {
+    "pembulatan": 133,
+    "sama": 104,
+    "selisih": 89
+   },
+   "unsdxwho_gho": {
+    "selisih": 80,
+    "pembulatan": 33,
+    "sama": 10
+   },
+   "wdixwho_gho": {
+    "selisih": 124,
+    "pembulatan": 24,
+    "sama": 1
+   }
+  },
+  "k9_per_pasangan_keluarga": {
+   "wdixwho_gho": 124,
+   "unsdxwdi": 88,
+   "unsdxwho_gho": 75,
+   "bpsxunsd": 54,
+   "bpsxwdi": 40,
+   "bpsxilostat": 25,
+   "ilostatxunsd": 4,
+   "bpsxwho_gho": 4
+  },
+  "kedua_sumber_boleh_tayang": {
+   "pasangan": 468,
+   "status": {
+    "selisih": 342,
+    "sama": 65,
+    "pembulatan": 61
+   },
+   "kelas_sebab_selisih": {
+    "tidak_terjelaskan": 193,
+    "definisi": 97,
+    "periode_acuan": 38,
+    "metodologi": 14
+   },
+   "per_pasangan_keluarga": {
+    "bpsxwdi": 157,
+    "wdixwho_gho": 149,
+    "ilostatxwdi": 66,
+    "bpsxilostat": 61,
+    "bpsxwho_gho": 35
+   }
+  }
+ },
+ "per_sumber": [
+  {
+   "sumber": "bnpb",
+   "keluarga": "bnpb",
+   "kelas_lisensi": "A-SA",
+   "boleh_tayang": true,
+   "observasi": 25395,
+   "rilis": 79,
+   "seri": 23,
+   "konsep": 23,
+   "sel_pilihan": 14929,
+   "sel_tayang": 14929,
+   "konsep_berkode_sdg": 19,
+   "indikator_global": 5,
+   "indikator_katalog_langsung": 1,
+   "indikator_katalog_lewat_global": 0,
+   "tujuan": [
+    1,
+    11,
+    13
+   ]
+  },
+  {
+   "sumber": "bps",
+   "keluarga": "bps",
+   "kelas_lisensi": "A",
+   "boleh_tayang": true,
+   "observasi": 45063,
+   "rilis": 69,
+   "seri": 70,
+   "konsep": 70,
+   "sel_pilihan": 45063,
+   "sel_tayang": 45063,
+   "konsep_berkode_sdg": 66,
+   "indikator_global": 48,
+   "indikator_katalog_langsung": 50,
+   "indikator_katalog_lewat_global": 18,
+   "tujuan": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "sumber": "ilostat",
+   "keluarga": "ilostat",
+   "kelas_lisensi": "A",
+   "boleh_tayang": true,
+   "observasi": 6868,
+   "rilis": 18,
+   "seri": 18,
+   "konsep": 18,
+   "sel_pilihan": 6779,
+   "sel_tayang": 6790,
+   "konsep_berkode_sdg": 18,
+   "indikator_global": 13,
+   "indikator_katalog_langsung": 6,
+   "indikator_katalog_lewat_global": 4,
+   "tujuan": [
+    1,
+    5,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "sumber": "kkp",
+   "keluarga": "kkp",
+   "kelas_lisensi": "B",
+   "boleh_tayang": false,
+   "observasi": 3385,
+   "rilis": 42,
+   "seri": 11,
+   "konsep": 11,
+   "sel_pilihan": 3373,
+   "sel_tayang": 0,
+   "konsep_berkode_sdg": 1,
+   "indikator_global": 1,
+   "indikator_katalog_langsung": 1,
+   "indikator_katalog_lewat_global": 0,
+   "tujuan": [
+    14
+   ]
+  },
+  {
+   "sumber": "signsmart",
+   "keluarga": "signsmart",
+   "kelas_lisensi": "B",
+   "boleh_tayang": false,
+   "observasi": 4365,
+   "rilis": 27,
+   "seri": 2,
+   "konsep": 2,
+   "sel_pilihan": 4365,
+   "sel_tayang": 0,
+   "konsep_berkode_sdg": 2,
+   "indikator_global": 1,
+   "indikator_katalog_langsung": 1,
+   "indikator_katalog_lewat_global": 0,
+   "tujuan": [
+    13
+   ]
+  },
+  {
+   "sumber": "sipsn",
+   "keluarga": "sipsn",
+   "kelas_lisensi": "B",
+   "boleh_tayang": false,
+   "observasi": 351,
+   "rilis": 1,
+   "seri": 26,
+   "konsep": 26,
+   "sel_pilihan": 351,
+   "sel_tayang": 0,
+   "konsep_berkode_sdg": 2,
+   "indikator_global": 1,
+   "indikator_katalog_langsung": 1,
+   "indikator_katalog_lewat_global": 0,
+   "tujuan": [
+    12
+   ]
+  },
+  {
+   "sumber": "unsd",
+   "keluarga": "unsd",
+   "kelas_lisensi": "B",
+   "boleh_tayang": false,
+   "observasi": 14688,
+   "rilis": 1,
+   "seri": 505,
+   "konsep": 505,
+   "sel_pilihan": 13650,
+   "sel_tayang": 0,
+   "konsep_berkode_sdg": 505,
+   "indikator_global": 215,
+   "indikator_katalog_langsung": 27,
+   "indikator_katalog_lewat_global": 74,
+   "tujuan": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "sumber": "unsd_arsip",
+   "keluarga": "unsd",
+   "kelas_lisensi": "B",
+   "boleh_tayang": false,
+   "observasi": 525017,
+   "rilis": 48,
+   "seri": 611,
+   "konsep": 611,
+   "sel_pilihan": 6416,
+   "sel_tayang": 0,
+   "konsep_berkode_sdg": 611,
+   "indikator_global": 218,
+   "indikator_katalog_langsung": 29,
+   "indikator_katalog_lewat_global": 74,
+   "tujuan": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+   ]
+  },
+  {
+   "sumber": "wdi",
+   "keluarga": "wdi",
+   "kelas_lisensi": "A",
+   "boleh_tayang": true,
+   "observasi": 10107,
+   "rilis": 1,
+   "seri": 367,
+   "konsep": 367,
+   "sel_pilihan": 9816,
+   "sel_tayang": 9907,
+   "konsep_berkode_sdg": 17,
+   "indikator_global": 17,
+   "indikator_katalog_langsung": 15,
+   "indikator_katalog_lewat_global": 12,
+   "tujuan": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    15,
+    16
+   ]
+  },
+  {
+   "sumber": "wdi_arsip",
+   "keluarga": "wdi",
+   "kelas_lisensi": "A",
+   "boleh_tayang": true,
+   "observasi": 848794,
+   "rilis": 142,
+   "seri": 388,
+   "konsep": 388,
+   "sel_pilihan": 2255,
+   "sel_tayang": 2259,
+   "konsep_berkode_sdg": 17,
+   "indikator_global": 17,
+   "indikator_katalog_langsung": 15,
+   "indikator_katalog_lewat_global": 12,
+   "tujuan": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    15,
+    16
+   ]
+  },
+  {
+   "sumber": "who_gho",
+   "keluarga": "who_gho",
+   "kelas_lisensi": "A",
+   "boleh_tayang": true,
+   "observasi": 2457,
+   "rilis": 41,
+   "seri": 41,
+   "konsep": 41,
+   "sel_pilihan": 2292,
+   "sel_tayang": 2301,
+   "konsep_berkode_sdg": 41,
+   "indikator_global": 33,
+   "indikator_katalog_langsung": 8,
+   "indikator_katalog_lewat_global": 17,
+   "tujuan": [
+    2,
+    3,
+    6
+   ]
+  }
+ ],
+ "per_tujuan": [
+  {
+   "tujuan": 1,
+   "tujuan_game": true,
+   "indikator_katalog": 3,
+   "indikator_berdata": 3,
+   "indikator_berdata_tayang": 2,
+   "konsep_dimuat": 76,
+   "konsep_tayang": 20,
+   "sel_tayang": 13593,
+   "sumber": [
+    "bnpb",
+    "bps",
+    "ilostat",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip"
+   ],
+   "sumber_tayang": [
+    "bnpb",
+    "bps",
+    "ilostat",
+    "wdi"
+   ]
+  },
+  {
+   "tujuan": 2,
+   "tujuan_game": true,
+   "indikator_katalog": 9,
+   "indikator_berdata": 9,
+   "indikator_berdata_tayang": 7,
+   "konsep_dimuat": 71,
+   "konsep_tayang": 7,
+   "sel_tayang": 1797,
+   "sumber": [
+    "bps",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip",
+    "who_gho"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "wdi",
+    "wdi_arsip",
+    "who_gho"
+   ]
+  },
+  {
+   "tujuan": 3,
+   "tujuan_game": true,
+   "indikator_katalog": 22,
+   "indikator_berdata": 22,
+   "indikator_berdata_tayang": 20,
+   "konsep_dimuat": 88,
+   "konsep_tayang": 38,
+   "sel_tayang": 3409,
+   "sumber": [
+    "bps",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip",
+    "who_gho"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "wdi",
+    "wdi_arsip",
+    "who_gho"
+   ]
+  },
+  {
+   "tujuan": 4,
+   "tujuan_game": true,
+   "indikator_katalog": 14,
+   "indikator_berdata": 14,
+   "indikator_berdata_tayang": 10,
+   "konsep_dimuat": 62,
+   "konsep_tayang": 12,
+   "sel_tayang": 13929,
+   "sumber": [
+    "bps",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "wdi",
+    "wdi_arsip"
+   ]
+  },
+  {
+   "tujuan": 5,
+   "tujuan_game": true,
+   "indikator_katalog": 5,
+   "indikator_berdata": 4,
+   "indikator_berdata_tayang": 3,
+   "konsep_dimuat": 39,
+   "konsep_tayang": 4,
+   "sel_tayang": 1197,
+   "sumber": [
+    "bps",
+    "ilostat",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "ilostat",
+    "wdi",
+    "wdi_arsip"
+   ]
+  },
+  {
+   "tujuan": 6,
+   "tujuan_game": true,
+   "indikator_katalog": 4,
+   "indikator_berdata": 4,
+   "indikator_berdata_tayang": 2,
+   "konsep_dimuat": 55,
+   "konsep_tayang": 6,
+   "sel_tayang": 2146,
+   "sumber": [
+    "bps",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip",
+    "who_gho"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "wdi",
+    "who_gho"
+   ]
+  },
+  {
+   "tujuan": 7,
+   "tujuan_game": true,
+   "indikator_katalog": 2,
+   "indikator_berdata": 2,
+   "indikator_berdata_tayang": 2,
+   "konsep_dimuat": 8,
+   "konsep_tayang": 2,
+   "sel_tayang": 4834,
+   "sumber": [
+    "bps",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "wdi",
+    "wdi_arsip"
+   ]
+  },
+  {
+   "tujuan": 8,
+   "tujuan_game": true,
+   "indikator_katalog": 11,
+   "indikator_berdata": 11,
+   "indikator_berdata_tayang": 8,
+   "konsep_dimuat": 33,
+   "konsep_tayang": 14,
+   "sel_tayang": 10303,
+   "sumber": [
+    "bps",
+    "ilostat",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "ilostat",
+    "wdi"
+   ]
+  },
+  {
+   "tujuan": 9,
+   "tujuan_game": true,
+   "indikator_katalog": 9,
+   "indikator_berdata": 8,
+   "indikator_berdata_tayang": 5,
+   "konsep_dimuat": 25,
+   "konsep_tayang": 4,
+   "sel_tayang": 1612,
+   "sumber": [
+    "bps",
+    "ilostat",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "ilostat",
+    "wdi",
+    "wdi_arsip"
+   ]
+  },
+  {
+   "tujuan": 10,
+   "tujuan_game": true,
+   "indikator_katalog": 7,
+   "indikator_berdata": 6,
+   "indikator_berdata_tayang": 6,
+   "konsep_dimuat": 24,
+   "konsep_tayang": 5,
+   "sel_tayang": 4106,
+   "sumber": [
+    "bps",
+    "ilostat",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "ilostat",
+    "wdi"
+   ]
+  },
+  {
+   "tujuan": 11,
+   "tujuan_game": true,
+   "indikator_katalog": 5,
+   "indikator_berdata": 4,
+   "indikator_berdata_tayang": 4,
+   "konsep_dimuat": 63,
+   "konsep_tayang": 24,
+   "sel_tayang": 14349,
+   "sumber": [
+    "bnpb",
+    "bps",
+    "unsd",
+    "unsd_arsip"
+   ],
+   "sumber_tayang": [
+    "bnpb",
+    "bps"
+   ]
+  },
+  {
+   "tujuan": 12,
+   "tujuan_game": false,
+   "indikator_katalog": 1,
+   "indikator_berdata": 1,
+   "indikator_berdata_tayang": 0,
+   "konsep_dimuat": 39,
+   "konsep_tayang": 0,
+   "sel_tayang": 0,
+   "sumber": [
+    "sipsn",
+    "unsd",
+    "unsd_arsip"
+   ],
+   "sumber_tayang": []
+  },
+  {
+   "tujuan": 13,
+   "tujuan_game": true,
+   "indikator_katalog": 2,
+   "indikator_berdata": 2,
+   "indikator_berdata_tayang": 1,
+   "konsep_dimuat": 33,
+   "konsep_tayang": 8,
+   "sel_tayang": 5932,
+   "sumber": [
+    "bnpb",
+    "signsmart",
+    "unsd",
+    "unsd_arsip"
+   ],
+   "sumber_tayang": [
+    "bnpb"
+   ]
+  },
+  {
+   "tujuan": 14,
+   "tujuan_game": false,
+   "indikator_katalog": 1,
+   "indikator_berdata": 1,
+   "indikator_berdata_tayang": 0,
+   "konsep_dimuat": 18,
+   "konsep_tayang": 0,
+   "sel_tayang": 0,
+   "sumber": [
+    "kkp",
+    "unsd",
+    "unsd_arsip"
+   ],
+   "sumber_tayang": []
+  },
+  {
+   "tujuan": 15,
+   "tujuan_game": true,
+   "indikator_katalog": 1,
+   "indikator_berdata": 1,
+   "indikator_berdata_tayang": 1,
+   "konsep_dimuat": 39,
+   "konsep_tayang": 4,
+   "sel_tayang": 2786,
+   "sumber": [
+    "bps",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "wdi"
+   ]
+  },
+  {
+   "tujuan": 16,
+   "tujuan_game": true,
+   "indikator_katalog": 12,
+   "indikator_berdata": 12,
+   "indikator_berdata_tayang": 7,
+   "konsep_dimuat": 51,
+   "konsep_tayang": 6,
+   "sel_tayang": 1360,
+   "sumber": [
+    "bps",
+    "unsd",
+    "unsd_arsip",
+    "wdi",
+    "wdi_arsip"
+   ],
+   "sumber_tayang": [
+    "bps",
+    "wdi"
+   ]
+  },
+  {
+   "tujuan": 17,
+   "tujuan_game": true,
+   "indikator_katalog": 1,
+   "indikator_berdata": 1,
+   "indikator_berdata_tayang": 1,
+   "konsep_dimuat": 69,
+   "konsep_tayang": 1,
+   "sel_tayang": 70,
+   "sumber": [
+    "bps",
+    "unsd",
+    "unsd_arsip"
+   ],
+   "sumber_tayang": [
+    "bps"
+   ]
+  }
+ ]
+}

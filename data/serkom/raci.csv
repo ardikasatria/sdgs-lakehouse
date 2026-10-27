@@ -1,0 +1,25 @@
+no,kegiatan,fase,penanggung_jawab_penelitian,pemilik_domain,tim_platform,steward_sumber,operator_dsw,fasilitator_sesi,koordinator_prodi,komite_etik,produsen_data,peserta
+1,Menetapkan prinsip dan aturan global (kode wilayah; kode indikator; satuan; kelas lisensi),M0-M1,A,C,R,C,I,,I,,,
+2,Meminta izin pemakaian dan redistribusi data kepada produsen,M0,A,C,I,R,,,I,,C,
+3,Mengajukan persetujuan etik evaluasi pengguna,M0,A/R,,,,,C,C,C,,
+4,Membangun dan memelihara data rujukan dan induk,M1,A,C,R,C,,,,,I,
+5,Menulis dan menjalankan konektor sumber ke raw dan Bronze,M2,A,C,R,R,,,,,I,
+6,Membekukan aturan rekonsiliasi sebelum perbandingan pertama,M3,A,R,C,C,,,,,,
+7,Memetakan sumber ke Silver dan mengelola karantina,M3,I,A,R,R,,,,,,
+8,Menetapkan kontrak dan ambang kualitas data product domain,M3-M4,C,A/R,C,C,,,,,,
+9,Menegakkan uji kontrak dan memantau kualitas,M3-M9,I,A,R,C,,,,,,
+10,Membangun gudang bitemporal dan orkestrasi,M4,A,C,R,,,,,,,
+11,Mengelola repositori metadata dan lineage,M4,A,C,R,C,,,,,,
+12,Menjalankan alur berita dan anotasi klaim,M5,A,C,R,R,,,,,,
+13,Mengompilasi dan menguji paket level,M6,A,C,R,,I,,,,,
+14,Memasang paket dan perubahan ke produksi DSW,M6,A,I,C,,R,,I,,,I
+15,Menjaga cadangan; akses; dan ketersediaan server DSW,sepanjang,A,,C,,R,,,,,
+16,Menyelenggarakan sesi evaluasi dan mengumpulkan persetujuan,M7,A,,,,C,R,I,I,,C
+17,Menganonimkan data evaluasi dan menyimpan garam hash,M7,A/R,,,,C,C,,I,,I
+18,Menangani permintaan penarikan data peserta,M7-M8,A/R,,,,C,C,,I,,C
+19,Menangani laporan kesalahan angka dari pemain atau produsen,sepanjang,A,R,C,R,C,,,,C,C
+20,Menulis naskah dan paket angka kunci,M8,A/R,C,C,C,,,I,,,
+21,Menyusun portofolio sertifikasi per unit,M9,A/R,C,C,C,C,,I,,,
+22,Memegang garam pseudonim dan mengunduh ekspor penelitian,M7-M8,A/R,,,,C,,,I,,
+23,Membayar hadiah dan mengosongkan nomor dompet,M7-M8,A/R,,,,C,,,,,I
+24,Memusnahkan data peserta dan raw berita setelah lima tahun,2031,A/R,,C,C,C,,I,I,,

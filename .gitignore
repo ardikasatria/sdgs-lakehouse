@@ -1,0 +1,10 @@
+.DS_Store
+
+# data pribadi asesi: jangan pernah di-commit
+berkas-asesmen/
+
+# catatan belajar pribadi
+catatan/
+
+# hasil bangun laporan
+report/_build/
