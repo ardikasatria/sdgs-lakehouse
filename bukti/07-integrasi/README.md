@@ -106,7 +106,3 @@ Dua sikap menjadi inti aspek kritis ini. Pertama, **tidak membuang**: baris yang
 - **Satu padanan seri dilewati**: seri triwulanan ILOSTAT `UNE_DEAP_SEX_AGE_RT` (32 observasi) tidak dibandingkan karena periodenya tidak sepadan dengan tahunan.
 - **Pseudonim ekspor peserta** diterapkan di kode pada 24 Oktober; keadaan di produksi dicatat pada langkah 11.
 - **Kode belum disalin ke `code/`.** `src/sdg_gudang/silver/`, `config/rekonsiliasi/`, dan praregistrasi masih di DSIC-SDG.
-
-## Catatan untuk wawancara asesor
-
-Dokumen di repositori ini disusun dengan bantuan asisten AI (Claude). Keputusan tetap tanggung jawab saya. Pertanyaan yang harus bisa saya jawab tanpa membaca: bagaimana memastikan tidak ada data yang hilang (identitas lima tempat dan karantina beralasan), mengapa nilai tidak digabung di Silver (agar setiap angka yang pernah terbit tetap dapat dipanggil), kalau dua sumber berbeda mana yang dipakai (prioritas nilai pilihan dengan alasan tersaji), dan bagaimana lineage diuji (kelengkapan dari manifest dbt dan Dagster, ambang 1,00, hasil 1,00).

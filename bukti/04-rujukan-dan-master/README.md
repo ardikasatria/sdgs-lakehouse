@@ -134,7 +134,3 @@ Sebelas uji unit di `tests/unit/test_sdg_gudang_referensi.py` membuktikan penang
 - **Pemekaran sebelum 2012 belum dimodelkan**, sehingga deret 1977–2011 pada provinsi hasil pemekaran lama belum ditandai ketidaksebandingannya.
 - **Ruang nama KG `https://sd.itera.ac.id/kg/` masih sementara.** IRI tidak dipakai di luar repositori sebelum ruang nama yang stabil diputuskan.
 - **Kode belum disalin ke `code/`.** `src/sdg_gudang/referensi.py`, `config/referensi/`, dan uji unitnya masih di DSIC-SDG; akan disalin sesuai daftar di `code/README.md`.
-
-## Catatan untuk wawancara asesor
-
-Dokumen di repositori ini disusun dengan bantuan asisten AI (Claude). Keputusan tetap tanggung jawab saya. Pertanyaan yang harus bisa saya jawab tanpa membaca: apa beda reference data dan master data pada proyek ini, apa yang terjadi pada angka Papua 2021 setelah pemekaran 2022, dan mengapa resolver menolak menebak kode Kemendagri yang ambigu.

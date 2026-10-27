@@ -119,7 +119,3 @@ Selisih proporsi terikat 0,862 dengan selang kepercayaan 0,831–0,888. Tanpa al
 - **72 satuan lokal belum dikurasi** ke satuan kanonik; utangnya terukur tetapi belum dilunasi.
 - **Pemeriksaan klaim berita baru menjangkau dua indikator**, sehingga lapis semantik untuk klaim belum teruji luas.
 - **Kode belum disalin ke `code/`.** `sdg_gudang/gudang/kontrak.py`, `kg.py`, `lineage.py`, dan `artefak/mesh/*.jsonld` masih di DSIC-SDG.
-
-## Catatan untuk wawancara asesor
-
-Dokumen di repositori ini disusun dengan bantuan asisten AI (Claude). Keputusan tetap tanggung jawab saya. Pertanyaan yang harus bisa saya jawab tanpa membaca: bagaimana saya tahu angka di game ini berasal dari rilis mana, mengapa metadata tidak boleh ditulis tangan, dan mengapa repositori ringan saya anggap cukup untuk ukuran organisasi ini.

@@ -144,7 +144,3 @@ Dua kesimpulan dari perhitungan ini. Pertama, biaya simpan dapat diabaikan: kura
 - **Deduplikasi isi snapshot BPS belum dijalankan**, karena snapshot BPS kedua setelah 20 Oktober belum diambil.
 - **Memori komponen lakehouse belum diukur dengan `docker stats`** seperti direncanakan; yang ada adalah bukti tidak langsung bahwa semuanya berjalan pada VM 8 GiB.
 - **Pemantauan ruang kosong masih manual.** Ruang kosong Mac 6,2 GiB saat uji operasi sudah di bawah ambang peringatan 5 GB yang direncanakan bila dihitung dalam GB desimal; ini alasan mode alir wajib pada langkah 10.
-
-## Catatan untuk wawancara asesor
-
-Dokumen di repositori ini disusun dengan bantuan asisten AI (Claude). Keputusan tetap tanggung jawab saya. Pertanyaan yang harus bisa saya jawab tanpa membaca: mengapa tidak semua di satu database, mengapa Raw disimpan selamanya padahal payload global dibuang, dan mengapa biaya komputasi, bukan biaya simpan, yang menentukan pilihan.
