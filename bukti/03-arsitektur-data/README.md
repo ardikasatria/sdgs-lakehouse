@@ -8,7 +8,7 @@
 
 | Elemen | Yang saya kerjakan | Bukti | Jenis | Status |
 | --- | --- | --- | --- | --- |
-| 1. Menyusun model operasional tata kelola data | memetakan lima unsur tata kelola ke strategi TI, arsitektur data, dan integrasi aplikasi; menganalisis arah tarikan lima penggerak; merancang model federasi dan mewujudkannya sebagai sembilan data product berkontrak | tabel dan bagan pada Elemen 1; `config/mesh/*.yaml` di DSIC-SDG; 12 tabel `dp` pada `data/gudang/m4_sidik_gold.json` | T, L, TL | lengkap, kode belum disalin ke `code/` |
+| 1. Menyusun model operasional tata kelola data | memetakan lima unsur tata kelola ke strategi TI, arsitektur data, dan integrasi aplikasi; menganalisis arah tarikan lima penggerak; merancang model federasi dan mewujudkannya sebagai sembilan data product berkontrak | tabel dan bagan pada Elemen 1; `config/mesh/*.yaml` di repositori penelitian Ardika; 12 tabel `dp` pada `data/gudang/m4_sidik_gold.json` | T, L, TL | lengkap |
 | 2. Menganalisis pengaruh faktor budaya organisasi | menilai lima faktor penerimaan kedisiplinan dan lima faktor kemampuan beradaptasi, lalu menetapkan siklus semester sebagai faktor penentu | tabel pada Elemen 2 | T | lengkap, pemilik domain masih simulasi |
 | 3. Menganalisis pengaruh faktor peraturan | memetakan tujuh peraturan dan ketentuan ke pola pikir yang dibentuknya, dan menetapkan lima penanda dini bila model tidak tepat | tabel pada Elemen 3 | T | lengkap, Perpres 39/2019 belum dicocokkan dengan teks resmi |
 
@@ -56,7 +56,7 @@ Hasilnya adalah model federasi: empat domain pilar memiliki data product, sedang
    Konsumen: dp_liga (paket level) · Bravais · pemeriksa klaim berita · naskah
 ```
 
-Pembagian tujuan per pilar mengikuti Permen PPN/Kepala Bappenas Nomor 1 Tahun 2024 Pasal 4 ayat (3) sampai (6), yang juga menjadi struktur Metadata Indikator TPB per pilar. Padanannya diperiksa pada M1 dan disimpan sebagai `artefak/referensi/dim_pilar.csv` di DSIC-SDG. Struktur ini dipilih karena sudah dikenal pemangku kepentingan, sehingga pemilik domain tidak perlu mempelajari pembagian baru.
+Pembagian tujuan per pilar mengikuti Permen PPN/Kepala Bappenas Nomor 1 Tahun 2024 Pasal 4 ayat (3) sampai (6), yang juga menjadi struktur Metadata Indikator TPB per pilar. Padanannya diperiksa pada M1 dan disimpan sebagai `artefak/referensi/dim_pilar.csv` di repositori penelitian Ardika. Struktur ini dipilih karena sudah dikenal pemangku kepentingan, sehingga pemilik domain tidak perlu mempelajari pembagian baru.
 
 **Wujud model setelah gudang dibangun (21–24 Oktober 2026).** Federasi tidak berhenti sebagai bagan. Setiap data product dinyatakan sebagai satu berkas YAML sepanjang 19–26 baris di `config/mesh/` yang memuat pemilik, kanal pelaporan masalah, SLA kesegaran, dan aturan kualitas. Pembangkit kontrak menurunkan dari setiap YAML sebuah model dbt, kontrak skema, uji aturan global federasi, uji SLA, dan rekaman DCAT, sehingga kontrak tidak dapat tertinggal dari konfigurasi.
 
@@ -135,7 +135,7 @@ Penanda ini ditinjau di akhir setiap fase bersama status faktor keberhasilan pad
 - **Pemilik domain masih simulasi.** Keempat domain pilar saya pegang sendiri, sehingga sisi organisasi federasi (dua orang berbeda memegang domain yang berbeda dan harus menaati aturan global yang sama) belum pernah diuji. Sisi teknisnya sudah terbukti lewat uji aturan global yang berjalan tanpa pelanggaran.
 - **Perpres 39/2019 belum dicocokkan pasal demi pasal** dengan teks resmi. Baris itu pada KUK 3.1 bertumpu pada pemahaman umum tentang Satu Data Indonesia dan harus diperiksa sebelum dipakai di hadapan asesor.
 - **Tiga keputusan teknis menyimpang dari bagan 20 Oktober** (tanpa Spark, Dagster, katalog ringan). Bagan di Elemen 1 sudah disesuaikan pada baris katalog metadata; tabel KUK 1.1 dibiarkan memuat rencana semula dengan keterangan "direncanakan", agar perubahan keputusan tetap terbaca.
-- **Kode belum disalin ke `code/`.** Berkas `config/mesh/*.yaml` dan pembangkit kontrak masih di DSIC-SDG; akan disalin sesuai daftar di `code/README.md`.
+- **Kode yang dirujuk tersalin di [`code/`](../../code/README.md)** dari repositori penelitian Ardika pada commit `dcaa55e` (22 Oktober 2026), termasuk jalur berkasnya yang disebut di atas.
 
 ## Catatan untuk wawancara asesor
 

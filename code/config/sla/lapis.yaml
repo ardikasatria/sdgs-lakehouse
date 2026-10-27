@@ -1,0 +1,51 @@
+# Ambang SLA per lapis gudang SDG untuk uji ketersambungan antarlapis (unit J.62DMS00.007.1 KUK 4.3-4.4).
+# Ditulis 24 Okt 2026 sebelum uji pertama dijalankan; ambang diambil dari target yang sudah tercatat
+# (piagam unit 002, bukti unit 005, 012, 014, dan uji operasi Tahap II), bukan disesuaikan dengan hasil.
+#
+#   PYTHONPATH=src python -m sdg_gudang.gudang.uji_sla      # atau: make m4-uji-sla
+#
+# Waktu dalam detik, latency dalam milidetik.
+
+tanggal_ditetapkan: 2026-10-24
+
+ingest:                      # Raw bermanifest
+  integritas_raw: 1.0        # proporsi berkas Raw yang sha256-nya cocok dengan manifest (make m2-verifikasi)
+  kesegaran_snapshot_hari: 7 # snapshot terakhir setiap sumber terjadwal tidak lebih tua dari 7 hari (piagam 002)
+
+proses:                      # job Dagster gudang_penuh, dari Raw tanpa jaringan
+  langkah_maks_s:
+    bronze: 120
+    silver: 120
+    rekonsiliasi: 120
+    kualitas: 60
+    iceberg_silver: 60
+    kontrak_mesh: 30
+    gudang_dbt: 180
+  job_maks_s: 600            # gudang dapat dibangun ulang dari Raw dalam 10 menit (bukti unit 012)
+  uji_dbt_gagal_maks: 0      # error dbt; peringatan (SLA kesegaran tingkat warn) dilaporkan terpisah
+  keterlacakan: 1.0          # proporsi baris Silver dengan sha256 Raw yang cocok (m3_kualitas.json)
+
+sajian:
+  data_product:
+    kesegaran: dari_yaml     # sla.kesegaran_hari pada config/mesh/<produk>.yaml terhadap tanggal uji
+    baris_minimum: 1
+    query_p95_ms: 2000       # query titik (satu konsep, satu wilayah) ke setiap data product lewat Trino
+    query_per_produk: 20
+  jembatan_ke_paket:
+    identik_dengan_commit: true   # ekspor Gold -> masukan paket level sama byte dengan artefak/v4/masukan
+    waktu_maks_s: 120
+  api_produksi:
+    url: https://sditera.cloud/api/game/sdg/levels
+    permintaan: 20
+    galat_maks: 0
+    p95_ms: 3000             # dari Mac lewat internet, termasuk transfer daftar level; p95 di dalam server
+                             # (< 100 ms) diukur terpisah pada uji operasi
+
+ingest_berita_gdelt:         # jalur berkas GKG, jendela tanggal nyata (bukti unit 007 KUK 3.2)
+  berkas_per_hari_per_aliran: 96   # kecuali interval yang memang tidak diterbitkan GDELT (tidak ada di masterfilelist)
+  md5_gagal_maks: 0
+  laju_min_mb_s: 10          # unduh + saring dengan pekerja=8; pengukuran awal 18,1 MB/s (17-18 Okt 2026)
+  hari_maks_menit: 60        # satu hari UTC (dua aliran) selesai dalam satu jam, sehingga pembaruan harian muat
+
+keterulangan:
+  sidik_gold_acuan: 657df68e2f000087f750c4e5b95a55b0465f27ef2da16ff10bcb9ca5665d0adb

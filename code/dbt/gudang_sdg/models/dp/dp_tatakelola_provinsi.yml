@@ -1,0 +1,110 @@
+# Dibangkitkan dari config/mesh/dp_tatakelola_provinsi.yaml oleh sdg_gudang.gudang.kontrak; jangan disunting.
+version: 2
+models:
+- name: dp_tatakelola_provinsi
+  description: Satu nilai pilihan per konsep, wilayah provinsi, periode, dan rincian untuk tujuan 16, dipilih as-of
+    tanggal acuan menurut aturan nilai pilihan praregistrasi M3 Bagian 5, hanya dari sumber kelas lisensi A atau
+    A-SA. Alasan pilihan dan rilis asal ikut tersaji.
+  config:
+    contract:
+      enforced: true
+    meta:
+      domain: hukum_tata_kelola
+      pemilik: Ardika Satria
+      peran_pemilik: steward domain Pilar Pembangunan Hukum dan Tata Kelola
+      kanal_masalah: "<pelacak isu repositori penelitian>"
+      sla_kesegaran_hari: 400
+      berkas_konfigurasi: config/mesh/dp_tatakelola_provinsi.yaml
+  data_tests:
+  - kunci_unik:
+      arguments:
+        kolom: konsep_id, wilayah_kode, periode, rincian
+  - hanya_tayang: {}
+  - baris_minimum:
+      arguments:
+        n: 1
+  - segar:
+      arguments:
+        kolom: berlaku_sejak
+        hari: 400
+      config:
+        severity: warn
+  columns:
+  - name: konsep_id
+    data_type: varchar
+    description: konsep observasi (S06)
+    data_tests:
+    - relationships:
+        arguments:
+          to: ref('dim_konsep')
+          field: konsep_id
+  - name: indikator_id
+    data_type: varchar
+    description: indikator TPB nasional bila konsep terpetakan
+  - name: kode_global
+    data_type: varchar
+    description: kode indikator SDG global
+  - name: tujuan
+    data_type: integer
+    description: tujuan TPB
+  - name: wilayah_kode
+    data_type: integer
+    description: kode wilayah dp_referensi
+    data_tests:
+    - relationships:
+        arguments:
+          to: ref('dim_wilayah')
+          field: wilayah_kode
+  - name: nama_wilayah
+    data_type: varchar
+    description: nama wilayah versi terkini
+  - name: periode
+    data_type: varchar
+    description: periode kanonik
+  - name: rincian
+    data_type: varchar
+    description: rincian kanonik; total = semua total
+  - name: nilai
+    data_type: varchar
+    description: nilai desimal kanonik dalam satuan_id
+  - name: nilai_angka
+    data_type: double
+    description: nilai sebagai bilangan
+    data_tests:
+    - not_null
+  - name: satuan_id
+    data_type: varchar
+    description: satuan kanonik
+    data_tests:
+    - relationships:
+        arguments:
+          to: ref('dim_satuan')
+          field: satuan_id
+  - name: sumber
+    data_type: varchar
+    description: sumber nilai pilihan
+    data_tests:
+    - not_null
+  - name: rilis_id
+    data_type: varchar
+    description: rilis asal
+    data_tests:
+    - not_null
+  - name: berlaku_sejak
+    data_type: date
+    description: tanggal efektif rilis asal
+  - name: sifat
+    data_type: varchar
+    description: resmi, disesuaikan, estimasi, model, tidak_diketahui
+  - name: prioritas
+    data_type: integer
+    description: prioritas aturan nilai pilihan
+  - name: jumlah_calon
+    data_type: bigint
+    description: jumlah observasi calon
+  - name: alasan_pilihan
+    data_type: varchar
+    description: alasan pilihan
+  - name: tanggal_acuan
+    data_type: date
+    description: tanggal acuan as-of

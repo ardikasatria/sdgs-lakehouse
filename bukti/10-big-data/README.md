@@ -127,7 +127,7 @@ make m5-jalan-gdelt OPSI="jalur=berkas mulai=2026-10-01 sampai=2026-10-07 pekerj
 
 Dari 46 pemeriksaan uji gudang, 45 lulus. Satu kegagalan, API tanpa kompresi, berasal dari cara uji memanggil API: klien Python tidak meminta gzip, sedangkan peramban selalu meminta. Ambang tidak diubah. Kedua cara diukur ulang (`data/uji/uji-sla-api.json`): tanpa kompresi p50 4,7 s dan p95 6,5 s untuk jawaban 513 KB; dengan gzip p50 1,5 s dan p95 2,2 s untuk 38,5 KB. Latensi dari luar terutama ditentukan oleh jaringan dari Mac ke server di Sydney, sedangkan waktu proses di server sendiri tetap di bawah satu milidetik: pada tiga pengukuran 2.000 kiriman di produksi, p95 pemeriksaan jawaban 0,714–0,751 ms (`data/produk/latensi-produksi-*.json`).
 
-**KUK 4.4 Dokumentasi hasil uji SLA.** Log yang dibangkitkan otomatis (`log-uji-sla.md` di DSIC-SDG) memuat tabel semua pemeriksaan dengan nilai, ambang, dan hasil, ditambah diagnosis API dan ingest GDELT per aliran-hari. Hasil mentahnya disalin ke repositori ini sebagai `data/uji/uji-sla.json`, `uji-sla-api.json`, `uji-sla-gdelt.json`, dan `banding-spark.json`; manifest jalan GDELT dengan sha256 setiap zip asal ada di DSIC-SDG.
+**KUK 4.4 Dokumentasi hasil uji SLA.** Log yang dibangkitkan otomatis (`log-uji-sla.md` di repositori penelitian Ardika) memuat tabel semua pemeriksaan dengan nilai, ambang, dan hasil, ditambah diagnosis API dan ingest GDELT per aliran-hari. Hasil mentahnya disalin ke repositori ini sebagai `data/uji/uji-sla.json`, `uji-sla-api.json`, `uji-sla-gdelt.json`, dan `banding-spark.json`; manifest jalan GDELT dengan sha256 setiap zip asal ada di repositori penelitian Ardika.
 
 **Data pendukung** (sudah ada di repositori):
 
@@ -145,7 +145,7 @@ Dari 46 pemeriksaan uji gudang, 45 lulus. Satu kegagalan, API tanpa kompresi, be
 - **Uji GDELT baru satu jendela seminggu** (14–20 Oktober). Perilaku pada jendela yang memuat interval tidak terbit atau alamat berubah baru dilindungi uji unit, belum oleh jalan nyata.
 - **CC-NEWS dan RSS belum punya uji SLA tersendiri**; keduanya baru diperiksa lewat umur snapshot pada lapis ingest.
 - **Berkas uji memuat alamat API produksi** (`sditera.cloud`). Itu alamat publik layanan, bukan rahasia, tetapi perlu diketahui sebelum repositori dipublikasikan.
-- **Kode belum disalin ke `code/`.** Konektor akuisisi, `uji_sla.py`, `config/sla/lapis.yaml`, dan `infra/gudang/` masih di DSIC-SDG.
+- **Kode yang dirujuk tersalin di [`code/`](../../code/README.md)** dari repositori penelitian Ardika pada commit `dcaa55e` (22 Oktober 2026), termasuk jalur berkasnya yang disebut di atas.
 
 ## Catatan untuk wawancara asesor
 

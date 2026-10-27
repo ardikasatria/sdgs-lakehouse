@@ -8,11 +8,11 @@
 
 | Elemen | Yang saya kerjakan | Bukti | Jenis | Status |
 | --- | --- | --- | --- | --- |
-| 1. Mengimplementasikan kebijakan PDP | menerapkan lima prinsip UU 27/2022 pada alur berita; menetapkan lingkup tujuan evaluasi, jenis data pribadi per aliran, dan mekanisme persetujuan, tes, hadiah; menulis DPIA ringkas sembilan risiko | tabel pada Elemen 1; `dpia-ringkas.md` di DSIC-SDG | T | ada, nomor etik resmi belum terbit |
-| 2. Mengimplementasikan kebijakan data terkait PDP | kebijakan simpan berita (metadata dan URL saja, raw lima tahun); masa simpan data peserta lima tahun; peran pemegang garam, pembayar hadiah, dan pemusnah data di RACI | `data/serkom/raci.csv` kegiatan 3, 18, 22–24; `m5-akuisisi-berita.md` dan lembar persetujuan di DSIC-SDG | T | ada |
+| 1. Mengimplementasikan kebijakan PDP | menerapkan lima prinsip UU 27/2022 pada alur berita; menetapkan lingkup tujuan evaluasi, jenis data pribadi per aliran, dan mekanisme persetujuan, tes, hadiah; menulis DPIA ringkas sembilan risiko | tabel pada Elemen 1; `dpia-ringkas.md` di repositori penelitian Ardika | T | ada, nomor etik resmi belum terbit |
+| 2. Mengimplementasikan kebijakan data terkait PDP | kebijakan simpan berita (metadata dan URL saja, raw lima tahun); masa simpan data peserta lima tahun; peran pemegang garam, pembayar hadiah, dan pemusnah data di RACI | `data/serkom/raci.csv` kegiatan 3, 18, 22–24; `m5-akuisisi-berita.md` dan lembar persetujuan di repositori penelitian Ardika | T | ada |
 | 3. Mengimplementasikan prosedur pemrosesan data pribadi | persetujuan sebelum bermain, penarikan data sampai 7 hari sesudah Laga, verifikasi lima cek oleh admin, pengosongan nomor dompet | modul survei di repositori DSW (`sdg_survei.py`) | L | ada |
 | 4. Mengimplementasikan ketentuan pengungkapan kepada pihak lain | ekspor penelitian memakai `hash_peserta` HMAC bergaram dan hanya peserta yang setuju; nomor dompet tidak ikut ekspor; hasil hanya agregat | `sdg_survei_http.py` dan 17 uji di repositori DSW, commit `632f206e` di produksi | L | ada |
-| 5. Mengimplementasikan teknologi terkait PDP | hash nama akun Google, sesi berlingkup, tabel hadiah terpisah, penyamaran nomor, pagar kolom konektor berita dan uji unitnya; tanpa biaya tambahan | `masuk_google.py` (DSW), `test_gudang_konektor_berita.py` (DSIC-SDG) | L | ada |
+| 5. Mengimplementasikan teknologi terkait PDP | hash nama akun Google, sesi berlingkup, tabel hadiah terpisah, penyamaran nomor, pagar kolom konektor berita dan uji unitnya; tanpa biaya tambahan | `masuk_google.py` (DSW), `test_gudang_konektor_berita.py` (tersalin di `code/`) | L | ada |
 
 Jenis bukti: **L** langsung (artefak yang berjalan), **TL** tidak langsung (hasil terukur, laporan), **T** tambahan (dokumen tata kelola, surat).
 
@@ -101,9 +101,9 @@ Satu hal perlu ditegaskan sejak awal: repositori ini tidak memuat data pribadi p
 | R4 identitas Google | akun game terpisah; nama pengguna `google-` + sha256 pengenal; email tidak disimpan; sesi berlingkup dengan daftar rute | `masuk_google.py` (DSW) |
 | R2 berkas analisis dikaitkan ke akun | HMAC-SHA256 bergaram pada ekspor; garam di environment server; tolak ekspor tanpa garam | `sdg_survei_http.py` (DSW) |
 | R3 nomor dompet | tabel `sdg_hadiah` terpisah; penyamaran di panel; pengosongan otomatis; izin khusus | `sdg_survei.py` (DSW) |
-| R7 nama di berita | pemotong dua kalimat 400 karakter; pembuang HTML; pagar panjang kolom; kolom nama dan kutipan GDELT tidak dipilih | `berita_umum.py`, konektor `gdelt`, `rss`, `ccnews` (DSIC-SDG) |
+| R7 nama di berita | pemotong dua kalimat 400 karakter; pembuang HTML; pagar panjang kolom; kolom nama dan kutipan GDELT tidak dipilih | `berita_umum.py`, konektor `gdelt`, `rss`, `ccnews` (tersalin di `code/`) |
 | R6 percakapan Bravais | permintaan ke penyedia model tanpa penyimpanan; tanpa riwayat; tembolok 24 jam | layanan Bravais (DSW) |
-| keamanan rahasia | kunci API di luar repositori; pola rahasia ditolak di manifest | `akuisisi/inti.py` (DSIC-SDG) |
+| keamanan rahasia | kunci API di luar repositori; pola rahasia ditolak di manifest | `akuisisi/inti.py` (tersalin di `code/`) |
 
 Pagar di konektor berita diuji unit: nama orang dan kutipan GDELT tidak terbawa, teks penuh RSS dibuang dari raw, dan tidak ada kolom Bronze di atas 600 karakter.
 
@@ -111,7 +111,7 @@ Pagar di konektor berita diuji unit: nama orang dan kutipan GDELT tidak terbawa,
 
 - [`data/serkom/raci.csv`](../../data/serkom/raci.csv): kegiatan 3, 18, 22, 23, dan 24 beserta peran yang dikonsultasikan dan diberi tahu.
 
-Berkas bukti lain untuk langkah ini sengaja tidak ada di repositori ini: kode modul survei dan masuk Google ada di repositori DSW yang privat, konektor berita di DSIC-SDG, dan lembar persetujuan serta DPIA ringkas di `docs/serkom/` DSIC-SDG. Data peserta tidak pernah disalin ke mana pun selain server produksi.
+Berkas bukti lain untuk langkah ini sengaja tidak ada di repositori ini: kode modul survei dan masuk Google ada di repositori DSW yang privat, konektor berita tersalin di `code/`, dan lembar persetujuan serta DPIA ringkas di `docs/serkom/` repositori penelitian Ardika. Data peserta tidak pernah disalin ke mana pun selain server produksi.
 
 ## Catatan terbuka
 
@@ -120,7 +120,7 @@ Berkas bukti lain untuk langkah ini sengaja tidak ada di repositori ini: kode mo
 - **Penyaring nama di RSS belum dipasang** (R7); risikonya diterima karena sumber berita tidak ditayangkan.
 - **Penyaring otomatis untuk data pribadi yang ditulis peserta** di Mode Kueri atau jawaban terbuka belum ada (R5).
 - **Pemusnahan terjadwal belum dicatat di kalender**; tanggalnya ditetapkan saat analisis selesai.
-- **Surat etik dan lembar persetujuan masih draf** di `docs/serkom/surat/` DSIC-SDG dan belum diajukan; folder `bukti/surat/` di repositori ini masih kosong sampai surat ditulis ulang tanpa data pribadi.
+- **Surat etik dan lembar persetujuan masih draf** di `docs/serkom/surat/` repositori penelitian Ardika dan belum diajukan; folder `bukti/surat/` di repositori ini masih kosong sampai surat ditulis ulang tanpa data pribadi.
 
 ## Catatan untuk wawancara asesor
 

@@ -1,0 +1,24 @@
+keluarga,seri_kode,kode_global,hubungan,padanan_unsd,alasan
+bnpb,korban_meninggal_hilang_per_100rb,13.1.1|1.5.1|11.5.1,sama,VC_DSR_MTMP,korban meninggal dan hilang per 100.000 penduduk; seri utama indikator bersama 1.5.1/11.5.1/13.1.1
+bnpb,korban_meninggal,13.1.1|1.5.1|11.5.1,komponen,VC_DSR_MORT,jumlah korban meninggal; komponen pembilang indikator
+bnpb,korban_hilang,13.1.1|1.5.1|11.5.1,komponen,VC_DSR_MISS,jumlah korban hilang; komponen pembilang indikator
+bnpb,korban_luka_sakit,13.1.1|1.5.1|11.5.1,komponen,VC_DSR_IJILN,jumlah korban luka atau sakit; komponen orang terdampak langsung
+bnpb,korban_terdampak,13.1.1|1.5.1|11.5.1,komponen,VC_DSR_AFFCT,jumlah orang terdampak; definisi terdampak BNPB belum dicocokkan dengan Sendai B-1
+bnpb,korban_mengungsi,13.1.1|1.5.1|11.5.1,komponen,,jumlah pengungsi; Sendai menghitung orang yang dievakuasi atau direlokasi sebagai terdampak langsung
+bnpb,korban_terdampak_mengungsi,13.1.1|1.5.1|11.5.1,komponen,,jumlah terdampak dan mengungsi (rekap 2021/2022); komponen orang terdampak
+bnpb,korban_mengungsi_per_100rb,13.1.1|1.5.1|11.5.1,proksi,VC_DSR_DAFF,pengungsi per 100.000 penduduk; hanya sebagian dari orang terdampak langsung per 100.000
+bnpb,rumah_rusak,11.5.2|1.5.2,komponen,VC_DSR_HOLH,jumlah rumah rusak (berat/sedang/ringan); padanan fisik kerugian sektor perumahan (Sendai C-4)
+bnpb,rumah_terendam,11.5.2|1.5.2,komponen,VC_DSR_HOLH,jumlah rumah terendam (rekap 2021/2022); kerusakan perumahan
+bnpb,fasyankes_rusak,11.5.2,komponen,,fasilitas pelayanan kesehatan rusak; kerusakan infrastruktur kritis dalam definisi 11.5.2 (Sendai D-2)
+bnpb,satuan_pendidikan_rusak,11.5.2,komponen,,satuan pendidikan rusak; kerusakan infrastruktur kritis dalam definisi 11.5.2 (Sendai D-3)
+bnpb,jembatan_rusak,11.5.2,komponen,VC_DSR_CILN,jembatan rusak; kerusakan infrastruktur kritis (Sendai D-4)
+bnpb,kios_toko_rusak,11.5.2|1.5.2,komponen,VC_DSR_DDPA,kios/toko rusak; aset produktif (Sendai C-3)
+bnpb,pabrik_rusak,11.5.2|1.5.2,komponen,VC_DSR_DDPA,pabrik rusak; aset produktif (Sendai C-3)
+bnpb,luas_sawah_rusak,11.5.2|1.5.2,komponen,VC_DSR_AGLH,luas sawah rusak; kerugian pertanian (Sendai C-2); satuan tidak dinyatakan sumber
+bnpb,luas_lahan_kebun_hutan_rusak,11.5.2|1.5.2,komponen,VC_DSR_AGLH,luas lahan kebun dan hutan rusak; kerugian pertanian (Sendai C-2); satuan tidak dinyatakan sumber
+bnpb,nilai_kerusakan,11.5.2|1.5.2,sama,VC_DSR_GDPLS,nilai kerusakan RRRP (rupiah); kerusakan aset fisik = kerugian ekonomi langsung; berbeda dari seri PBB dalam mata uang dan cakupan (hanya usulan RRRP)
+bnpb,nilai_kerugian,11.5.2|1.5.2,proksi,,nilai kerugian RRRP (rupiah); dalam metode DALA kerugian adalah aliran ekonomi yang hilang, bukan kerugian langsung
+bnpb,kantor_rusak,,tidak_dipetakan,,kantor rusak; bukan infrastruktur kritis Sendai D dan bukan aset produktif; dibiarkan sebagai seri
+bnpb,rumah_ibadat_rusak,,tidak_dipetakan,,rumah ibadat rusak; tidak ada komponen Sendai/SDG yang sepadan; dibiarkan sebagai seri
+bnpb,kejadian,,tidak_dipetakan,,jumlah kejadian bencana; tidak ada indikator SDG global untuk cacah kejadian
+bnpb,jumlah_penduduk,,tidak_dipetakan,,penduduk penyebut tabel per 100.000; bukan indikator

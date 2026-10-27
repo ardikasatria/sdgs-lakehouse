@@ -1,4 +1,4 @@
-# salinan (relatif ke data/)	asal di DSIC-SDG
+# salinan (relatif ke data/)	asal di repositori penelitian Ardika
 gudang/volume.json	data/manifests/gudang/volume.json
 gudang/m3_kualitas.json	data/manifests/gudang/m3_kualitas.json
 gudang/m3_rekonsiliasi_ringkasan.json	data/manifests/gudang/m3_rekonsiliasi_ringkasan.json

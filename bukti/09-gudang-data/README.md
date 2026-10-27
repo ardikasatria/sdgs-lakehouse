@@ -10,7 +10,7 @@
 | --- | --- | --- | --- | --- |
 | 1. Mengidentifikasi kebutuhan gudang data | menurunkan lima kebutuhan dari naskah vintage, rencana kerja, dan praktik praregistrasi, lalu memetakan wujudnya di gudang; mengidentifikasi 12 sumber lewat `dim_sumber` dan `dim_rilis` | tabel pada Elemen 1; `gold.dim_rilis` 2.678 baris di `data/gudang/m4_sidik_gold.json` | T, TL | lengkap |
 | 2. Merancang skema dan memilih alat ETL | merancang struktur berlapis, skema bintang dua fakta tujuh dimensi dengan tiga sumbu waktu, dan memilih enam alat dengan alasan | tabel pada Elemen 2 | T | lengkap |
-| 3. Membangun dan mendokumentasikan gudang data | 11 model `gold` dan 12 model `dp` dbt, 139 node lulus; dokumentasi dari `dbt docs` dan DCAT | 23 tabel di `data/gudang/m4_sidik_gold.json`; `dbt/gudang_sdg/` di DSIC-SDG | TL, L | lengkap, kode belum disalin ke `code/` |
+| 3. Membangun dan mendokumentasikan gudang data | 11 model `gold` dan 12 model `dp` dbt, 139 node lulus; dokumentasi dari `dbt docs` dan DCAT | 23 tabel di `data/gudang/m4_sidik_gold.json`; `dbt/gudang_sdg/` di repositori penelitian Ardika | TL, L | lengkap |
 | 4. Memasang, menjalankan, dan memantau ETL | `make m4-naik` dengan versi dipatok; job Dagster `gudang_penuh`; metadata materialisasi per aset; empat rebuild bersidik sama; dua insiden ditangani | `data/produk/uji-keterulangan.json`, `data/produk/sidik-gold.json`, `data/produk/uji-kompilasi.json` | L, TL | lengkap |
 
 Jenis bukti: **L** langsung (artefak yang berjalan), **TL** tidak langsung (hasil terukur, laporan), **T** tambahan (dokumen tata kelola, surat).
@@ -82,7 +82,7 @@ Gudang tidak memakai skor kepercayaan beku seperti fusi data. Semua observasi di
 
 **Uji yang menegakkan rancangan.** Jenisnya: kunci unik, not null, relasi ke dimensi, nilai yang diterima, identitas jumlah Silver–Gold, interval bitemporal tidak mundur, kewajaran tanggal rilis (ditambahkan setelah insiden pada langkah 08), satu seri per keluarga per konsep, tidak ada calon setara, hanya sumber kelas terbuka pada sajian, dan SLA kesegaran. Uji inilah yang menjadikan rancangan sesuatu yang ditegakkan mesin, bukan diagram yang harus dipatuhi secara manual.
 
-**Dokumentasi.** `dbt docs generate` menghasilkan katalog dan lineage model; rekaman DCAT per data product ada di `artefak/mesh/`; laporan fase ada di `docs/gudang/m4-laporan.md` (semuanya di DSIC-SDG). Sidik per tabel dan jumlah baris tersimpan di `data/gudang/m4_sidik_gold.json` sebagai dokumentasi hasil yang dapat diperiksa ulang.
+**Dokumentasi.** `dbt docs generate` menghasilkan katalog dan lineage model; rekaman DCAT per data product ada di `artefak/mesh/`; laporan fase ada di `docs/gudang/m4-laporan.md` (semuanya di repositori penelitian Ardika). Sidik per tabel dan jumlah baris tersimpan di `data/gudang/m4_sidik_gold.json` sebagai dokumentasi hasil yang dapat diperiksa ulang.
 
 ## Elemen 4. Pemasangan, pengoperasian, dan pemantauan ETL
 
@@ -121,4 +121,4 @@ Rantai ke produk ikut diuji. Kompilasi paket level v4 dari Gold acuan memberi ha
 - **Waktu catat baru ditandai, belum dipakai.** Snapshot Iceberg ada, tetapi belum ada kueri time travel yang diuji sebagai bagian pengujian resmi.
 - **Pemekaran sebelum 2012** belum ada di `dim_wilayah` (langkah 04), sehingga kueri as-of pada deret lama provinsi hasil pemekaran lama belum menandai ketidaksebandingannya.
 - **Gudang berjalan di satu simpul** (Mac, Colima 4 vCPU 8 GiB). Pemasangan di instance Lightsail yang direncanakan pada langkah 06 belum dilakukan.
-- **Kode belum disalin ke `code/`.** `dbt/gudang_sdg/`, `muat.py`, `orkestrasi.py`, `sidik.py`, dan `infra/gudang/` masih di DSIC-SDG.
+- **Kode yang dirujuk tersalin di [`code/`](../../code/README.md)** dari repositori penelitian Ardika pada commit `dcaa55e` (22 Oktober 2026), termasuk jalur berkasnya yang disebut di atas.

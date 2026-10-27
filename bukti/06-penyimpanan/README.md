@@ -10,7 +10,7 @@
 | --- | --- | --- | --- | --- |
 | 1. Menganalisis jumlah data | mengukur Raw, Bronze, manifest, dan rilis per sumber dengan `make m2-volume`; menaksir pertumbuhan dari frekuensi rilis terukur | `data/gudang/volume.json`; tabel pada Elemen 1 | TL | lengkap |
 | 2. Merencanakan volume data | merinci volume per lapis arsitektur, memeriksa kecukupan tiga tahun, dan menulis model pertumbuhan V(t) | tabel dan rumus pada Elemen 2 | T, TL | lengkap, volume berita belum ditaksir |
-| 3. Membuat opsi penyimpanan | menetapkan opsi per jenis data, masa simpan per jenis, biaya lima opsi tempat lakehouse, dan rencana lima langkah | tabel pada Elemen 3; `perbandingan-biaya-m4.md` di DSIC-SDG; `data/produk/latensi-produksi-*.json` | T, TL | lengkap, kompatibilitas S3 bucket Lightsail belum diperiksa |
+| 3. Membuat opsi penyimpanan | menetapkan opsi per jenis data, masa simpan per jenis, biaya lima opsi tempat lakehouse, dan rencana lima langkah | tabel pada Elemen 3; `perbandingan-biaya-m4.md` di repositori penelitian Ardika; `data/produk/latensi-produksi-*.json` | T, TL | lengkap, kompatibilitas S3 bucket Lightsail belum diperiksa |
 
 Jenis bukti: **L** langsung (artefak yang berjalan), **TL** tidak langsung (hasil terukur, laporan), **T** tambahan (dokumen tata kelola, surat).
 
@@ -42,7 +42,7 @@ Bronze memuat 1.607.907 baris dalam 780 berkas Parquet; dua sumber arsip menyumb
 
 - **Payload asli yang tidak disimpan utuh: 2,63 GB.** Ini 91 berkas arsip global PBB dan Bank Dunia yang hanya disimpan ekstrak Indonesianya. Arsip WDI juga disimpan termampatkan: 1,17 GB JSON menjadi 26 MB.
 - **Data rujukan M1** (`artefak/referensi`, 0,7 MB) dan Gold paket v3 (17 MB).
-- **Berkas unduhan tangan BNPB dan Bappenas** yang belum terkumpul (`docs/gudang/unduh-tangan.md` di DSIC-SDG).
+- **Berkas unduhan tangan BNPB dan Bappenas** yang belum terkumpul (`docs/gudang/unduh-tangan.md` di repositori penelitian Ardika).
 
 **KUK 1.2 Perkiraan pertumbuhan.** Frekuensi rilis tidak ditebak, tetapi diukur dari registri rilis 2021–2026.
 

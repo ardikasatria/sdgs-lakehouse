@@ -11,7 +11,7 @@
 | 1. Menyusun kerangka kualitas data | menetapkan tujuh dimensi dengan parameter, standar minimum, dan alasan per pemakai; membekukannya pada commit `89e0387` sebelum penilaian | tabel pada Elemen 1; `standar` di `data/gudang/m3_kualitas.json` | T, TL | lengkap |
 | 2. Menilai kualitas awal dan menemukan akar masalah | menilai 12 sumber pada tujuh dimensi, menelusuri akar setiap pelanggaran sampai ke payload atau ke kerangka | `data/serkom/kualitas-per-sumber.csv`, `data/gudang/m3_kualitas.json` | TL | lengkap |
 | 3. Menetapkan prioritas perbaikan | memberi skor setiap masalah (baris × bobot dampak), menetapkan tindakan dan pemilik per masalah | `data/serkom/prioritas-perbaikan.csv`; tabel pada Elemen 3 | TL, T | lengkap, dua tindakan menunggu jawaban produsen |
-| 4. Menjalankan operasi koreksi, mengukur, dan memantau | koreksi di aturan, ukur ulang dari Raw, pantau lewat 139 node dbt di setiap jalan; lima insiden ditangani dengan pola yang sama | `data/gudang/m4_sidik_gold.json` (139 node lulus); `data/gudang/silver_ringkasan.json`; `src/sdg_gudang/silver/kualitas.py` di DSIC-SDG | L, TL | lengkap, kode belum disalin ke `code/` |
+| 4. Menjalankan operasi koreksi, mengukur, dan memantau | koreksi di aturan, ukur ulang dari Raw, pantau lewat 139 node dbt di setiap jalan; lima insiden ditangani dengan pola yang sama | `data/gudang/m4_sidik_gold.json` (139 node lulus); `data/gudang/silver_ringkasan.json`; `src/sdg_gudang/silver/kualitas.py` di repositori penelitian Ardika | L, TL | lengkap |
 
 Jenis bukti: **L** langsung (artefak yang berjalan), **TL** tidak langsung (hasil terukur, laporan), **T** tambahan (dokumen tata kelola, surat).
 
@@ -115,4 +115,4 @@ Skor prioritas = baris terdampak × bobot dampak. Bobotnya 3 bila seri dipakai p
 - **Dua keterbatasan kerangka belum masuk praregistrasi berikutnya:** validitas untuk `massa_setara` (emisi bersih boleh negatif) dan kelengkapan untuk tabel kejadian. Keduanya sengaja tidak diterapkan surut.
 - **Duplikat WHO GHO** belum dilaporkan ke sumbernya; kedua nilai disimpan dan kuncinya ditandai, tidak dipilih salah satu.
 - **Pemantauan baru bersifat per jalan**, belum berjadwal, karena konektor belum berjadwal (langkah 02, faktor kesegaran).
-- **Kode belum disalin ke `code/`.** `src/sdg_gudang/silver/kualitas.py`, aturan S01–S09, dan uji unitnya masih di DSIC-SDG.
+- **Kode yang dirujuk tersalin di [`code/`](../../code/README.md)** dari repositori penelitian Ardika pada commit `dcaa55e` (22 Oktober 2026), termasuk jalur berkasnya yang disebut di atas.

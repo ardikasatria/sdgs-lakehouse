@@ -1,0 +1,23 @@
+tabel,kode_tpb,kode_global,hubungan,alasan,steward,tanggal
+ilo_sdg8_informal,8.3.1*,8.3.1,kode_sama,seri ILOSTAT SDG_0831_SEX_ECO_RT adalah seri indikator global 8.3.1; tingkat nasional,penanggung jawab penelitian,2026-10-20
+ilo_sdg8_neet,8.6.1*,8.6.1,kode_sama,seri ILOSTAT SDG_0861_SEX_RT adalah seri indikator global 8.6.1; tingkat nasional,penanggung jawab penelitian,2026-10-20
+ilo_sdg8_produktivitas,8.2.1*,8.2.1,kode_sama,seri ILOSTAT SDG_0821_NOC_RT adalah seri indikator global 8.2.1; tingkat nasional,penanggung jawab penelitian,2026-10-20
+ilo_sdg8_tpt,8.5.2*,8.5.2,kode_sama,tingkat pengangguran ILOSTAT definisi ICLS-19; dapat berbeda dari TPT Sakernas BPS (kelas sebab metodologi pada rekonsiliasi),penanggung jawab penelitian,2026-10-20
+ilo_sdg8_upah,8.5.1*,8.5.1,kode_sama,seri ILOSTAT SDG_0851_SEX_OCU_NB adalah seri indikator global 8.5.1; tingkat nasional,penanggung jawab penelitian,2026-10-20
+sdg4_amh_rinci,4.6.1.(a),4.6.1,kode_sama,angka melek aksara 15+ dengan rincian desa-kota dan jenis kelamin,penanggung jawab penelitian,2026-10-20
+sdg4_apk,4.3.1.(a),4.3.1,sebagian,hanya subindikator perguruan tinggi berpadanan dengan 4.3.1.(a); jenjang SD sampai SM tidak mempunyai kode TPB,penanggung jawab penelitian,2026-10-20
+sdg4_apk_paud,,4.2.2,berkaitan,APK PAUD (usia 3-6 tahun) bukan partisipasi satu tahun sebelum usia SD seperti 4.2.2*,penanggung jawab penelitian,2026-10-20
+sdg4_apm,,4.5.1,berkaitan,4.5.1* adalah rasio APM perempuan terhadap laki-laki; tabel memuat APM per jenjang,penanggung jawab penelitian,2026-10-20
+sdg4_aps,,,bukan_indikator_tpb,angka partisipasi sekolah adalah indikator pendukung pendidikan,penanggung jawab penelitian,2026-10-20
+sdg4_hls,,,bukan_indikator_tpb,harapan lama sekolah adalah komponen IPM,penanggung jawab penelitian,2026-10-20
+sdg4_rls,,,bukan_indikator_tpb,rata-rata lama sekolah adalah komponen IPM,penanggung jawab penelitian,2026-10-20
+sdg6_air_layak,,6.1.1,berkaitan,akses air minum layak berbeda dari layanan yang dikelola secara aman pada 6.1.1*,penanggung jawab penelitian,2026-10-20
+sdg7_bahan_bakar,,7.1.2,berkaitan,sebaran bahan bakar memasak; berkaitan dengan 7.1.2 dan 7.1.2.(b) rasio penggunaan gas rumah tangga,penanggung jawab penelitian,2026-10-20
+sdg7_listrik_pln,,7.1.1,berkaitan,sumber penerangan listrik PLN; rasio elektrifikasi 7.1.1* juga mencakup listrik non-PLN,penanggung jawab penelitian,2026-10-20
+sdg7_bauran_ebt,,7.2.1,kode_sama,bauran energi terbarukan dalam konsumsi energi final sama dengan definisi global 7.2.1; tidak ada di katalog TPB provinsi,penanggung jawab penelitian,2026-10-20
+sdg7_intensitas_energi,,7.3.1,kode_sama,intensitas energi primer terhadap PDB sama dengan definisi global 7.3.1; tidak ada di katalog TPB provinsi,penanggung jawab penelitian,2026-10-20
+sdg15_tutupan_hutan,,15.1.1,proksi,luas tutupan hutan dan non-hutan; proporsi terhadap luas daratan perlu dihitung,penanggung jawab penelitian,2026-10-20
+sdg3_3_2_1_v1584,,3.2.1,berkaitan,angka kematian bayi bukan 3.2.1 (balita) maupun 3.2.2 (neonatal); katalog memadankan var 1584 dengan keduanya lewat kemiripan judul dan nama tabel v3 memuat 3_2_1; kode TPB nasional untuk AKB diperiksa pada Metadata TPB,penanggung jawab penelitian,2026-10-20
+sdg6_sanitasi_aman,6.2.1*,6.2.1,kode_sama,var 2179 sanitasi aman; katalog juga memadankan 6.1.1* (air minum) yang tidak berlaku untuk tabel ini,penanggung jawab penelitian,2026-10-20
+sdg8_produktivitas,8.2.1*,8.2.1,kode_sama,laju pertumbuhan PDB per tenaga kerja; katalog juga memadankan 8.1.1* (PDB per kapita) yang tidak berlaku,penanggung jawab penelitian,2026-10-20
+sdg8_tpt,8.5.2*,8.5.2,kode_sama,tingkat pengangguran terbuka; 8.5.2.(a) adalah setengah pengangguran dan tidak berlaku,penanggung jawab penelitian,2026-10-20

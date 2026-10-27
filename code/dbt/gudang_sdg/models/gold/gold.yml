@@ -1,0 +1,94 @@
+version: 2
+
+models:
+  - name: dim_sumber
+    description: Produsen data, kelas lisensi, kelas tayang, prioritas keluarga nilai pilihan.
+    columns:
+      - name: sumber
+        data_tests: [unique, not_null]
+      - name: kelas_lisensi
+        data_tests:
+          - accepted_values: {arguments: {values: ["A", "A-SA", "B", "C"]}}
+  - name: dim_rilis
+    description: Registri rilis dengan jenis bukti tanggal (brief 4 Bagian 2.4).
+    columns:
+      - name: rilis_id
+        data_tests: [unique, not_null]
+      - name: tanggal_efektif
+        data_tests: [not_null]
+      - name: jenis_bukti_tanggal
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["rilis_resmi", "pembaruan_sumber", "tanggal_unduh_berubah", "tanggal_unduh", "tidak_diketahui"]
+  - name: dim_wilayah
+    description: Dimensi wilayah tipe 2.
+    columns:
+      - name: wilayah_sk
+        data_tests: [unique, not_null]
+  - name: dim_satuan
+    columns:
+      - name: satuan_id
+        data_tests: [unique, not_null]
+  - name: dim_konsep
+    columns:
+      - name: konsep_id
+        data_tests: [unique, not_null]
+  - name: dim_periode
+    columns:
+      - name: periode
+        data_tests: [not_null]
+      - name: awal
+        data_tests: [not_null]
+  - name: fakta_observasi
+    description: Fakta observasi bitemporal, satu baris per sumber, rilis, seri, wilayah, periode, rincian.
+    data_tests:
+      - ekspresi_benar:
+          arguments:
+            ekspresi: "berlaku_sampai is null or berlaku_sampai >= berlaku_sejak"
+    columns:
+      - name: obs_id
+        data_tests: [unique, not_null]
+      - name: rilis_id
+        data_tests:
+          - relationships: {arguments: {to: ref('dim_rilis'), field: rilis_id}}
+      - name: sumber
+        data_tests:
+          - relationships: {arguments: {to: ref('dim_sumber'), field: sumber}}
+      - name: satuan_id
+        data_tests:
+          - relationships: {arguments: {to: ref('dim_satuan'), field: satuan_id}}
+      - name: konsep_id
+        data_tests:
+          - relationships: {arguments: {to: ref('dim_konsep'), field: konsep_id}}
+      - name: sifat
+        data_tests:
+          - accepted_values: {arguments: {values: ["resmi", "disesuaikan", "estimasi", "model", "tidak_diketahui"]}}
+      - name: nilai_angka
+        data_tests: [not_null]
+  - name: fakta_selisih
+    description: Pasangan rilis x rilis dan sumber x sumber dengan kelas sebab K1-K9.
+    columns:
+      - name: selisih_id
+        data_tests: [unique, not_null]
+      - name: status
+        data_tests:
+          - accepted_values: {arguments: {values: ["sama", "pembulatan", "selisih"]}}
+      - name: kelas_sebab
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["satuan_skala", "cakupan_wilayah", "granularitas", "periode_acuan", "definisi", "vintage",
+                         "turunan", "metodologi", "tidak_terjelaskan"]
+  - name: nilai_pilihan
+    description: Nilai pilihan as-of tanggal acuan (praregistrasi M3 Bagian 5), semua kelas lisensi.
+    data_tests:
+      - kunci_unik: {arguments: {kolom: "konsep_id, wilayah_kode, periode, rincian"}}
+    columns:
+      - name: obs_id
+        data_tests:
+          - relationships: {arguments: {to: ref('fakta_observasi'), field: obs_id}}
+  - name: nilai_pilihan_tayang
+    description: Nilai pilihan dengan sumber kelas B dan C dikeluarkan (boleh tampil di game dan Bravais).
+    data_tests:
+      - kunci_unik: {arguments: {kolom: "konsep_id, wilayah_kode, periode, rincian"}}

@@ -1,0 +1,12 @@
+aturan_id,urutan,berlaku_untuk,kelas_sebab,tingkat_bukti,syarat
+K0a,0,semua,sama,teramati,nilai kedua sisi identik setelah normalisasi satuan kanonik
+K0b,0,semua,pembulatan,teramati,selisih mutlak <= satu satuan pada desimal terakhir sisi yang lebih kasar (R01 H4)
+K1,1,semua,satuan_skala,teramati,satuan_id berbeda dan selisih hilang setelah konversi faktor dim_satuan; atau rasio nilai berada dalam 1 % dari 10^k untuk k bilangan bulat tak nol |k| <= 6; atau persen lawan proporsi (rasio 100)
+K2,2,semua,cakupan_wilayah,kandidat,wilayah terdampak pemekaran (punya induk atau anak di dim_wilayah) dan versi wilayah yang dipakai sumber (dari sistem kode dan periode) berbeda dari versi as-of periode; atau salah satu sisi bertanda cakupan_parsial
+K3,3,semua,granularitas,teramati,salah satu sisi bertanda agregasi (dihitung Silver dari tingkat lebih rinci) atau tingkat_asal sisi berbeda
+K4,4,semua,periode_acuan,kandidat,jenis_periode berbeda atau bulan_acuan berbeda (contoh Agustus lawan rata-rata tahunan)
+K5,5,semua,definisi,kandidat,hubungan padanan seri salah satu sisi bukan sama (proksi; nasional_tambahan; definisi_beda)
+K6,6,rilis_x_rilis,vintage,teramati,pasangan dua rilis berurutan dari keluarga sumber yang sama dengan kunci sama (termasuk kanal WebAPI lawan publikasi dalam keluarga BPS)
+K7,7,sumber_x_sumber,turunan,teramati,nilai sumber internasional sama atau pembulatan dengan nilai keluarga BPS pada rilis lain untuk kunci yang sama; jeda = selisih tanggal rilis
+K8,8,sumber_x_sumber,metodologi,kandidat,sifat salah satu sisi estimasi atau model sedangkan sisi lain resmi; atau hubungan padanan seri metodologi_beda
+K9,9,semua,tidak_terjelaskan,tidak_terselesaikan,tidak ada aturan sebelumnya yang cocok

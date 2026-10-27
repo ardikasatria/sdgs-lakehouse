@@ -178,7 +178,7 @@ Tanggal di atas adalah rencana pada 20 Oktober. Pelaksanaannya berjalan jauh leb
 
 **Data pendukung** (sudah ada di repositori):
 
-- [`data/serkom/raci.csv`](../../data/serkom/raci.csv): matriks RACI 24 kegiatan × 10 peran, dengan kolom fase per kegiatan. Identik dengan sumbernya di DSIC-SDG (`docs/serkom/J.62DMS00.002.1/`); sidiknya tercatat di `data/SIDIK.txt`.
+- [`data/serkom/raci.csv`](../../data/serkom/raci.csv): matriks RACI 24 kegiatan × 10 peran, dengan kolom fase per kegiatan. Identik dengan sumbernya di repositori penelitian Ardika (`docs/serkom/J.62DMS00.002.1/`); sidiknya tercatat di `data/SIDIK.txt`.
 - [`data/gudang/m4_sidik_gold.json`](../../data/gudang/m4_sidik_gold.json), [`data/gudang/m4_lineage.json`](../../data/gudang/m4_lineage.json), [`data/produk/uji-keterulangan.json`](../../data/produk/uji-keterulangan.json): dasar kolom status 24 Oktober pada KUK 4.2.
 
 ## Catatan terbuka

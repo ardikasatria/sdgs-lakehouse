@@ -1,0 +1,20 @@
+# Data product platform (brief 4 Bagian 3.4): data rujukan dan induk M1 untuk semua domain.
+nama: dp_referensi
+jenis: referensi
+domain: platform
+judul: Data rujukan dan induk Gudang SDG (wilayah, indikator, satuan, konsep)
+deskripsi: >-
+  Dimensi wilayah tipe 2 dengan kode BPS, Kemendagri, dan ISO 3166-2; indikator TPB beserta padanan global
+  dan pilar; satuan kanonik termasuk satuan lokal yang belum terdaftar; konsep observasi. Aturan global federasi
+  (kode wilayah, kode indikator, satuan) ditegakkan terhadap produk ini.
+pemilik:
+  peran: steward platform
+  nama: Ardika Satria
+  catatan: simulasi pemilik domain (brief 4 Bagian 3.4 pilihan a)
+kanal_masalah: "<pelacak isu repositori penelitian>"
+lisensi_keluaran: CC BY 4.0 (karya peneliti atas sumber terbuka)
+sla:
+  kesegaran_hari: null
+  catatan: diperbarui bila sumber rujukan berubah (pemekaran, Permen pilar, katalog TPB)
+kualitas:
+  baris_minimum: 1

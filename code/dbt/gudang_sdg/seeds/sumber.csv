@@ -1,0 +1,16 @@
+sumber,keluarga,nama_keluarga,kelas_lisensi,lisensi,boleh_tayang,prioritas_keluarga
+bnpb,bnpb,Badan Nasional Penanggulangan Bencana,A-SA,ODbL (CKAN BNPB),true,2
+bps,bps,Badan Pusat Statistik,A,"Term of use BPS (bebas, termasuk komersial)",true,1
+bps_brs,bps,Badan Pusat Statistik,A,Term of use BPS,true,1
+ccnews,ccnews,Common Crawl CC-NEWS,C,"Common Crawl Terms of Use; metadata berita berhak cipta, hanya riset internal, tidak ditayangkan",false,9
+gdelt,gdelt,GDELT 2.0 Global Knowledge Graph,A,"ketentuan GDELT: data terbuka, pemakaian bebas dengan sitasi GDELT Project (hanya metadata dan URL)",false,9
+ilostat,ilostat,ILOSTAT (ILO),A,CC BY 4.0 (data ILO terbit sejak 3 Mei 2023),true,3
+kkp,kkp,Portal Data Kementerian Kelautan dan Perikanan,B,tidak ditemukan,false,2
+rss,rss,Aliran RSS media Indonesia,C,"metadata berita berhak cipta (UU 28/2014 Pasal 43c, 44(1)a); hanya riset internal, tidak ditayangkan",false,9
+signsmart,signsmart,SIGN-SMART inventarisasi GRK (KLH/BPLH),B,tidak jelas (halaman ketentuan berisi teks templat),false,2
+sipsn,sipsn,Sistem Informasi Pengelolaan Sampah Nasional (KLH/BPLH),B,tidak ditemukan,false,2
+unsd,unsd,Global SDG Indicators Database (UNSD),B,tidak ditemukan lisensi terbuka; ketentuan umum PBB,false,3
+unsd_arsip,unsd,Global SDG Indicators Database (UNSD),B,tidak ditemukan lisensi terbuka; ketentuan umum PBB,false,3
+wdi,wdi,World Development Indicators (Bank Dunia),A,CC BY 4.0 (World Bank),true,4
+wdi_arsip,wdi,World Development Indicators (Bank Dunia),A,CC BY 4.0 (World Bank),true,4
+who_gho,who_gho,Global Health Observatory (WHO),A,CC BY 4.0 dengan ketentuan WHO,true,3

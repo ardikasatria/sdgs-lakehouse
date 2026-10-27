@@ -1,0 +1,73 @@
+# Tumpukan Gudang SDG (brief 4 M4): penyimpanan objek S3, katalog Iceberg REST, dan Trino.
+#
+# Berbeda dari eval/lakehouse_kecil/compose.yml dalam satu hal: penyimpanan objek memakai SeaweedFS
+# (antarmuka S3) dari Docker Hub, bukan MinIO Chainguard. Registri cgr.dev tidak dapat dijangkau dari
+# lingkungan cloud pembangun (20 Okt 2026), dan citra minio/minio di Docker Hub ditolak. SeaweedFS
+# menyediakan citra amd64 dan arm64, sehingga tumpukan yang sama jalan di Mac.
+#
+# Spark tidak dihidupkan. Silver dimuat ke Iceberg oleh PyIceberg dari host (sdg_gudang.gudang.muat),
+# lalu dbt-trino membangun skema bintang dan data product. Porta host digeser (+20000) agar tidak
+# bentrok dengan tumpukan lain; semua hanya di 127.0.0.1.
+#
+#   make m4-naik      # docker compose -f infra/gudang/compose.yml up -d
+#   make m4-turun     # ... down -v
+
+name: gudang-sdg
+
+x-kredensial: &kredensial
+  AWS_ACCESS_KEY_ID: ${GUDANG_S3_KUNCI:-<kunci-s3-lokal>}
+  AWS_SECRET_ACCESS_KEY: ${GUDANG_S3_RAHASIA:-<rahasia-s3-lokal>}
+  AWS_REGION: us-east-1
+
+services:
+  s3:
+    image: chrislusf/seaweedfs:3.97
+    command: ["server", "-dir=/data", "-s3", "-s3.port=8333", "-s3.config=/etc/seaweedfs/s3.json",
+              "-master.volumeSizeLimitMB=1024", "-volume.max=0"]
+    ports:
+      - "127.0.0.1:28333:8333"
+    volumes:
+      - s3-data:/data
+      - ./s3.json:/etc/seaweedfs/s3.json:ro
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8333/status || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 24
+    mem_limit: 1g
+
+  iceberg-rest:
+    image: apache/iceberg-rest-fixture:1.8.1
+    depends_on:
+      s3:
+        condition: service_healthy
+    environment:
+      <<: *kredensial
+      # WAL dan busy_timeout: tanpa keduanya SQLite menolak tulis bersamaan (SQLITE_BUSY) saat dbt membangun
+      # beberapa model sekaligus.
+      CATALOG_URI: jdbc:sqlite:/home/iceberg/iceberg_catalog.db?journal_mode=WAL&busy_timeout=30000
+      CATALOG_WAREHOUSE: s3://gudang-sdg/
+      CATALOG_IO__IMPL: org.apache.iceberg.aws.s3.S3FileIO
+      CATALOG_S3_ENDPOINT: http://s3:8333
+      CATALOG_S3_PATH__STYLE__ACCESS: "true"
+    ports:
+      - "127.0.0.1:28181:8181"
+    volumes:
+      - iceberg-catalog:/home/iceberg
+    mem_limit: 1g
+
+  trino:
+    image: trinodb/trino:476
+    depends_on: [iceberg-rest]
+    environment:
+      <<: *kredensial
+    ports:
+      - "127.0.0.1:28080:8080"
+    volumes:
+      - ./trino/iceberg.properties:/etc/trino/catalog/iceberg.properties:ro
+      - ./trino/jvm.config:/etc/trino/jvm.config:ro
+    mem_limit: 6g
+
+volumes:
+  s3-data:
+  iceberg-catalog:

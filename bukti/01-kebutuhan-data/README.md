@@ -11,7 +11,7 @@
 | 1. Menentukan bentuk aset data organisasi dan aspek pengelolaannya | menguraikan tiga fungsi organisasi yang memakai data, mengelompokkan 38 aset ke delapan kelompok menurut aktivitas pemakainya, menetapkan empat aturan penanganan, dan menyelaraskannya dengan sasaran 2026 | `data/serkom/inventaris-aset-data.csv`; dua insiden yang menjadi aturan kontrak (KUK 1.5) | TL, L | lengkap |
 | 2. Menentukan aspek tata kelola aset data organisasi | memetakan setiap aset ke tujuh tatanan kerja lewat kolom `pilar` dan `steward`, memisahkan ranah keputusan data dari TI lewat kolom `ranah_tata_kelola` | kolom `pilar`, `steward`, `ranah_tata_kelola` pada inventaris; matriks RACI (Responsible, Accountable, Consulted, Informed) di langkah 02 | TL, T | lengkap, pemilik domain masih simulasi |
 | 3. Mengidentifikasi tipe model operasional tata kelola data | membandingkan model terpusat, tereplikasi, dan terdistribusi pada keadaan organisasi ini, lalu memilih federasi | tabel perbandingan di bawah; rincian di langkah 03 | T | lengkap |
-| 4. Mengidentifikasi unsur pengelolaan aset data (data stewardship) | menetapkan tanggung jawab steward atas metadata, mendaftar aturan yang sudah berversi di git, mencatat enam isu kualitas yang sudah teridentifikasi, dan menjadikan kepatuhan sebagai pemeriksaan otomatis | kolom `steward` pada inventaris; aturan di DSIC-SDG; tabel isu kualitas di bawah | TL, T, L | lengkap, kode belum disalin ke `code/` |
+| 4. Mengidentifikasi unsur pengelolaan aset data (data stewardship) | menetapkan tanggung jawab steward atas metadata, mendaftar aturan yang sudah berversi di git, mencatat enam isu kualitas yang sudah teridentifikasi, dan menjadikan kepatuhan sebagai pemeriksaan otomatis | kolom `steward` pada inventaris; aturan di repositori penelitian Ardika; tabel isu kualitas di bawah | TL, T, L | lengkap |
 
 Jenis bukti: **L** langsung (artefak yang berjalan), **TL** tidak langsung (hasil terukur, laporan), **T** tambahan (dokumen tata kelola, surat).
 
@@ -92,7 +92,7 @@ Ketiga model dinilai pada keadaan organisasi yang sama, lalu dipilih satu. Alasa
 
 **KUK 4.1 Membuat dan mengelola metadata.** Steward setiap aset menulis deskripsi, pemilik, kontrak, dan kelas lisensi produknya. Tim platform menetapkan standar metadatanya, yaitu DCAT dan konsep SDMX dengan Metadata Indikator TPB Bappenas sebagai sumber definisi. Repositori metadata yang akhirnya dipakai adalah versi ringan (DCAT per data product, dokumentasi dbt, katalog Iceberg REST), bukan OpenMetadata seperti yang direncanakan pada inventaris; alasannya dijelaskan pada langkah 05.
 
-**KUK 4.2 Mendokumentasikan aturan dan standar.** Aturan berikut sudah terdokumentasi dan berversi di git pada repositori penelitian DSIC-SDG.
+**KUK 4.2 Mendokumentasikan aturan dan standar.** Aturan berikut sudah terdokumentasi dan berversi di git pada repositori penelitian Ardika.
 
 - Kontrak data product `config/sdg_game/contract*.json`: skema, toleransi, dan kelayakan level.
 - Aturan klasifikasi ketidaksesuaian H3: delapan aturan, dibekukan sebelum data diperiksa.
@@ -115,7 +115,7 @@ Ketiga model dinilai pada keadaan organisasi yang sama, lalu dipilih satu. Alasa
 - Uji kontrak dan uji kelayakan berjalan pada setiap kompilasi.
 - Pemeriksa di server menolak paket yang jawabannya tidak cocok.
 - Guardrail Bravais menolak menyebut angka tanpa memanggil tool.
-- Daftar tugas pemilik diperbarui mengikuti keadaan (`docs/game/tugas-manual-pemilik.md` di DSIC-SDG).
+- Daftar tugas pemilik diperbarui mengikuti keadaan (`docs/game/tugas-manual-pemilik.md` di repositori penelitian Ardika).
 - Satu aturan pemasangan: produksi hanya berubah atas izin penanggung jawab.
 
 ## Aspek kritis: ketepatan mengidentifikasi aset data pada tatanan kerja
@@ -124,11 +124,11 @@ Inventaris diturunkan dari folder dan tabel yang nyata pada 20 Oktober 2026, buk
 
 **Data pendukung** (sudah ada di repositori):
 
-- [`data/serkom/inventaris-aset-data.csv`](../../data/serkom/inventaris-aset-data.csv): 38 aset dengan kolom lokasi, format, ukuran, produsen, steward, kelas lisensi, sensitivitas, retensi, status, dan ranah tata kelola. Salinan identik dengan sumbernya di DSIC-SDG (`docs/serkom/J.62DMS00.001.1/`), sidiknya tercatat di `data/SIDIK.txt`.
+- [`data/serkom/inventaris-aset-data.csv`](../../data/serkom/inventaris-aset-data.csv): 38 aset dengan kolom lokasi, format, ukuran, produsen, steward, kelas lisensi, sensitivitas, retensi, status, dan ranah tata kelola. Salinan identik dengan sumbernya di repositori penelitian Ardika (`docs/serkom/J.62DMS00.001.1/`), sidiknya tercatat di `data/SIDIK.txt`.
 
 ## Catatan terbuka
 
 - **Pemilik domain masih simulasi.** Keempat domain pilar pada tatanan kerja masih saya pegang sendiri; kolom `steward` pada inventaris menyebut peran, bukan orang yang sudah ditunjuk. Sisi teknis federasi sudah terbukti, sisi organisasinya belum.
 - **Inventaris adalah potret 20 Oktober 2026.** Sebagian aset berstatus `rencana` sudah dikerjakan pada fase M1–M5 dan dibuktikan pada langkah 04–10, dan keputusan repositori metadata (B14) berubah dari OpenMetadata menjadi versi ringan. Kolom `status` dan baris B14 belum disegarkan; saya biarkan apa adanya agar sidik berkas tetap cocok, dan perubahannya dicatat di sini.
 - **Surat izin masih draf.** Izin untuk sumber kelas B (B03 UNSD, B05 SIPSN, B07 SIGN-SMART, B08 KKP) dan izin cuplikan berita ANTARA (B12) belum dikirim. Sampai izin terbit, sumber-sumber itu tidak tampil di game.
-- **Kode belum disalin.** Kontrak, uji kelayakan, dan pemeriksa server yang dirujuk pada KUK 1.5 dan 4.4 masih berada di repositori DSIC-SDG yang privat. Bagian yang dirujuk akan disalin ke `code/` sesuai daftar di `code/README.md`; sebelum itu, kode ditunjukkan langsung saat demonstrasi.
+- **Kode yang dirujuk tersalin di [`code/`](../../code/README.md)** dari repositori penelitian Ardika pada commit `dcaa55e` (22 Oktober 2026), termasuk jalur berkasnya yang disebut di atas.

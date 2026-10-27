@@ -1,0 +1,9 @@
+{
+  "identities": [
+    {
+      "name": "gudang",
+      "credentials": [{"accessKey": "<kunci-s3-lokal>", "secretKey": "<rahasia-s3-lokal>"}],
+      "actions": ["Admin", "Read", "Write", "List", "Tagging"]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+version: 2
+sources:
+  - name: silver
+    description: Silver M3, dimuat PyIceberg (sdg_gudang.gudang.muat).
+    tables:
+      - name: observasi
+      - name: karantina
+      - name: fakta_selisih
+  - name: rujukan
+    description: dp_referensi M1, registri rilis M2, padanan seri M3.
+    tables:
+      - name: dim_wilayah
+      - name: dim_indikator
+      - name: dim_satuan
+      - name: dim_pilar
+      - name: dim_rilis
+      - name: padanan_seri
+      - name: alias_satuan
+      - name: peta_tabel_indikator

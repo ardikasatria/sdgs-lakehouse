@@ -1,0 +1,26 @@
+# Data product brief 4 Bagian 3.4. Kontrak dbt dan rekaman DCAT dibangkitkan dari berkas ini:
+#   python3 -m sdg_gudang.gudang.kontrak
+nama: dp_ekonomi_provinsi
+jenis: pilar
+domain: ekonomi
+judul: Nilai pilihan indikator Pilar Pembangunan Ekonomi, tingkat provinsi
+deskripsi: >-
+  Satu nilai pilihan per konsep, wilayah provinsi, periode, dan rincian untuk tujuan 7, 8, 9, 10, 17, dipilih
+  as-of tanggal acuan menurut aturan nilai pilihan praregistrasi M3 Bagian 5, hanya dari sumber kelas
+  lisensi A atau A-SA. Alasan pilihan dan rilis asal ikut tersaji.
+pilar: ekonomi
+tujuan: [7, 8, 9, 10, 17]
+tingkat: provinsi
+pemilik:
+  peran: steward domain Pilar Pembangunan Ekonomi
+  nama: Ardika Satria
+  catatan: simulasi pemilik domain (brief 4 Bagian 3.4 pilihan a) sampai keputusan pemilik domain diambil
+kanal_masalah: "<pelacak isu repositori penelitian>"
+lisensi_keluaran: mengikuti lisensi sumber per baris (kolom sumber); kelas B dan C tidak dimuat
+sla:
+  kesegaran_hari: 400
+  catatan: rilis terbaru di produk tidak lebih tua dari 400 hari terhadap tanggal acuan (BPS dan kustodian terbit tahunan)
+kualitas:
+  baris_minimum: 1
+  wilayah_dalam_dim_wilayah: true
+  satuan_dalam_dim_satuan: true

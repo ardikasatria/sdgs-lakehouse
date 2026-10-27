@@ -1,0 +1,13 @@
+gudang_sdg:
+  target: lokal
+  outputs:
+    lokal:
+      type: trino
+      method: none
+      user: gudang
+      host: "{{ env_var('GUDANG_TRINO_HOST', '127.0.0.1') }}"
+      port: "{{ env_var('GUDANG_TRINO_PORT', '28080') | int }}"
+      database: iceberg
+      schema: gold
+      threads: 4
+      http_scheme: http

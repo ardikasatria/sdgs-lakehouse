@@ -1,0 +1,29 @@
+# Dibangkitkan dari config/mesh/dp_rilis.yaml oleh sdg_gudang.gudang.kontrak; jangan disunting.
+version: 2
+models:
+- name: dp_rilis
+  description: Satu baris per rilis per sumber dengan tanggal rilis, jenis bukti tanggal (lima tingkat, brief 4
+    Bagian 2.4), tanggal efektif untuk kueri as-of, kelas lisensi, dan boleh tidaknya ditayangkan.
+  config:
+    meta:
+      domain: platform
+      pemilik: Ardika Satria
+      peran_pemilik: steward platform
+      kanal_masalah: "<pelacak isu repositori penelitian>"
+      sla_kesegaran_hari: 31
+      berkas_konfigurasi: config/mesh/dp_rilis.yaml
+  data_tests:
+  - baris_minimum:
+      arguments:
+        n: 1
+  - segar:
+      arguments:
+        kolom: snapshot_pertama
+        hari: 31
+      config:
+        severity: warn
+  columns:
+  - name: rilis_id
+    data_tests:
+    - unique
+    - not_null

@@ -1,0 +1,27 @@
+# Proyek dbt Gudang SDG (brief 4 M4): skema bintang bitemporal (gold) dan data product (dp) atas Trino.
+name: gudang_sdg
+version: "0.4.0"
+config-version: 2
+profile: gudang_sdg
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+vars:
+  # Tanggal acuan nilai pilihan as-of (praregistrasi M3 Bagian 5); diganti lewat --vars.
+  tanggal_acuan: "2026-10-20"
+
+models:
+  gudang_sdg:
+    +materialized: table
+    gold:
+      +schema: gold
+    dp:
+      +schema: dp
+seeds:
+  gudang_sdg:
+    +schema: rujukan

@@ -1,0 +1,59 @@
+# Dibangkitkan dari config/mesh/dp_referensi.yaml oleh sdg_gudang.gudang.kontrak; jangan disunting.
+version: 2
+models:
+- name: dp_referensi_wilayah
+  description: 'Data rujukan dan induk Gudang SDG (wilayah, indikator, satuan, konsep): wilayah'
+  config:
+    meta:
+      domain: platform
+      pemilik: Ardika Satria
+      peran_pemilik: steward platform
+      kanal_masalah: "<pelacak isu repositori penelitian>"
+      sla_kesegaran_hari: null
+      berkas_konfigurasi: config/mesh/dp_referensi.yaml
+  data_tests:
+  - baris_minimum:
+      arguments:
+        n: 1
+- name: dp_referensi_indikator
+  description: 'Data rujukan dan induk Gudang SDG (wilayah, indikator, satuan, konsep): indikator'
+  config:
+    meta:
+      domain: platform
+      pemilik: Ardika Satria
+      peran_pemilik: steward platform
+      kanal_masalah: "<pelacak isu repositori penelitian>"
+      sla_kesegaran_hari: null
+      berkas_konfigurasi: config/mesh/dp_referensi.yaml
+  data_tests:
+  - baris_minimum:
+      arguments:
+        n: 1
+- name: dp_referensi_satuan
+  description: 'Data rujukan dan induk Gudang SDG (wilayah, indikator, satuan, konsep): satuan'
+  config:
+    meta:
+      domain: platform
+      pemilik: Ardika Satria
+      peran_pemilik: steward platform
+      kanal_masalah: "<pelacak isu repositori penelitian>"
+      sla_kesegaran_hari: null
+      berkas_konfigurasi: config/mesh/dp_referensi.yaml
+  data_tests:
+  - baris_minimum:
+      arguments:
+        n: 1
+- name: dp_referensi_konsep
+  description: 'Data rujukan dan induk Gudang SDG (wilayah, indikator, satuan, konsep): konsep'
+  config:
+    meta:
+      domain: platform
+      pemilik: Ardika Satria
+      peran_pemilik: steward platform
+      kanal_masalah: "<pelacak isu repositori penelitian>"
+      sla_kesegaran_hari: null
+      berkas_konfigurasi: config/mesh/dp_referensi.yaml
+  data_tests:
+  - baris_minimum:
+      arguments:
+        n: 1

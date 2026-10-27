@@ -28,14 +28,14 @@ Folder bukti diurutkan mengikuti urutan pekerjaan, bukan urutan nomor unit. Seti
 | --- | --- |
 | `bukti/` | satu folder per langkah: apa yang dikerjakan, bukti per elemen, catatan terbuka |
 | `data/` | ringkasan hasil terukur yang menjadi dasar angka, dengan asal dan sidiknya |
-| `code/` | salinan kode gudang yang dirujuk bukti |
+| `code/` | salinan kode gudang yang dirujuk bukti, dari commit `dcaa55e` repositori penelitian Ardika |
 | `report/` | laporan portofolio |
 | `berkas-asesmen/` | FR.APL.01, FR.APL.02, persyaratan; `pribadi/` tidak pernah di-commit |
 
 ## Perintah
 
 ```bash
-make data      # salin ringkasan dari penelitian Ardika Satria
+make data      # salin ringkasan dari repositori penelitian Ardika (PENELITIAN=/jalur/repositori-penelitian)
 make sidik     # catat sha256 data ke data/SIDIK.txt
 make periksa   # pastikan data belum berubah
 ```

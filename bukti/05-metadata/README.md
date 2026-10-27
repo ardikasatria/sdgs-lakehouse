@@ -9,8 +9,8 @@
 | Elemen | Yang saya kerjakan | Bukti | Jenis | Status |
 | --- | --- | --- | --- | --- |
 | 1. Mendefinisikan kebutuhan metadata | memetakan tiga konsumen ke jenis metadata bisnis, tata kelola, dan teknis; merancang arsitektur empat lapis; menetapkan standar wajib per data product, distribusi, dan observasi | tabel pada Elemen 1 | T | lengkap |
-| 2. Membangun metadata | membangkitkan `metadata.jsonld` dan manifest dari pembangun `dp_referensi`; 9 rekaman DCAT per data product; kontrak dbt dari YAML; lineage 166 simpul dan 320 sisi; TPB-KG 85.734 tripel sebagai metadata semantik | `data/gudang/m4_lineage.json`, `data/gudang/m5_kg_ringkasan.json`, `data/produk/uji-graf.json`; `artefak/mesh/*.jsonld` di DSIC-SDG | TL, L | lengkap, repositori versi ringan atas keputusan sendiri |
-| 3. Menggunakan metadata | mendistribusikan metadata di tempat yang sama dengan data (tabel `dp_referensi_*`, `dp_rilis`, kolom provenans per baris); analisis cakupan indikator dari metadata saja; tiga mekanisme pemeliharaan; provenans sebagai alat Bravais | `data/produk/uji-keterikatan.json`; `sdg_gudang.gudang.kontrak` dan uji `test_gudang_kontrak` di DSIC-SDG | TL, L | lengkap, kode belum disalin ke `code/` |
+| 2. Membangun metadata | membangkitkan `metadata.jsonld` dan manifest dari pembangun `dp_referensi`; 9 rekaman DCAT per data product; kontrak dbt dari YAML; lineage 166 simpul dan 320 sisi; TPB-KG 85.734 tripel sebagai metadata semantik | `data/gudang/m4_lineage.json`, `data/gudang/m5_kg_ringkasan.json`, `data/produk/uji-graf.json`; `artefak/mesh/*.jsonld` di repositori penelitian Ardika | TL, L | lengkap, repositori versi ringan atas keputusan sendiri |
+| 3. Menggunakan metadata | mendistribusikan metadata di tempat yang sama dengan data (tabel `dp_referensi_*`, `dp_rilis`, kolom provenans per baris); analisis cakupan indikator dari metadata saja; tiga mekanisme pemeliharaan; provenans sebagai alat Bravais | `data/produk/uji-keterikatan.json`; `sdg_gudang.gudang.kontrak` dan uji `test_gudang_kontrak` di repositori penelitian Ardika | TL, L | lengkap |
 
 Jenis bukti: **L** langsung (artefak yang berjalan), **TL** tidak langsung (hasil terukur, laporan), **T** tambahan (dokumen tata kelola, surat).
 
@@ -118,4 +118,4 @@ Selisih proporsi terikat 0,862 dengan selang kepercayaan 0,831–0,888. Tanpa al
 - **Metadata hanya untuk 9 data product dan 12 tabel `dp`.** Tabel Bronze dan Silver baru punya metadata teknis dari katalog Iceberg, belum rekaman DCAT.
 - **72 satuan lokal belum dikurasi** ke satuan kanonik; utangnya terukur tetapi belum dilunasi.
 - **Pemeriksaan klaim berita baru menjangkau dua indikator**, sehingga lapis semantik untuk klaim belum teruji luas.
-- **Kode belum disalin ke `code/`.** `sdg_gudang/gudang/kontrak.py`, `kg.py`, `lineage.py`, dan `artefak/mesh/*.jsonld` masih di DSIC-SDG.
+- **Kode yang dirujuk tersalin di [`code/`](../../code/README.md)** dari repositori penelitian Ardika pada commit `dcaa55e` (22 Oktober 2026), termasuk jalur berkasnya yang disebut di atas.

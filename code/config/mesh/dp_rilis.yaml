@@ -1,0 +1,19 @@
+# Data product platform (brief 4 Bagian 3.4): registri vintage semua sumber.
+nama: dp_rilis
+jenis: rilis
+domain: platform
+judul: Registri rilis dan bukti tanggal Gudang SDG
+deskripsi: >-
+  Satu baris per rilis per sumber dengan tanggal rilis, jenis bukti tanggal (lima tingkat, brief 4 Bagian 2.4),
+  tanggal efektif untuk kueri as-of, kelas lisensi, dan boleh tidaknya ditayangkan.
+pemilik:
+  peran: steward platform
+  nama: Ardika Satria
+  catatan: simulasi pemilik domain (brief 4 Bagian 3.4 pilihan a)
+kanal_masalah: "<pelacak isu repositori penelitian>"
+lisensi_keluaran: CC BY 4.0 (metadata rilis)
+sla:
+  kesegaran_hari: 31
+  catatan: registri diperbarui sedikitnya setiap bulan dari snapshot akuisisi
+kualitas:
+  baris_minimum: 1

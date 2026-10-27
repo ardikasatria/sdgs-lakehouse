@@ -8,10 +8,10 @@
 
 | Elemen | Yang saya kerjakan | Bukti | Jenis | Status |
 | --- | --- | --- | --- | --- |
-| 1. Mendefinisikan kebutuhan akan integrasi data | merumuskan kebutuhan konsumen (satu nilai pilihan, semua nilai tetap dapat dipanggil), kunci relasi antardata, tabel padanan 105 seri dalam 36 konsep, dan tiga kelompok business rule yang dibekukan sebelum perbandingan | `data/gudang/m3_rekonsiliasi_ringkasan.json` (sha256 dan commit berkas beku); praregistrasi dan `config/rekonsiliasi/` di DSIC-SDG | T, TL | lengkap |
+| 1. Mendefinisikan kebutuhan akan integrasi data | merumuskan kebutuhan konsumen (satu nilai pilihan, semua nilai tetap dapat dipanggil), kunci relasi antardata, tabel padanan 105 seri dalam 36 konsep, dan tiga kelompok business rule yang dibekukan sebelum perbandingan | `data/gudang/m3_rekonsiliasi_ringkasan.json` (sha256 dan commit berkas beku); praregistrasi dan `config/rekonsiliasi/` di repositori penelitian Ardika | T, TL | lengkap |
 | 2. Melakukan data discovery | mengatalogkan 12 sumber, memprofilkan kualitas tujuh dimensi per sumber sebagai syarat integrasi, dan mengukur konsistensi antarsumber lewat rekonsiliasi | `data/gudang/m3_kualitas.json`, `data/produk/uji-integrasi.json` | TL | lengkap |
 | 3. Mendokumentasikan data lineage | mencatat lineage pada tingkat baris (sha256 Raw di setiap baris) dan tingkat aset (166 simpul, 320 sisi), menguji ekspor ke paket level identik byte, dan mendokumentasikan lima usulan perbaikan aliran | `data/gudang/m4_lineage.json`, `data/produk/uji-keterulangan.json` | TL, L | lengkap, dua usulan belum diterapkan |
-| 4. Membuat profil data | menguji identitas lima tempat untuk setiap sel Bronze pada 54 tabel, dan menerapkan kelas lisensi serta pagar privasi secara mekanis | `data/gudang/silver_ringkasan.json`; `src/sdg_gudang/silver/` di DSIC-SDG | TL, L | lengkap, kode belum disalin ke `code/` |
+| 4. Membuat profil data | menguji identitas lima tempat untuk setiap sel Bronze pada 54 tabel, dan menerapkan kelas lisensi serta pagar privasi secara mekanis | `data/gudang/silver_ringkasan.json`; `src/sdg_gudang/silver/` di repositori penelitian Ardika | TL, L | lengkap |
 
 Jenis bukti: **L** langsung (artefak yang berjalan), **TL** tidak langsung (hasil terukur, laporan), **T** tambahan (dokumen tata kelola, surat).
 
@@ -105,4 +105,4 @@ Dua sikap menjadi inti aspek kritis ini. Pertama, **tidak membuang**: baris yang
 - **Konsistensi hanya diukur pada 32 konsep berpasangan**; 4 konsep hanya punya satu keluarga, dan sumber sektoral (BNPB, SIPSN, SIGN-SMART, KKP) belum punya pembanding antarkeluarga.
 - **Satu padanan seri dilewati**: seri triwulanan ILOSTAT `UNE_DEAP_SEX_AGE_RT` (32 observasi) tidak dibandingkan karena periodenya tidak sepadan dengan tahunan.
 - **Pseudonim ekspor peserta** diterapkan di kode pada 24 Oktober; keadaan di produksi dicatat pada langkah 11.
-- **Kode belum disalin ke `code/`.** `src/sdg_gudang/silver/`, `config/rekonsiliasi/`, dan praregistrasi masih di DSIC-SDG.
+- **Kode yang dirujuk tersalin di [`code/`](../../code/README.md)** dari repositori penelitian Ardika pada commit `dcaa55e` (22 Oktober 2026), termasuk jalur berkasnya yang disebut di atas.

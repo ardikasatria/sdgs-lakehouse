@@ -8,15 +8,15 @@
 
 | Elemen | Yang saya kerjakan | Bukti | Jenis | Status |
 | --- | --- | --- | --- | --- |
-| 1. Mendefinisikan kebutuhan reference and master data | menurunkan lima kebutuhan dari kesalahan nyata, menganalisis delapan sumber rujukan, dan menetapkan definisi data yang dipakai semua tabel | tabel pada Elemen 1; `raw/referensi/2026-10-20/SUMBER.md` di DSIC-SDG | T | lengkap |
-| 2. Membangun reference and master data | membangun lima tabel rujukan, dimensi wilayah tipe 2 (42 baris), dua tabel pemetaan, dan ontologi SDG dengan validasi SHACL | `data/gudang/m4_sidik_gold.json` (tabel `dp_referensi_*`); `src/sdg_gudang/referensi.py` di DSIC-SDG | TL, L | lengkap, kode belum disalin ke `code/` |
-| 3. Menggunakan reference and master data | menyediakan satu resolver untuk semua konsumen dan mengelola lima jenis perubahan, dibuktikan 11 uji unit | `tests/unit/test_sdg_gudang_referensi.py` di DSIC-SDG; `data/gudang/m5_kg_ringkasan.json` | L, TL | lengkap, kode belum disalin ke `code/` |
+| 1. Mendefinisikan kebutuhan reference and master data | menurunkan lima kebutuhan dari kesalahan nyata, menganalisis delapan sumber rujukan, dan menetapkan definisi data yang dipakai semua tabel | tabel pada Elemen 1; `raw/referensi/2026-10-20/SUMBER.md` di repositori penelitian Ardika | T | lengkap |
+| 2. Membangun reference and master data | membangun lima tabel rujukan, dimensi wilayah tipe 2 (42 baris), dua tabel pemetaan, dan ontologi SDG dengan validasi SHACL | `data/gudang/m4_sidik_gold.json` (tabel `dp_referensi_*`); `src/sdg_gudang/referensi.py` di repositori penelitian Ardika | TL, L | lengkap |
+| 3. Menggunakan reference and master data | menyediakan satu resolver untuk semua konsumen dan mengelola lima jenis perubahan, dibuktikan 11 uji unit | `tests/unit/test_sdg_gudang_referensi.py` di repositori penelitian Ardika; `data/gudang/m5_kg_ringkasan.json` | L, TL | lengkap |
 
 Jenis bukti: **L** langsung (artefak yang berjalan), **TL** tidak langsung (hasil terukur, laporan), **T** tambahan (dokumen tata kelola, surat).
 
 ## Kedudukan langkah ini
 
-Pekerjaan ini dikerjakan 20 Oktober 2026 pada fase M1 (data rujukan dan metadata), sebelum konektor sumber dan gudang dibangun. Urutannya disengaja: kunci bersama harus ada lebih dulu, karena pemetaan Silver (langkah 07), gudang (langkah 09), dan graf pengetahuan (langkah 05) semuanya merujuk ke kunci yang sama. Artefaknya dibangun dengan satu perintah `make m1-referensi` dan diuji dengan `make m1-test` di repositori DSIC-SDG.
+Pekerjaan ini dikerjakan 20 Oktober 2026 pada fase M1 (data rujukan dan metadata), sebelum konektor sumber dan gudang dibangun. Urutannya disengaja: kunci bersama harus ada lebih dulu, karena pemetaan Silver (langkah 07), gudang (langkah 09), dan graf pengetahuan (langkah 05) semuanya merujuk ke kunci yang sama. Artefaknya dibangun dengan satu perintah `make m1-referensi` dan diuji dengan `make m1-test` di repositori repositori penelitian Ardika.
 
 ## Elemen 1. Kebutuhan reference and master data
 
@@ -130,7 +130,7 @@ Sebelas uji unit di `tests/unit/test_sdg_gudang_referensi.py` membuktikan penang
 ## Catatan terbuka
 
 - **Nama tabel v3 `sdg3_3_2_1_v1584` menyesatkan.** Namanya memuat kode 3.2.1, padahal isinya angka kematian bayi, yang bukan 3.2.1 (kematian balita) maupun 3.2.2 (kematian neonatal). Isi level tidak terpengaruh. Kode TPB nasional yang benar diperiksa setelah buku Metadata Indikator TPB diunduh tangan.
-- **Arti tanda `*` dan `()` baru dipastikan dari legenda halaman Metadata SDGs Bappenas**, belum dari buku metadata 2024. Buku itu diunduh tangan (`docs/gudang/unduh-tangan.md` di DSIC-SDG) untuk memeriksa definisi per indikator.
+- **Arti tanda `*` dan `()` baru dipastikan dari legenda halaman Metadata SDGs Bappenas**, belum dari buku metadata 2024. Buku itu diunduh tangan (`docs/gudang/unduh-tangan.md` di repositori penelitian Ardika) untuk memeriksa definisi per indikator.
 - **Pemekaran sebelum 2012 belum dimodelkan**, sehingga deret 1977–2011 pada provinsi hasil pemekaran lama belum ditandai ketidaksebandingannya.
 - **Ruang nama KG `https://sd.itera.ac.id/kg/` masih sementara.** IRI tidak dipakai di luar repositori sebelum ruang nama yang stabil diputuskan.
-- **Kode belum disalin ke `code/`.** `src/sdg_gudang/referensi.py`, `config/referensi/`, dan uji unitnya masih di DSIC-SDG; akan disalin sesuai daftar di `code/README.md`.
+- **Kode yang dirujuk tersalin di [`code/`](../../code/README.md)** dari repositori penelitian Ardika pada commit `dcaa55e` (22 Oktober 2026), termasuk jalur berkasnya yang disebut di atas.

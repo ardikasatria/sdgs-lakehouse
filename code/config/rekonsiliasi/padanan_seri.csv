@@ -1,0 +1,106 @@
+konsep_id,keluarga,seri_kode,hubungan,satuan_id,rincian,bulan_dipakai,dasar
+global:15.1.1,bps,tabel:sdg15_tutupan_hutan:persen,definisi_beda,persen,tutupan=hutan,,BPS/KLHK: tutupan hutan hasil penafsiran citra; global: luas hutan FAO FRA
+global:15.1.1,unsd,AG_LND_FRST,sama,persen,total,,seri global 15.1.1
+global:15.1.1,wdi,AG.LND.FRST.ZS,sama,persen,total,,Forest area % of land area
+global:3.2.1:bayi,bps,var1584,sama,per_1000_kelahiran_hidup,total,,Angka Kematian Bayi per 1000 kelahiran hidup (satuan dari judul tabel)
+global:3.2.1:bayi,unsd,SH_DYN_IMRT,sama,per_1000_kelahiran_hidup,Age=<1Y,,Infant mortality rate
+global:7.1.1,bps,var87,definisi_beda,persen,total,,BPS: rumah tangga dengan penerangan listrik PLN; global: penduduk dengan akses listrik
+global:7.1.1,unsd,EG_ACS_ELEC,sama,persen,total,,seri global 7.1.1
+global:7.1.1,wdi,EG.ELC.ACCS.ZS,sama,persen,total,,Access to electricity
+tpb:1.2.1*,bps,var192,sama,persen,total,3,P0 menurut provinsi dan daerah; angka tahunan resmi adalah Maret; kode TPB P0 adalah 1.2.1* (peta M1 menulis 10.1.1.(f))
+tpb:1.2.1*,unsd,SI_POV_NAHC,sama,persen,total,,seri global 1.2.1
+tpb:1.2.1*,wdi,SI.POV.NAHC,sama,persen,total,,Poverty headcount ratio at national poverty lines
+tpb:10.2.1*,bps,var2011,sama,persen,total,,judul tabel sama dengan indikator global
+tpb:10.2.1*,unsd,SI_POV_50MI,sama,persen,Quantile=B50,,seri global 10.2.1
+tpb:11.2.1.(a),bps,var2012,proksi,persen,total,,akses nyaman 0.5 km ke transportasi umum (proksi nasional)
+tpb:11.2.1.(a),unsd,SP_TRN_PUBL,sama,persen,total,,seri global 11.2.1
+tpb:16.1.3.(a),bps,var1311,proksi,persen,total,,korban kejahatan kekerasan (proksi nasional)
+tpb:16.1.3.(a),unsd,VC_VOV_PHYL,sama,persen,total,,seri global 16.1.3 kekerasan fisik
+tpb:16.1.4*,bps,var1312,sama,persen,total,,judul tabel sama dengan indikator global
+tpb:16.1.4*,unsd,VC_SNS_WALN_DRK,sama,persen,total,,seri global 16.1.4
+tpb:16.2.1.(a),bps,var2738,proksi,persen,total,,rumah tangga dengan anak 1-17 yang mengalami hukuman fisik (proksi nasional)
+tpb:16.2.1.(a),unsd,VC_VAW_PHYPYV,sama,persen,total,,seri global 16.2.1
+tpb:16.3.1.(a),bps,var2740,proksi,persen,total,,korban kekerasan yang melapor ke polisi (proksi nasional)
+tpb:16.3.1.(a),unsd,VC_PRR_PHY_VIO,sama,persen,total,,seri global 16.3.1 kekerasan fisik
+tpb:16.9.1*,bps,var1410,sama,persen,total,,judul tabel sama dengan indikator global
+tpb:16.9.1*,unsd,SG_REG_BRTH,sama,persen,Age=<5Y,,seri global 16.9.1
+tpb:16.9.1*,wdi,SP.REG.BRTH.ZS,sama,persen,total,,Completeness of birth registration
+tpb:17.1.1*,bps,var1254,sama,persen,total,,total pendapatan pemerintah terhadap PDB
+tpb:17.1.1*,unsd,GR_G14_GDP,sama,persen,total,,seri global 17.1.1
+tpb:2.1.1*,bps,var1473,sama,persen,total,,judul tabel sama dengan indikator global
+tpb:2.1.1*,unsd,SN_ITK_DEFC,sama,persen,total,,seri global 2.1.1
+tpb:2.1.1*,wdi,SN.ITK.DEFC.ZS,sama,persen,total,,Prevalence of undernourishment
+tpb:2.1.2*,bps,var1474,sama,persen,total,,judul tabel sama dengan indikator global (FIES sedang atau berat)
+tpb:2.1.2*,unsd,AG_PRD_FIESMS,sama,persen,total,,seri global 2.1.2 sedang atau berat
+tpb:2.1.2*,wdi,SN.ITK.MSFI.ZS,sama,persen,total,,moderate or severe food insecurity
+tpb:3.1.2*,bps,var1541,definisi_beda,persen,total,,BPS: persalinan di fasilitas kesehatan; global: ditolong tenaga kesehatan terlatih
+tpb:3.1.2*,unsd,SH_STA_BRTC,sama,persen,total,,seri global 3.1.2
+tpb:3.1.2*,wdi,SH.STA.BRTC.ZS,sama,persen,total,,Births attended by skilled health staff
+tpb:3.1.2*,who_gho,MDG_0000000025,sama,persen,total,,Births attended by skilled health personnel
+tpb:3.2.1*,bps,var1373,sama,per_1000_kelahiran_hidup,total,,Angka Kematian Balita per 1000 kelahiran hidup (satuan dari judul tabel)
+tpb:3.2.1*,unsd,SH_DYN_MORT,sama,per_1000_kelahiran_hidup,Age=<5Y,,Under-five mortality rate
+tpb:3.2.1*,wdi,SH.DYN.MORT,sama,per_1000_kelahiran_hidup,total,,Mortality rate under-5
+tpb:3.2.1*,who_gho,MDG_0000000007,sama,per_1000_kelahiran_hidup,total,,Under-five mortality rate
+tpb:3.3.3*,bps,var1393,definisi_beda,x_per_1000_penduduk_berisiko,total,,BPS: kejadian malaria per 1000 orang (penyebut penduduk); global: per 1000 penduduk berisiko
+tpb:3.3.3*,unsd,SH_STA_MALR,sama,x_per_1000_penduduk_berisiko,total,,Malaria incidence per 1000 population at risk
+tpb:3.3.3*,wdi,SH.MLR.INCD.P3,sama,x_per_1000_penduduk_berisiko,total,,Incidence of malaria per 1000 population at risk
+tpb:3.3.3*,who_gho,MALARIA_EST_INCIDENCE,sama,x_per_1000_penduduk_berisiko,total,,Estimated malaria incidence
+tpb:3.7.1*,bps,var1394,sama,persen,total,,judul tabel sama dengan indikator global
+tpb:3.7.1*,unsd,SH_FPL_MTMM,sama,persen,Age=15-49;Sex=FEMALE,,seri global 3.7.1
+tpb:3.7.1*,who_gho,SDGFPALL,sama,persen,total,,need for family planning satisfied with modern methods
+tpb:3.7.2*,bps,var1353,sama,per_1000_perempuan_15_19,total,,Angka kelahiran perempuan 15-19 tahun (satuan dari judul tabel)
+tpb:3.7.2*,unsd,SP_DYN_ADKL,sama,per_1000_perempuan_15_19,Age=15-19;Sex=FEMALE,,seri global 3.7.2 rincian umur 15-19
+tpb:3.7.2*,wdi,SP.ADO.TFRT,sama,per_1000_perempuan_15_19,total,,Adolescent fertility rate ages 15-19
+tpb:3.7.2*,who_gho,MDG_0000000003,sama,per_1000_perempuan_15_19,DIM_AGE=Y15T19,,Adolescent birth rate
+tpb:3.a.1*,bps,var1435,definisi_beda,persen,total,,BPS: merokok tembakau sebulan terakhir 15+ (kasar); global: prevalensi terstandar umur
+tpb:3.a.1*,unsd,SH_PRV_SMOK,sama,persen,Age=15+,,seri global 3.a.1 terstandar umur
+tpb:3.a.1*,who_gho,M_Est_tob_curr_std,sama,persen,total,,current tobacco use age-standardized
+tpb:4.2.2,bps,var1439,definisi_beda,persen,total,,BPS: APK PAUD; global: partisipasi satu tahun sebelum usia SD
+tpb:4.2.2,unsd,SE_PRE_PARTN,sama,persen,total,,seri global 4.2.2
+tpb:4.3.1*,bps,var2685,sama,persen,turvar=Usia 15-64 tahun,,judul tabel sama dengan indikator global
+tpb:4.3.1*,unsd,SE_ADT_EDUCTRN,sama,persen,Age=15-64,,seri global 4.3.1 rincian umur 15-64
+tpb:4.6.1.(a),bps,var1458,proksi,persen,total,,Angka melek aksara 15+ (proksi nasional)
+tpb:4.6.1.(a),unsd,SE_ADT_LITR,proksi,persen,Age=15-99;Type of skill=LITE,,Youth/adult literacy rate rincian umur 15+
+tpb:4.6.1.(a),wdi,SE.ADT.LITR.ZS,proksi,persen,total,,Literacy rate adult total 15+
+tpb:5.3.1*,bps,var1360,sama,persen,total,,judul tabel sama dengan indikator global (sebelum 18 tahun)
+tpb:5.3.1*,unsd,SP_DYN_MRBF18,sama,persen,Age=20-24;Sex=FEMALE,,seri global 5.3.1 sebelum 18
+tpb:5.3.1*,wdi,SP.M18.2024.FE.ZS,sama,persen,total,,Women first married by age 18
+tpb:5.5.2*,bps,var2003,sama,persen,total,,proporsi perempuan di posisi manajerial
+tpb:5.5.2*,unsd,IC_GEN_MGTL,sama,persen,Age=15+;Sex=FEMALE,,seri global 5.5.2 ICLS-13
+tpb:5.5.2*,ilostat,SDG_T552_NOC_RT,sama,persen,total,,ILOSTAT 5.5.2 semua posisi manajerial (T552; 0552 hanya manajemen senior dan menengah)
+tpb:5.b.1*,bps,var1221,sama,persen,total,,judul tabel sama dengan indikator global
+tpb:5.b.1*,unsd,IT_MOB_OWN,sama,persen,total,,seri global 5.b.1
+tpb:6.1.1*,bps,var2741,definisi_beda,persen,total,,BPS: persentase rumah tangga; global: persentase penduduk
+tpb:6.1.1*,unsd,SH_H2O_SAFE,sama,persen,total,,seri global 6.1.1
+tpb:6.1.1*,wdi,SH.H2O.SMDW.ZS,sama,persen,total,,safely managed drinking water
+tpb:6.1.1*,who_gho,WSH_WATER_SAFELY_MANAGED,sama,persen,total,,safely managed drinking-water
+tpb:6.2.1*,bps,var2749,definisi_beda,persen,total,,BPS: persentase rumah tangga; global: persentase penduduk
+tpb:6.2.1*,unsd,SH_SAN_SAFE,sama,persen,total,,seri global 6.2.1 sanitasi aman
+tpb:6.2.1*,wdi,SH.STA.SMSS.ZS,sama,persen,total,,safely managed sanitation
+tpb:6.2.1*,who_gho,WSH_SANITATION_SAFELY_MANAGED,sama,persen,total,,safely managed sanitation
+tpb:6.2.1*:cuci_tangan,bps,var1273,definisi_beda,persen,total,,BPS: rumah tangga dengan fasilitas cuci tangan sabun dan air; global: penduduk
+tpb:6.2.1*:cuci_tangan,unsd,SH_SAN_HNDWSH,sama,persen,total,,seri global 6.2.1 cuci tangan
+tpb:6.2.1*:cuci_tangan,wdi,SH.STA.HYGN.ZS,sama,persen,total,,basic handwashing facilities
+tpb:6.2.1*:cuci_tangan,who_gho,WSH_HYGIENE_BASIC,sama,persen,total,,basic handwashing facilities
+tpb:8.2.1*,bps,var1161,sama,persen,total,,laju pertumbuhan PDB riil per orang bekerja
+tpb:8.2.1*,unsd,SL_EMP_PCAP,sama,persen,Age=15+,,seri global 8.2.1
+tpb:8.2.1*,ilostat,SDG_0821_NOC_RT,sama,persen,total,,estimasi model ILO 8.2.1
+tpb:8.3.1*,bps,var2153,sama,persen,total,,proporsi lapangan kerja informal; TPB 8.3.1: sektor nonpertanian
+tpb:8.3.1*,unsd,SL_ISV_IFEM,sama,persen,Activity=NONAGR;Age=15+,,seri global 8.3.1 ICLS-13 rincian sektor nonpertanian umur 15+
+tpb:8.3.1*,ilostat,SDG_0831_SEX_ECO_RT,sama,persen,ECO=ECO_SECTOR_NAG,,ILOSTAT 8.3.1 sektor nonpertanian
+tpb:8.5.2*,bps,var543,sama,persen,total,8,TPT Sakernas; angka tahunan resmi adalah Agustus
+tpb:8.5.2*,unsd,SL_TLF_UEM,sama,persen,Age=15+,,seri global 8.5.2 ICLS-13 rincian umur 15+
+tpb:8.5.2*,wdi,SL.UEM.TOTL.NE.ZS,sama,persen,total,,Unemployment total national estimate
+tpb:8.5.2*,ilostat,UNE_DEAP_SEX_AGE_RT,metodologi_beda,persen,total,,tingkat pengangguran ILOSTAT definisi ICLS-19 (peta M1: kelas sebab metodologi lawan TPT Sakernas)
+tpb:8.6.1*,bps,var1186,sama,persen,total,,NEET 15-24 tahun
+tpb:8.6.1*,unsd,SL_TLF_NEET,sama,persen,Age=15-24,,seri global 8.6.1 ICLS-13 rincian umur 15-24
+tpb:8.6.1*,wdi,SL.UEM.NEET.ZS,sama,persen,total,,Share of youth not in education employment or training
+tpb:8.6.1*,ilostat,SDG_0861_SEX_RT,sama,persen,total,,ILOSTAT 8.6.1 NEET 15-24
+tpb:8.7.1*,bps,var2658,sama,persen,total,,pekerja anak 5-17 sesuai metadata SDGs global
+tpb:8.7.1*,unsd,SL_TLF_CHLDEC,sama,persen,total,,seri global 8.7.1 kegiatan ekonomi dan rumah tangga rincian umur 5-17
+tpb:9.2.1*,bps,var1214,sama,persen,total,,proporsi nilai tambah industri manufaktur terhadap PDB (harga berlaku)
+tpb:9.2.1*,unsd,NV_IND_MANF_CD,sama,persen,Activity=ISIC4_C,,seri global 9.2.1 harga berlaku
+tpb:9.2.1*,wdi,NV.IND.MANF.ZS,sama,persen,total,,Manufacturing value added % of GDP
+tpb:9.2.2*,bps,var2755,sama,persen,total,,proporsi tenaga kerja industri manufaktur
+tpb:9.2.2*,unsd,SL_TLF_MANF,sama,persen,Activity=ISIC4_C,,seri global 9.2.2 ICLS-13
+tpb:9.2.2*,ilostat,SDG_0922_NOC_RT,sama,persen,total,,ILOSTAT 9.2.2
