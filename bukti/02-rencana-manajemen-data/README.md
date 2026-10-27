@@ -188,7 +188,3 @@ Tanggal di atas adalah rencana pada 20 Oktober. Pelaksanaannya berjalan jauh leb
 - **Dua faktor belum pernah diukur:** kesegaran, karena konektor belum berjadwal, dan kemudahan menambah sumber, karena belum ada sumber baru yang ditambahkan setelah platform berdiri.
 - **Kelengkapan riwayat belum dihitung ulang** sebagai proporsi setelah gudang dibangun. Yang tersedia baru bukti struktural dari skema fakta pada langkah 09.
 - **Baris kesiapan 20 Oktober tidak disegarkan.** Tabel KUK 1.2 dan kolom status pertama KUK 4.2 sengaja dibiarkan sebagai potret awal, supaya kemajuan dapat dibaca dari selisihnya.
-
-## Catatan untuk wawancara asesor
-
-Dokumen di repositori ini disusun dengan bantuan asisten AI (Claude). Keputusan tetap tanggung jawab saya. Pertanyaan yang harus bisa saya jawab tanpa membaca: bila kontrak data product gagal, siapa yang memperbaiki (pemilik domain sebagai A, tim platform sebagai R pada kegiatan 9), dan mengapa setiap kegiatan hanya boleh punya satu A.
