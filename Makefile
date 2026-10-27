@@ -4,15 +4,16 @@
 #                  (setel PENELITIAN=/jalur/repositori-penelitian)
 #   make sidik     catat sha256 setiap berkas data ke data/SIDIK.txt
 #   make periksa   pastikan data belum berubah sejak sidik dicatat
-#   make laporan   gabungkan report/*.md menjadi report/_build/laporan.docx
+#   make laporan   susun report/0*.md di InDesign (TEMPLAT_INDD=/jalur/WP8.indd) -> report/laporan-serkom.indd + .pdf
+#   make laporan-pdf  bangun PDF tanpa InDesign (pandoc + XeLaTeX) -> report/laporan-serkom-xelatex.pdf
 
 PENELITIAN ?=
 DATA     ?= data
 
-.PHONY: bantuan data sidik periksa laporan
+.PHONY: bantuan data sidik periksa laporan laporan-pdf
 
 bantuan:
-	@sed -n '3,6p' Makefile | sed 's/^#   //'
+	@sed -n '3,8p' Makefile | sed 's/^#   //'
 
 data:
 	@test -n "$(PENELITIAN)" || { echo "setel PENELITIAN=/jalur/repositori-penelitian"; exit 1; }
@@ -29,5 +30,9 @@ periksa:
 	@cd $(DATA) && shasum -a 256 -c --quiet SIDIK.txt && echo "data sama dengan SIDIK.txt"
 
 laporan:
-	@mkdir -p report/_build
-	pandoc $(sort $(wildcard report/[0-9]*.md)) -o report/_build/laporan.docx
+	bash report/_templat/indesign/buat_laporan.sh
+
+laporan-pdf:
+	cd report && pandoc 0*.md --from markdown --pdf-engine=xelatex --lua-filter=_templat/laporan.lua \
+	  --include-in-header=_templat/header.tex --include-before-body=_templat/sampul.tex \
+	  -V lang=id -V linkcolor=biru -o laporan-serkom-xelatex.pdf

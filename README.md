@@ -29,7 +29,7 @@ Folder bukti diurutkan mengikuti urutan pekerjaan, bukan urutan nomor unit. Seti
 | `bukti/` | satu folder per langkah: apa yang dikerjakan, bukti per elemen, catatan terbuka |
 | `data/` | ringkasan hasil terukur yang menjadi dasar angka, dengan asal dan sidiknya |
 | `code/` | salinan kode gudang yang dirujuk bukti, dari commit `dcaa55e` repositori penelitian Ardika |
-| `report/` | laporan portofolio |
+| `report/` | laporan portofolio: Markdown per bab, templat, dan hasil bangun (`.indd`, `.pdf`) |
 | `berkas-asesmen/` | FR.APL.01, FR.APL.02, persyaratan; `pribadi/` tidak pernah di-commit |
 
 ## Perintah
@@ -38,6 +38,8 @@ Folder bukti diurutkan mengikuti urutan pekerjaan, bukan urutan nomor unit. Seti
 make data      # salin ringkasan dari repositori penelitian Ardika (PENELITIAN=/jalur/repositori-penelitian)
 make sidik     # catat sha256 data ke data/SIDIK.txt
 make periksa   # pastikan data belum berubah
+make laporan   # report/0*.md -> report/laporan-serkom.indd + .pdf lewat InDesign (TEMPLAT_INDD=/jalur/WP8.indd)
+make laporan-pdf  # PDF cadangan tanpa InDesign (pandoc + XeLaTeX)
 ```
 
 ## Keadaan

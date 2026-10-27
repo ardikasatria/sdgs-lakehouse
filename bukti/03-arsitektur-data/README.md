@@ -42,18 +42,37 @@ Unit ini menilai model operasional tata kelola beserta pengaruh budaya dan perat
 
 Hasilnya adalah model federasi: empat domain pilar memiliki data product, sedangkan platform menyediakan alat swalayan dan menegakkan aturan global.
 
-```
-   Aturan global (tim platform, ditegakkan otomatis)
-   kode wilayah · kode indikator · satuan · kelas lisensi · format provenans
-   ───────────────────────────────────────────────────────────────────────
-   │ Domain Sosial │ Domain Ekonomi │ Domain Lingkungan │ Domain Hukum dan │
-   │ SDG 1–5       │ SDG 7–10, 17   │ SDG 6, 11–15      │ Tata Kelola SDG 16│
-   │ kontrak lokal │ kontrak lokal  │ kontrak lokal     │ kontrak lokal     │
-   ───────────────────────────────────────────────────────────────────────
-   Platform swalayan: konektor · templat Silver · pembangkit kontrak ·
-   registri rilis · katalog metadata · Dagster · Iceberg/Trino
-   ───────────────────────────────────────────────────────────────────────
-   Konsumen: dp_liga (paket level) · Bravais · pemeriksa klaim berita · naskah
+Model ini tersusun atas empat lapis. Di atas, tim platform menetapkan aturan global yang ditegakkan otomatis: kode wilayah, kode indikator, satuan, kelas lisensi, dan format provenans. Di bawahnya, empat domain pilar memegang kontrak lokal masing-masing, yaitu Domain Sosial (SDG 1–5), Domain Ekonomi (SDG 7–10 dan 17), Domain Lingkungan (SDG 6 dan 11–15), serta Domain Hukum dan Tata Kelola (SDG 16). Keempat domain membangun data product di atas platform swalayan yang menyediakan konektor, templat Silver, pembangkit kontrak, registri rilis, katalog metadata, Dagster, serta Iceberg dan Trino. Hasilnya dibaca oleh konsumen: `dp_liga` untuk paket level, Bravais, pemeriksa klaim berita, dan naskah.
+
+```mermaid
+flowchart TB
+    subgraph G["Aturan global · tim platform, ditegakkan otomatis"]
+        G1["kode wilayah · kode indikator · satuan<br/>kelas lisensi · format provenans"]
+    end
+
+    subgraph D["Domain pilar · kontrak lokal"]
+        direction LR
+        D1["Domain Sosial<br/>SDG 1–5"]
+        D2["Domain Ekonomi<br/>SDG 7–10, 17"]
+        D3["Domain Lingkungan<br/>SDG 6, 11–15"]
+        D4["Domain Hukum dan Tata Kelola<br/>SDG 16"]
+    end
+
+    subgraph P["Platform swalayan"]
+        P1["konektor · templat Silver · pembangkit kontrak<br/>registri rilis · katalog metadata<br/>Dagster · Iceberg/Trino"]
+    end
+
+    subgraph K["Konsumen"]
+        direction LR
+        K1["dp_liga<br/>(paket level)"]
+        K2["Bravais"]
+        K3["pemeriksa klaim berita"]
+        K4["naskah"]
+    end
+
+    G -- "menegakkan" --> D
+    P -- "menyediakan alat" --> D
+    D -- "data product" --> K
 ```
 
 Pembagian tujuan per pilar mengikuti Permen PPN/Kepala Bappenas Nomor 1 Tahun 2024 Pasal 4 ayat (3) sampai (6), yang juga menjadi struktur Metadata Indikator TPB per pilar. Padanannya diperiksa pada M1 dan disimpan sebagai `artefak/referensi/dim_pilar.csv` di repositori penelitian Ardika. Struktur ini dipilih karena sudah dikenal pemangku kepentingan, sehingga pemilik domain tidak perlu mempelajari pembagian baru.
