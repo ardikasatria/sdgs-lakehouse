@@ -8,3 +8,11 @@ catatan/
 
 # hasil bangun laporan
 report/_build/
+
+report/01-pendahuluan.md
+report/02-proyek.md
+report/03-bukti-per-langkah.md
+report/04-hasil-dan-masalah.md
+report/05-keterbatasan.md
+report/06-lampiran.md
+report/README.md

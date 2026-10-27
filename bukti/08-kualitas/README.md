@@ -116,7 +116,3 @@ Skor prioritas = baris terdampak × bobot dampak. Bobotnya 3 bila seri dipakai p
 - **Duplikat WHO GHO** belum dilaporkan ke sumbernya; kedua nilai disimpan dan kuncinya ditandai, tidak dipilih salah satu.
 - **Pemantauan baru bersifat per jalan**, belum berjadwal, karena konektor belum berjadwal (langkah 02, faktor kesegaran).
 - **Kode belum disalin ke `code/`.** `src/sdg_gudang/silver/kualitas.py`, aturan S01–S09, dan uji unitnya masih di DSIC-SDG.
-
-## Catatan untuk wawancara asesor
-
-Dokumen di repositori ini disusun dengan bantuan asisten AI (Claude). Keputusan tetap tanggung jawab saya. Pertanyaan yang harus bisa saya jawab tanpa membaca: ceritakan satu masalah kualitas yang ditemukan dan diperbaiki (insiden tanggal rilis PBB, dari gejala sampai uji baru), mengapa ambang tidak boleh diubah setelah hasil terlihat, dan mengapa nilai negatif SIGN-SMART tidak dikoreksi padahal melanggar standar.
